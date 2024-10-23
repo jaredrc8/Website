@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/2faed38072.js" crossorigin="anonymous"></script>
+    <title>Jared Crebo</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+    <!-- Custom Styling -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1 class="logo-text"><span>Jared </span> Crebo</h1>
+        </div>
+        <i class="fa fa-bars menu-toggle"></i>
+        <ul class="nav">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Travel</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Hobbies</a></li>
+            <li>
+                <a href="#">Jared Crebo</a>
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Exit</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+</body>
+
+
+</html>
