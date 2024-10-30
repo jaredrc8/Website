@@ -78,18 +78,30 @@
             <div class="tab-header">
                 <h2>Education</h2>
             </div>
-            <img src="" alt="Education Image">
+            <div class="education">
+                <a href="https://schulichuav.ca/" ><img src="images/SUAV-Competition.jpg" alt="Education Image"></a>
+                <a href="https://schulich.ucalgary.ca/future-students/undergraduate/programs/bsc-mechanical-engineering">
+                    <h2>BSc ('25), Mechanical Engineering</h2>
+                    <p><b>
+                        University of Calgary<br>
+                        Minor in Astrophysics<br>
+                        Former President of Schulich UAV 
+                    </p></b>
+                </a>
+            </div>
         </div>
         <div class="career-line"></div>
         <div class="career-card">
             <div class="tab-header">
                 <h2>Experience</h2>
             </div>
-            <ul>
-                <li>Loading Engineering Business Student</li>
-                <li>Imperial Oil, An ExxonMobil Company</li>
-            </ul>
-            <img src="" alt="Experience Image">
+            <div class="experience">
+                <a href="https://www.imperialoil.ca/en-ca"><img src="images/Renewable-Diesel.jpg" alt="Experience Image"></a>
+                <h2>Loading Engineering Business Student</h2>
+                <p><b>
+
+                </b></p>
+            </div>
         </div>
     </div>
     <div class="projects">
