@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/2faed38072.js" crossorigin="anonymous"></script>
+    <title>Jared Crebo - Career</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+    <!-- Custom Styling -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1 class="logo-text"><a href="index#"><span>Jared </span>Crebo</a></h1>
+        </div>
+        <ul class="nav">
+            <li><a href="about#">About Me</a></li>
+            <li><a href="career#">Career</a></li>
+            <li><a href="travel#">Travel</a></li>
+            <li><a href="blog#">Blog</a></li>
+        </ul>
+    </header>
+
+    <div class="aspirations">
+        <h1><a href="documents/JaredCrebo_Resume.pdf">Resume</a></h1>
+        <p><b>
+            I aspire to be an aerospace engineer that uses computational tools to solve real problems.  
+        </p></b>
+    </div>
+    <div class="career">
+        <div class="career-card">
+            <div class="tab-header">
+                <h2>Skills</h2>
+            </div>
+            <div class="tab-container">
+                <div class="tabs">
+                    <h3>Computational Fluid Dynamics</h3>
+                </div>
+                <div class="tabs">
+                    <h3>Finite Element Analysis</h3>
+                </div>
+                <div class="tabs">
+                    <h3>Computer Aided Design</h3>
+                </div>
+                <div class="tabs">
+                    <h3>Python</h3>
+                </div>
+                <div class="tabs">
+                    <h3>MATLAB</h3>
+                </div>
+                <div class="tabs">
+                    <h3>Composite Materials</h3>
+                </div>
+                <div class="tabs">
+                    <h3>Manufacturing</h3>
+                </div>
+                <div class="tabs">
+                    <h3>Microsoft Excel</h3>
+                </div>
+                <div class="tabs">
+                    <h3>Power BI</h3>
+                </div>
+            </div>
+        </div>
+        <div class="career-line"></div>
+        <div class="career-card">
+            <div class="tab-header">
+                <h2>Education</h2>
+            </div>
+            <img src="" alt="Education Image">
+        </div>
+        <div class="career-line"></div>
+        <div class="career-card">
+            <div class="tab-header">
+                <h2>Experience</h2>
+            </div>
+            <ul>
+                <li>Loading Engineering Business Student</li>
+                <li>Imperial Oil, An ExxonMobil Company</li>
+            </ul>
+            <img src="" alt="Experience Image">
+        </div>
+    </div>
+    <div class="projects">
+        <div class="project-card">
+            <h2><a href="">Capstone Project: Aerodynamic Analysis and Control Law Synthesis</a></h2>
+        </div>
+        <div class="project-card">
+            <h2><a href="">Schulich UAV: Hammerhead Drone</a></h2>
+        </div>
+        <div class="project-card">
+            <h2><a href="">Imperial Oil: Renewable Diesel</a></h2>
+        </div>
+    </div>
+
+    <footer>
+        <ul class="social-media">
+            <li><a href="https://www.linkedin.com/in/jaredcrebo/"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/jaredrc8/"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+            <li><a href="mailto:jaredrc8@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a></li>
+        </ul>
+    </footer>
+</body>
+
+
+</html>

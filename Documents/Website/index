@@ -8,7 +8,7 @@
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/2faed38072.js" crossorigin="anonymous"></script>
-    <title>Jared Crebo</title>
+    <title>Jared Crebo - Home</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,31 +16,80 @@
     <link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 
     <!-- Custom Styling -->
-    <link rel="stylesheet" href="css/style.css">
-
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
         <div class="logo">
-            <h1 class="logo-text"><span>Jared </span> Crebo</h1>
+            <h1 class="logo-text"><a href="index#"><span>Jared </span>Crebo</a></h1>
         </div>
-        <i class="fa fa-bars menu-toggle"></i>
         <ul class="nav">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Travel</a></li>
-            <li><a href="#">Career</a></li>
-            <li><a href="#">Hobbies</a></li>
-            <li>
-                <a href="#">Jared Crebo</a>
-                <ul>
-                    <li><a href="#">Dashboard</a></li>
-                    <li><a href="#">Exit</a></li>
-                </ul>
-            </li>
+            <li><a href="about#">About Me</a></li>
+            <li><a href="career#">Career</a></li>
+            <li><a href="travel#">Travel</a></li>
+            <li><a href="blog#">Blog</a></li>
         </ul>
     </header>
+
+    <div class="main">
+        <a href="about#">
+            <img src="images/Headshot.jpg" alt="Main Image">
+            <div class="main-header">
+                <h2>Jared Crebo</h2>
+                <ul>
+                    <li><i class="fa-solid fa-jet-fighter"></i>  BSc Mechanical Engineering and Astrophysics at UCalgary</li>
+                    <li><i class="fa-solid fa-jet-fighter"></i>  41 Combat Engineer Regiment, Canadian Armed Forces</li>
+                </ul>
+                <p>
+                    Welcome to my home on the internet! <br>
+                    This page serves to host everything about me.
+                    If you are a recruiter, my resume can be found under Career.
+                    If you are here to learn more about my life, check out my other pages.
+                </p>
+            </div>
+        </a>
+    </div>
+
+    <div class="card-container">
+        <div class="card">
+            <a href="career#"><b>Career</b></a>
+            <img src="images/SUAV.jpg" alt="Career Image">
+            <p>
+                I strive to work in the aerospace industry. 
+                I have a passion for the use of computational tools applied to real world problems. 
+                This extends to computational fluid dynamics and finite element analysis of structures.
+            </p>
+        </div>
+        <div class="line"></div>
+        <div class="card">
+            <a href="travel#"><b>Travel</b></a>
+            <img src="images/Machu Picchu.JPG" alt="Travel Image">
+            <p>
+                I am fortunate enough to have travelled to over 20 countries in my life. 
+                I spent two months backpacking across South America in 2023, and  
+                I have also backpacked through Europe and Japan recently. 
+                My next adventure will be to cross the Silk Road from Beijing to Rome in 2025. 
+            </p>
+        </div>
+        <div class="line"></div>
+        <div class="card">
+            <a href="blog#"><b>Blog</b></a>
+            <img src="images/Backpacking.jpeg" alt="Blog Image">
+            <p>
+                I enjoy rock climbing, hiking, running, and lifting weights. 
+                Recently, I ran my first race: the Canmore Half-Marathon in 2024. 
+                I also serve as a reservist combat engineer for the Canadian Armed Forces. 
+            </p>
+        </div>
+    </div>
+    <footer>
+        <ul class="social-media">
+            <li><a href="https://www.linkedin.com/in/jaredcrebo/"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/jaredrc8/"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+            <li><a href="mailto:jaredrc8@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a></li>
+        </ul>
+    </footer>
 </body>
 
 

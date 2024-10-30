@@ -1,0 +1,355 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background: #eae0d5;
+    font-family: 'Lora', serif;
+    justify-content: center;
+}
+
+/* Header */
+
+header {
+    background: #5e503f;
+    height: 66px;
+}
+
+header * {
+    color: #eae0d5;
+}
+
+header .logo {
+    float: left;
+    height: inherit;
+    margin-left: 2em;
+}
+
+header .logo-text {
+    margin: 9px;
+    font-family: 'Candal';
+}
+
+header .logo-text a {
+    text-decoration: none;
+}    
+
+header .logo-text span {
+    color: #C6AC8F;
+}
+
+header ul {
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+header ul li {
+    float: left;
+    position: relative;
+}
+
+header ul li a {
+    display: block;
+    padding: 21px;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+/* Home - Main Body */
+
+body .main {
+    background: #eae0d5;
+    display: flex;
+    height: calc(100vh - 66px - 10vh);
+    padding: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+body .main a {
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+    flex-wrap: wrap;
+    background: #eae0d5;
+    border-radius: 20px;
+    text-decoration: none;
+    align-items: center;
+    gap: 10px;
+    overflow: hidden;
+}
+
+body .main img {
+    height: inherit;
+    border-radius: calc(60vh * 0.5);
+}
+
+body .main a .main-header {
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    width: 40vw;
+    padding: 20px;
+}
+
+body .main a .main-header h2 {
+    color: #5e503f;
+    font-size: 5em;
+    text-decoration: none;
+    padding-left: 20px;
+    text-align: left;
+}
+
+body .main a .main-header ul {
+    color: #5e503f;
+    font-size: 1.5em;
+    padding-left: 20px;
+    text-align: left;
+    list-style-type: none;
+}
+
+body .main a .main-header p {
+    color: #5e503f;
+    font-size: 1.3em;
+    padding-left: 20px;
+    text-align: left;
+    text-decoration: none;
+}
+
+body .card-container {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    height: calc(100vh - 66px);
+    gap: 5px;
+    flex-wrap: wrap;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #C6AC8F;
+}
+
+body .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 32%;
+    text-align: center;
+    padding: 0px 0px;
+    transition: transform 0.2s ease;
+}
+
+body .card a {
+    display: block;
+    padding: 20px;
+    padding-bottom: 50px;
+    font-size: 3em;
+    text-decoration: none;
+    color: #22333B;
+}
+
+body .card a:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+body .card img {
+    width: 95%;
+    border-radius: inherit;
+}
+
+body .card p {
+    text-align: left;
+    padding: 3%;
+    font-size: 1.3em;
+    color: #22333B;
+    font-family: 'Lora', 'serif';
+}
+
+body .line {
+    position: relative;
+    top: 160px;
+    height: 40vh;
+    width: 3px;
+    background-color: #5e503f;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    height: 66px;
+    background-color: #5e503f;
+}
+
+footer .social-media {
+    display: flex;
+    gap: 20px;
+    font-size: 1.3em;
+    text-decoration: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+footer .social-media li {
+    color: #eae0d5;
+    list-style-type: none;
+    padding: 20px 10px;
+}
+
+footer .social-media li a {
+    text-decoration: none;
+    color: #eae0d5;
+}
+
+footer .social-media li:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+/* About Me */
+
+body .about {
+    background: #eae0d5;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: #eae0d5;
+    border-radius: 20px;
+    height: calc(100vh - 132px);
+    text-decoration: none;
+    align-items: center;
+    gap: 100px;
+    overflow: hidden;
+}
+
+body .about img {
+    height: 60vh;
+    border-radius: calc(60vh * 0.5);
+}
+
+body .about .about-text {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+}
+
+body .about .about-text h2 {
+    font-size: 4em;
+    color: #5e503f;
+}
+
+body .about .about-text p {
+    font-size: 1.3em;
+    color: #5e503f;
+}
+
+/* Career */
+
+body .aspirations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    padding: 50px;
+    gap: 20px;
+    background-color: #C6AC8F;
+}
+
+body .aspirations h1 a {
+    display: flex;
+    text-decoration: none;
+    color: #22333B;
+    font-size: 1.6em;
+}
+
+body .aspirations p {
+    display: flex;
+    font-size: 1.3em;
+    color: #22333B;
+}
+
+body .aspirations h1 a:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+body .career {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    margin: 0px;
+    background-color: #eae0d5;
+    height: 30vh;
+}
+
+body .career .career-line {
+    position: relative;
+    width: 3px;
+    background-color: #5e503f;
+    height: 20vh;
+    top: 50px;
+}
+
+body .career .career-card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    background-color: #eae0d5;
+    height: inherit;
+    width: calc(100vw / 3);
+    gap: 20px;
+}
+
+body .career .career-card .tab-header {
+    display: grid;
+    place-content: center;
+    position: relative;
+    top: 0px;
+    background-color: #5e503f;
+    width: 400px;
+    height: 60px;
+    border-radius: 30px;
+}
+
+body .career .career-card .tab-header h2 {
+    color: #eae0d5;
+}
+
+body .career .career-card .tab-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+}
+
+body .career .career-card .tab-container .tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 4px solid #C6AC8F;
+    border-radius: 20px;
+    width: calc(100vw / 10);
+    height: 80px;
+    overflow: hidden;
+    word-wrap: break-word;
+    padding: 5px;
+}
+
+body .career .career-card .tab-container .tabs h3 {
+    color: #5e503f;
+}
