@@ -159,7 +159,7 @@ body .card a {
     display: block;
     padding: 20px;
     padding-bottom: 50px;
-    font-size: 3em;
+    font-size: 5vh;
     text-decoration: none;
     color: #22333B;
 }
@@ -177,7 +177,7 @@ body .card img {
 body .card p {
     text-align: left;
     padding: 3%;
-    font-size: 1.3em;
+    font-size: 2.5vh;
     color: #22333B;
     font-family: 'Lora', 'serif';
 }
