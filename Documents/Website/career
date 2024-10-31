@@ -33,12 +33,28 @@
     </header>
 
     <div class="aspirations">
-        <h1><a href="documents/JaredCrebo_Resume.pdf">Resume</a></h1>
+        <a href="documents/JaredCrebo_Resume.pdf">Resume</a>
         <p><b>
             I aspire to be an aerospace engineer that uses computational tools to solve real problems.  
         </p></b>
     </div>
     <div class="career">
+        <div class="career-card">
+            <div class="tab-header">
+                <h2>Education</h2>
+            </div>
+            <div class="education">
+                <a href="https://schulichuav.ca/" ><img src="images/SUAV-Competition.jpg" alt="Education Image"></a>
+                <a href="https://schulich.ucalgary.ca/future-students/undergraduate/programs/bsc-mechanical-engineering">
+                    <h2>BSc ('25), Mechanical Engineering</h2>
+                    <p><b>
+                        University of Calgary<br>
+                        Minor in Astrophysics<br>
+                        Former President of Schulich UAV 
+                    </p></b>
+                </a>
+            </div>
+        </div>
         <div class="career-card">
             <div class="tab-header">
                 <h2>Skills</h2>
@@ -73,37 +89,20 @@
                 </div>
             </div>
         </div>
-        <div class="career-line"></div>
-        <div class="career-card">
-            <div class="tab-header">
-                <h2>Education</h2>
-            </div>
-            <div class="education">
-                <a href="https://schulichuav.ca/" ><img src="images/SUAV-Competition.jpg" alt="Education Image"></a>
-                <a href="https://schulich.ucalgary.ca/future-students/undergraduate/programs/bsc-mechanical-engineering">
-                    <h2>BSc ('25), Mechanical Engineering</h2>
-                    <p><b>
-                        University of Calgary<br>
-                        Minor in Astrophysics<br>
-                        Former President of Schulich UAV 
-                    </p></b>
-                </a>
-            </div>
-        </div>
-        <div class="career-line"></div>
         <div class="career-card">
             <div class="tab-header">
                 <h2>Experience</h2>
             </div>
             <div class="experience">
                 <a href="https://www.imperialoil.ca/en-ca"><img src="images/Renewable-Diesel.jpg" alt="Experience Image"></a>
-                <h2>Loading Engineering Business Student</h2>
+                <h2>Loading Engineering Business Student (16 months)</h2>
                 <p><b>
-
+                    Imperial Oil, An ExxonMobil Company
                 </b></p>
             </div>
         </div>
     </div>
+    <div class="projects-title">Projects</div>
     <div class="projects">
         <div class="project-card">
             <h2><a href="">Capstone Project: Aerodynamic Analysis and Control Law Synthesis</a></h2>

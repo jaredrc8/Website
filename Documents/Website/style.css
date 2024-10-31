@@ -74,8 +74,8 @@ header ul li a:hover {
 body .main {
     background: #eae0d5;
     display: flex;
-    height: calc(100vh - 66px - 10vh);
-    padding: 100px;
+    flex-direction: row;
+    height: calc(800px);
     justify-content: center;
     align-items: center;
 }
@@ -83,7 +83,7 @@ body .main {
 body .main a {
     display: flex;
     justify-content: center;
-    height: 60vh;
+    height: calc(1080px * 0.5);
     flex-wrap: wrap;
     background: #eae0d5;
     border-radius: 20px;
@@ -95,14 +95,15 @@ body .main a {
 
 body .main img {
     height: inherit;
-    border-radius: calc(60vh * 0.5);
+    border-radius: calc(1080px * 0.6 * 0.5);
 }
 
 body .main a .main-header {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     height: inherit;
-    width: 40vw;
+    width: calc(1920px * 0.45);
     padding: 20px;
 }
 
@@ -116,7 +117,7 @@ body .main a .main-header h2 {
 
 body .main a .main-header ul {
     color: #5e503f;
-    font-size: 1.5em;
+    font-size: 1.7em;
     padding-left: 20px;
     text-align: left;
     list-style-type: none;
@@ -134,7 +135,9 @@ body .card-container {
     display: flex;
     justify-content: center;
     max-width: 100%;
-    height: calc(100vh - 66px);
+    min-height: 750px;
+    height: 40vw;
+    max-height: 900px;
     gap: 5px;
     flex-wrap: wrap;
     padding: 10px;
@@ -151,15 +154,14 @@ body .card {
     overflow: hidden;
     width: 32%;
     text-align: center;
-    padding: 0px 0px;
-    transition: transform 0.2s ease;
+    padding: 0px;
 }
 
 body .card a {
     display: block;
-    padding: 20px;
-    padding-bottom: 50px;
-    font-size: 5vh;
+    padding: 15px;
+    padding-bottom: 40px;
+    font-size: 2.5em;
     text-decoration: none;
     color: #22333B;
 }
@@ -170,14 +172,14 @@ body .card a:hover {
 }
 
 body .card img {
-    width: 95%;
+    width: 30vw;
     border-radius: inherit;
 }
 
 body .card p {
     text-align: left;
     padding: 3%;
-    font-size: 2.5vh;
+    font-size: 1.3em;
     color: #22333B;
     font-family: 'Lora', 'serif';
 }
@@ -185,7 +187,7 @@ body .card p {
 body .line {
     position: relative;
     top: 160px;
-    height: 40vh;
+    height: 350px;
     width: 3px;
     background-color: #5e503f;
 }
@@ -247,16 +249,18 @@ body .about img {
 body .about .about-text {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    gap: 50px;
     width: 40vw;
 }
 
 body .about .about-text h2 {
-    font-size: 4em;
+    font-size: clamp(2em, 2vw, 4em);
     color: #5e503f;
 }
 
 body .about .about-text p {
-    font-size: 1.3em;
+    font-size: clamp(1em, 0.87vw, 1.3em);
     color: #5e503f;
 }
 
@@ -267,26 +271,28 @@ body .aspirations {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 20vh;
-    padding: 50px;
+    height: 250px;
+    padding: 70px;
     gap: 20px;
-    background-color: #C6AC8F;
+    background-color: #eae0d5;
+    border: 0;
+    border-bottom: 2px solid #C6AC8F;
 }
 
-body .aspirations h1 a {
+body .aspirations a {
     display: flex;
     text-decoration: none;
-    color: #22333B;
-    font-size: 1.6em;
+    color: #5e503f;
+    font-size: 4em;
 }
 
 body .aspirations p {
     display: flex;
     font-size: 1.3em;
-    color: #22333B;
+    color: #5e503f;
 }
 
-body .aspirations h1 a:hover {
+body .aspirations a:hover {
     transform: scale(1.05);
     transition: 0.5s;
 }
@@ -297,27 +303,23 @@ body .career {
     padding: 0px;
     margin: 0px;
     background-color: #eae0d5;
-    height: 50vh;
-}
-
-body .career .career-line {
-    position: relative;
-    width: 3px;
-    background-color: #5e503f;
-    height: 40vh;
-    top: 30px;
+    min-height: 450px;
+    height: 29vw;
+    max-height: 570px;
 }
 
 body .career .career-card {
     display: flex;
     flex-direction: column;
     padding: 20px;
+    padding-top: 40px;
     align-items: center;
     background-color: #eae0d5;
+    max-height: inherit;
+    min-height: inherit;
     height: inherit;
     width: calc(100vw / 3);
     gap: 20px;
-    border: 2px solid red;
 }
 
 body .career .career-card .tab-header {
@@ -339,7 +341,7 @@ body .career .career-card .tab-container {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 10px;
-    height: 400px;
+    height: 350px;
 }
 
 body .career .career-card .tab-container .tabs {
@@ -354,6 +356,7 @@ body .career .career-card .tab-container .tabs {
     overflow: hidden;
     word-wrap: break-word;
     padding: 5px;
+    font-size: clamp(0.5em, 0.87vw, 1em);
 }
 
 body .career .career-card .tab-container .tabs h3 {
@@ -374,19 +377,16 @@ body .career .career-card .education {
 body .career .career-card .education a:nth-of-type(1) {
     position: relative;
     justify-self: center;
-    height: 250px;
+    width: 31vw;
+    max-width: 600px;
 }
 
 body .career .career-card .education a:nth-of-type(1) img {
     position: relative;
     justify-self: center;
-    height: inherit;
+    width: inherit;
+    max-width: inherit;
     border-radius: 20px;
-}
-
-body .career .career-card .education a:nth-of-type(1):hover {
-    transform: scale(1.05);
-    transition: 0.5s;
 }
 
 body .career .career-card .education a:nth-of-type(2) {
@@ -401,34 +401,86 @@ body .career .career-card .education a:nth-of-type(2) h2 {
     justify-self: center;
     align-self: end;
     color: #5e503f;
+    font-size: clamp(1em, 0.87vw, 4em);
 }
 
 body .career .career-card .education a:nth-of-type(2) p {
     color: #5e503f;
-}
-
-body .career .career-card .education :nth-of-type(2):hover {
-    transform: scale(1.05);
-    transition: 0.5s;
+    font-size: clamp(0.5em, 0.87vw, 1em);
 }
 
 body .career .career-card .experience {
     display: flex;
-    justify-content: center;
-    align-items: start;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
     height: 400px;
     width: inherit;
-    gap: 0;
-    border: 2px solid red;
+    gap: 10px;
+    padding: 10px;
 }
 
 body .career .career-card .experience a {
     position: relative;
+    justify-self: center;
+    width: 31vw;
+    max-width: 600px;
 }
 
 body .career .career-card .experience a img {
     position: relative;
     justify-self: center;
-    height: 250px;
+    width: inherit;
+    max-width: inherit;
     border-radius: 20px;
 }
+
+body .career .career-card .experience h2 {
+    color: #5e503f;
+    padding-top: 20px;
+    font-size: clamp(1em, 0.87vw, 4em);
+}
+
+body .career .career-card .experience p {
+    color: #5e503f;
+    font-size: clamp(0.5em, 0.87vw, 1em);
+}
+
+body .projects {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    margin: 0px;
+    background-color: #eae0d5;
+    min-height: 450px;
+    height: 29vw;
+    max-height: 550px;
+}
+
+body .projects-title {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;
+    font-family: 'Lora', serif;
+    color: #5e503f;
+    border: 0;
+    border-bottom: 2px solid #C6AC8F;
+    border-top: 2px solid #C6AC8F;
+    padding: 10px;
+}
+
+body .projects .project-card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    background-color: #eae0d5;
+    max-height: inherit;
+    min-height: inherit;
+    height: inherit;
+    width: calc(100vw / 3);
+    gap: 20px;
+}
+
