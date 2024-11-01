@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/2faed38072.js" crossorigin="anonymous"></script>
+    <title>Jared Crebo - Travel Journal</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+    <!-- Custom Styling -->
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1 class="logo-text"><a href="../index#"><span>Jared </span>Crebo</a></h1>
+        </div>
+        <ul class="nav">
+            <li><a href="../about#">About Me</a></li>
+            <li><a href="../career#">Career</a></li>
+            <li><a href="../travel#">Travel</a></li>
+            <li><a href="../blog#">Blog</a></li>
+        </ul>
+    </header>
+
+    <div class="days">
+        <div class="journal-title">
+            <p>Western Europe 2022 Travel Journal</p>
+        </div>
+        <div class="day">
+            <h3>Berlin, Germany. July 3, 2022.</h3>
+            <img src="../images/Europe 2022/Berlin-GermanFlag.JPG">
+            <p>
+                I have had a total of 8 hours of sleep in the last three days, but I must say it is worth it to be here in Berlin this beautiful morning. 
+                <br><br> Yesterday, we spent close to 24 hours travelling, and I almost lost my brother's camera in the London Gatwick Airport. 
+                I watched Mad Max: Fury Road and Martin Scorsese's Raging Bull on the flights. 
+                Our easyJet flight got delayed by 1.5 hours, and we almost missed our train to the Airbnb after, but somehow we made it.
+                We went to bed exhausted but excited around 1:30am.
+            </p>
+            <img src="../images/Europe 2022/Berlin-Friends.JPG">
+            <p>
+                This morning, Joey woke me up at 5:00am with a slam of the door, and the sun through the window didn't let me go back to sleep.
+                We decided to stroll the neighbourhood together to grab breakfast. I got a schnitzel donair and a small coffee. 
+                We noticed many beautiful balconies decorated with floral gardens and vines crawling up the old brick Soviet-era buildings as we crossed into East Berlin.
+                It was very interesting to note the difference in pedestrian signs in between East and West Berlin. 
+                East Berlin has hatted figures in red and green lights, and West Berlin has more regular looking figures also in red and green. 
+                I purchased my first Augustiner beer at the donair place. 
+                We returned to wake the others, and spent our morning listening to classical music with the cool breeze and bird chirps entering through the open window.
+                Soon we will get Chase and Josh breakfast and be at Checkpoint Charlie for 9am.
+            </p>
+            <img src="../images/Europe 2022/Berlin-Ampelman-Green.JPG">
+            <p>
+                The Checkpoint Charlie Museum doesn't open until 10am, and we already booked the Spy Museum at that time so we decided to go there first after taking some photos of the actual checkpoint.
+                We took the scenic route, taking many photos of the old architecture and German and EU flags.
+                We found the Canadian embassy by the Mall of Berlin and the Spy Museum. Currently, we're just waiting for the Spy Museum to open. 
+            </p>
+            <img src="../images/Europe 2022/Berlin-CheckpointCharlie.JPG">
+            <p>
+                The Spy Museum was quite fun. It brought back many memories to the 2019 trip I did with school, specifically the Laser Maze. 
+                I did not complete it :(. The Checkpoint Charlie Museum was interesting in some aspects, however it was a lot of text rather than artifacts.
+                It was very informative about the progression after the Cold War, and told the story of Raoull Wallberg, a man who diplomatically saved hundreds of Hungarian Jews in Budapest from the Holocaust in WWII.
+                When the Soviets took over, he was placed in a camp and was never seen again. One of the many unsung heroes of the war. 
+            </p>
+            <img src="../images/Europe 2022/CC-Museum.JPG">
+            <p>
+                We visited the Reichstag, Brandenburg Gate, and the Holocaust Memorial. We've seen so much today, and the lively banter between us and the energy of the city makes it a perfect summer vibe. There's no place I'd rather be.
+                <br><br>
+                We took many great photos, but they honestly do not do the actual structures justice. 
+                Upon reaching the Reichstag, the sheer size of everything amazed me. Giant stone pillars held up the Romanesque statues atop.
+                In front, the actual largest German flag I have ever seen flew in the wind. 
+                There was also a nice, beautiful park in front where tourists such as us took all our photos. 
+            </p>
+            <img src="../images/Europe 2022/Berlin-Reichstag.JPG">
+            <p>
+                The Brandenburg Gate gave a similar sentiment; a large pillared structure holding up a Romanesque statue of horses and a soldier on a chariot
+                Many embassies surrounded the gate, as signalled by their country's flags. The intense heat had us searching for a nice, refreshing, cold, German beer which we eventually found: Warsteiner Pilsener.
+                It was delicious and sweet, but mostly it was large :).
+            </p>
+            <img src="../images/Europe 2022/Berlin-Brandenburg.JPG">
+            <p>
+                Then, we headed for the Memorial to the Murdered Jews of Europe. The size of the stones was very surprising. 
+                The ground between the stones dips down deep, and the stones begin the tower like 14ft tall, making you feel claustrophobic and small. 
+                It also seems like you could get lost in there. Each row is ominously long. 
+                The monument is very abstract in terms of what it's representing but it does it well. 
+                The entire experience is uneasy, as intended.
+            </p>
+            <img src="../images/Europe 2022/Berlin-HolocaustMemorial.JPG">
+            <p>
+                We walked the entire length of the East Side Gallery of the Berlin Wall to the Wall Museum.
+                We ended up eating beforehand, as by this point it was 3pm and we were exhausted and hadn't eaten since breakfast. 
+                I got the beef currywurst with fries and I must say that sausage and curry sauce is a great combination. 
+                I also didn't realize how big of a Turkish population there is which is why there are donair, currywurst and kebab places everywhere.
+            </p>
+            <img src="../images/Europe 2022/Berlin-Wall.JPG">
+            <p>
+                After currywurst, we opted to skip the Wall Museum for the sake of time and go straight to the Tierpark Zoo.
+                At this point, all our feet were terribly sore since it was 4pm and we had been walking since 7am. 
+                We saw several birds and monkeys, water buffalo, giraffes, gazelles, and a leopard.
+                What was cool about this zoo was that the enclosures were closed off by a moat rather than a fence, so it felt more natural.
+                The entire day was also 26-30 degrees so by 6pm we just had to go back. We wanted to check out the Inselgarten beer garden but they closed at 7pm so we opted ot just go back, shower, and hit a bar or restaurant.
+                Overall, I'm quite satisfied with how the day turned out and how much we saw and experienced. 
+                We're gonna check out this really nice Turkish restaurant, and I'm gonna drink my Augustiner Helles Lager and enjoy this fine evening. 
+            </p>
+            <img src="../images/Europe 2022/Berlin-Tierpark.JPG">
+        </div>
+        <div class="day">
+            <h3>Berlin, Germany. July 4, 2022.</h3>
+            <img src="../images/Europe 2022/Berlin-GermanFlag.JPG">
+            <p>
+                Last night, we got our Turkish dinner and it was absolutely delicious. We all got the lahmacun and mati (Turkish tortellini). 
+                The lahmacun was a rolled flatbread stuffed with meat and a nice, thick cheese. The mati was like a pasta except each tortellini was stuffed with lamb meat and served with some yogurt-like sauce and lots of red spices. 
+                It was absolutely delicious. We went out and bought many different kinds of beer from a convenience store. The African man helped us pick out some good brands. 
+                I got a Schultheiss Pilsener, Störtebeker Baltik-Lager, and a Berliner Kindl Pilsener. We played poker, waging drinks against each other. I still have one left to drink. 
+                This morning, I woke up a bit hungover. Despite having only two litres of beer they are much stronger (and delicious) than Canadian beer. 
+                Today is the concert, should be fun!
+                <br><br>
+                It turns out that all the museums are closed on Monday. So we had to cancel the Natural History Museum. Based on my friend Parker's recommendation, we went to the DDR Museum which was absolutely fantastic. 
+                It very accurately and engagingly depicts life in East Berlin. There were rooms that laid out how a typical home would look like with a living room, kitchen, and bathroom. 
+                The museum does a great job at engaging the visitors by making them open doors and cabinets to see, feel, and read things. There was also a bench with headphones that played East German music from the era which I think I enjoyed the most. 
+            </p>
+            <img src="../images/Europe 2022/Berlin-DDR.JPG">
+            <p>
+                We strolled around Museum Island and gazed upon the old architecture and statues atop each museum. The Berliner Dom Cathedral next to the river was also a beautiful sight.
+            </p>
+            <img src="../images/Europe 2022/Berliner-Dom.JPG">
+            <p>
+                The highlight of the day so far, however, must be our lunch at Zollpackhof. It was the best place we could have picked to eat at. 
+                The building looked like a very German restaurant. We dined on the patio out side next to their beer garden. 
+                The side was decorated with beautiful red and pink flowers, as was our table. 
+                A massive tree stood in the middle of the beer garden and towered over the entire place, providing a nice element of nature to the scenery and shade. 
+                Past the tree, you could see the river flowing and shimmering with large tour boats going down it.
+            </p>
+            <img src="../images/Europe 2022/Zollpackhof.JPG">
+            <p>
+                I ordered the Augustiner Hefelweisen which was a light, slightly hoppy beer with hints of clove in it. Very refreshing!
+                The food was the best part though. An oven-roasted pork knuckle that just fell off the bone and melted in my mouth, with Kartoffelklöße that were so soft and squishy, and the best sauerkraut I have ever tasted topped with an Augustiner dark beer sauce. 
+                The sauerkraut was sweet and tangy, and honestly was the best and most flavourful part of the dish. 
+                I think the restaurant atmosphere and the feeling was the best I've ever experienced dining.
+                Any time I visit Berlin in the future, I will go back there for sure.
+            </p>
+            <img src="../images/Europe 2022/PorkKnuckle.jpg">
+            <p>
+                We got back from the Iron Maiden concert... <br>
+                WOW! This made me realize that the audience is half the show. You would never see this kind of energy in Calgary. 
+                We were on the centre floor, and started off waiting for the bands to start while sipping our beers.
+                <br><br>
+                The first band to go was called Lords of the Lost. They painted their faces white with black arms and black clothing. 
+                They were actually pretty good, although the crowd wasn't super hyped up at that point. 
+                The second opening act was Airbourne, and wow were they energetic. 
+                The crowd started moshing and people began crowdsurfing and carrying others on their shoulders. 
+                The lead singer was throwing beers into the crowd that would just explode on impact in peoples hands because they were in plastic cups. 
+                A man also walked past us carrying 8 one-litre jugs of beer. I also helped carry someone crowdsurfing. 
+                The lead singer came down from the stage on the shoulders of his security and continued playing his guitar through the crowd!
+                Then, someone passed him a beer which he slammed on his head to open and threw it into the crowd! 
+                Very energetic, I will have to check their music out!
+            </p>
+            <video width="600" autoplay loop muted>
+                <source src="../images/Europe 2022/Airbourne-BeerThrowing.mp4" type="video/mp4">
+            </video>
+            <p>
+                Just as Airbourne finished, Josh and I raced to the top of the Waldbühne to grab more beer for us. 
+                As we were walking down carrying two litres of beer each, Senjutsu began playing.
+                We all drank our beers and started really getting into the music and the visuals from the show. 
+                Chase made a German friend named Jonas whose father had recently passed. 
+                I saw him tearing up during the song Blood Brothers. 
+            </p>
+            <img src="">
+            <p>
+                At this point, I had finished two litres of Beck's beer and had to pee. 
+                I climbed the Waldbühne steps into the trees to go, and when I returned I couldn't find my friends. 
+                I did, however, find the <b>moshpit</b>.
+                That was one of the most fun experiences I have ever had!
+                Just straight up pure aggression enticed by the insane performance by Iron Maiden!
+                After a song, I proceeded to look for my friends again, who I found had also joined another moshpit!
+                For the rest of the night, we were in the moshpits and it was just so much fun. 
+                I recall at the intro to one of the songs, everybody backed up from the circle, and when the guitar picked up we all ran full-speed into each other. 
+                At some point, I ended up knocking a guy to the ground. I promptly helped pick him up and carried on. 
+                I also ran into a guy pretty hard and my finger bent backwards, but luckily it wasn't bad. Eventually, it got too dangerous to keep my glasses on so I had to pocket them to keep moshing. 
+            </p>
+            <img src="">
+            <p>
+                By the time the concert ended, we were exhausted, hyped on adrenaline, and our lungs were filled with dirt kicked up by the moshpit. 
+                We walked three train stations to avoid the crowd, and ended up running into four older German gentlemen who barely spoke English.
+                Chase and I had a very friendly exchange with them. 
+                We said we were from Canada and that we loved Iron Maiden and Germany. <br><br>
+                <i>Ich liebe Iron Maiden unt Deutschland!</i><br><br>
+                I spoke German to them about how I have a German friend in Canada and that I love Berlin and they were so happy. 
+                We all shook each others hands and headed our separate ways, ecstatic to have broken such a language barrer through the mutual love of Iron Maiden. 
+                We made it home to sleep and prepare for the next city tomorrow: Amsterdam!
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <ul class="social-media">
+            <li><a href="https://www.linkedin.com/in/jaredcrebo/"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/jaredrc8/"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+            <li><a href="mailto:jaredrc8@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a></li>
+        </ul>
+    </footer>
+</body>
+
+
+</html>

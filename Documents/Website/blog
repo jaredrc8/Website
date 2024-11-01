@@ -31,6 +31,9 @@
             <li><a href="blog#">Blog</a></li>
         </ul>
     </header>
+    <div class="coming-soon">
+        <p>Coming Soon</p>
+    </div>
     <footer>
         <ul class="social-media">
             <li><a href="https://www.linkedin.com/in/jaredcrebo/"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>

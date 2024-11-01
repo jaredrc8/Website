@@ -143,6 +143,7 @@ body .card-container {
     padding: 10px;
     overflow: hidden;
     background-color: #C6AC8F;
+    border-top: 2px solid #C6AC8F;
 }
 
 body .card {
@@ -302,9 +303,8 @@ body .career {
     flex-direction: row;
     padding: 0px;
     margin: 0px;
-    background-color: #eae0d5;
     min-height: 450px;
-    height: 29vw;
+    height: 32vw;
     max-height: 570px;
 }
 
@@ -318,7 +318,7 @@ body .career .career-card {
     max-height: inherit;
     min-height: inherit;
     height: inherit;
-    width: calc(100vw / 3);
+    width: calc(100vw / 3 - 10px);
     gap: 20px;
 }
 
@@ -327,7 +327,9 @@ body .career .career-card .tab-header {
     justify-content: center;
     align-items: center;
     background-color: #5e503f;
-    width: 300px;
+    width: 15vw;
+    min-width: 180px;
+    min-height: 50px;
     height: 50px;
     border-radius: 25px;
 }
@@ -340,6 +342,7 @@ body .career .career-card .tab-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    padding-top: 20px;
     gap: 10px;
     height: 350px;
 }
@@ -350,6 +353,7 @@ body .career .career-card .tab-container .tabs {
     align-items: center;
     text-align: center;
     border: 4px solid #C6AC8F;
+    background-color: #eae0d5;
     border-radius: 20px;
     width: calc(100vw / 10);
     height: 90px;
@@ -377,7 +381,7 @@ body .career .career-card .education {
 body .career .career-card .education a:nth-of-type(1) {
     position: relative;
     justify-self: center;
-    width: 31vw;
+    width: 29vw;
     max-width: 600px;
 }
 
@@ -423,7 +427,7 @@ body .career .career-card .experience {
 body .career .career-card .experience a {
     position: relative;
     justify-self: center;
-    width: 31vw;
+    width: 29vw;
     max-width: 600px;
 }
 
@@ -452,9 +456,7 @@ body .projects {
     padding: 0px;
     margin: 0px;
     background-color: #eae0d5;
-    min-height: 450px;
-    height: 29vw;
-    max-height: 550px;
+    height: fit-content;
 }
 
 body .projects-title {
@@ -469,6 +471,7 @@ body .projects-title {
     border-bottom: 2px solid #C6AC8F;
     border-top: 2px solid #C6AC8F;
     padding: 10px;
+    background-color: #eae0d5;
 }
 
 body .projects .project-card {
@@ -476,6 +479,7 @@ body .projects .project-card {
     flex-direction: column;
     padding: 20px;
     align-items: center;
+    justify-content: start;
     background-color: #eae0d5;
     max-height: inherit;
     min-height: inherit;
@@ -484,3 +488,155 @@ body .projects .project-card {
     gap: 20px;
 }
 
+body .projects .project-card h2 a {
+    text-decoration: none;
+    color: #5e503f;
+    font-size: clamp(0.7em, 1.5vw, 1.2em);
+}
+
+body .projects .project-card h2:hover {
+    transform: scale(1.05);
+    transition: 0.5s ease;
+}
+
+body .projects .project-card img {
+    width: 23vw;
+    border-radius: 20px;
+}
+
+body .projects .project-card p {
+    color: #5e503f;
+    font-size: clamp(0.5em, 0.87vw, 1em);
+}
+
+/* Travel */
+
+body .travel-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    border-bottom: 2px solid #C6AC8F;
+}
+
+body .travel-header p:nth-of-type(1) {
+    color: #5e503f;
+    font-size: 4em;
+}
+
+body .travel-header p:nth-of-type(2) {
+    color: #5e503f;
+    font-size: 1em;
+}
+
+body .map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #C6AC8F;
+}
+
+body .journal-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+    justify-content: center;
+    align-items: start;
+    background-color: #eae0d5;
+}
+
+body .journal-container .travel-journal {
+    display: flex;
+    flex-direction: column;
+    width: 32vw;
+    height: inherit;
+    justify-content: start;
+    align-items: center;
+}
+
+body .journal-container .travel-journal a {
+    text-decoration: none;
+    color: #5e503f;
+    font-size: clamp(1.5em, 2.5vw, 2.5em);
+    padding-top: 20px;
+}
+
+body .journal-container .travel-journal a:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+body .journal-container .travel-journal img {
+    width: inherit;
+    padding: 30px 60px;
+    border-radius: 20px;
+}
+
+body .journal-container .travel-journal p {
+    color: #5e503f;
+    font-size: 1.3em;
+    padding-bottom: 30px;
+}
+
+/* Blog */
+
+body .coming-soon {
+    display: flex;
+    justify-content: center;
+    height: calc(100vh - 132px);
+    align-items: center;
+}
+
+body .coming-soon p {
+    color:#5e503f;
+    font-size: 4em;
+}
+
+/* Travel Journals */
+
+body .days {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: calc(100vh - 132px);
+    width: 100%;
+    overflow: scroll;
+    gap: 20px;
+    padding: 20px
+}
+
+body .days .day {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: fit-content;
+    justify-content: start;
+    align-items: center;
+    gap: 40px;
+    border-top: 2px solid #5e503f;
+    padding-top: 50px;
+}
+
+body .days .day h3 {
+    color: #5e503f;
+    font-size: 2em;
+}
+
+body .days .day img {
+    height: 600px;
+    width: fit-content;
+}
+
+body .days .day p {
+    color: #5e503f;
+    font-size: 1.2em;
+}
+
+body .journal-title {
+    color: #5e503f;
+    font-size: 3em;
+}
