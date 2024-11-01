@@ -43,14 +43,14 @@
             <li><a href="#July 6">Amsterdam. July 6</a></li>
             <li><a href="#July 7">Amsterdam. July 7</a></li>
             <li><a href="#July 8">Amsterdam. July 8</a></li>
-            <li><a href="#July 9">Berlin. July 9</a></li>
-            <li><a href="#July 10">Berlin. July 10</a></li>
-            <li><a href="#July 11">Berlin. July 11</a></li>
-            <li><a href="#July 12">Berlin. July 12</a></li>
-            <li><a href="#July 13">Berlin. July 13</a></li>
-            <li><a href="#July 14">Berlin. July 14</a></li>
-            <li><a href="#July 15">Berlin. July 15</a></li>
-            <li><a href="#July 16">Berlin. July 16</a></li>
+            <li><a href="#July 9">London. July 9</a></li>
+            <li><a href="#July 10">London. July 10</a></li>
+            <li><a href="#July 11">London. July 11</a></li>
+            <li><a href="#July 12">Paris. July 12</a></li>
+            <li><a href="#July 13">Paris. July 13</a></li>
+            <li><a href="#July 14">Paris. July 14</a></li>
+            <li><a href="#July 15">Paris. July 15</a></li>
+            <li><a href="#July 16">Paris. July 16</a></li>
         </ul>
     </div>
 
@@ -61,7 +61,10 @@
         <div class="day">
             <section id="July 3">
                 <h3>Berlin, Germany. July 3, 2022.</h3>
-                <img src="../images/Europe 2022/Berlin-GermanFlag.JPG">
+                <figure>
+                    <img src="../images/Europe 2022/Berlin-GermanFlag.JPG">
+                    <figcaption>German flag over Berlin</figcaption>
+                </figure>
                 <p>
                     I have had a total of 8 hours of sleep in the last three days, but I must say it is worth it to be here in Berlin this beautiful morning. 
                     <br><br> Yesterday, we spent close to 24 hours travelling, and I almost lost my brother's camera in the London Gatwick Airport. 
@@ -69,31 +72,46 @@
                     Our easyJet flight got delayed by 1.5 hours, and we almost missed our train to the Airbnb after, but somehow we made it.
                     We went to bed exhausted but excited around 1:30am.
                 </p>
-                <img src="../images/Europe 2022/Berlin-Friends.JPG">
+                <figure>
+                    <img src="../images/Europe 2022/Berlin-Friends.JPG">
+                    <figcaption>Chase, Josh, Joey walking through our neighbourhood in Berlin</figcaption>
+                </figure>
                 <p>
                     This morning, Joey woke me up at 5:00am with a slam of the door, and the sun through the window didn't let me go back to sleep.
                     We decided to stroll the neighbourhood together to grab breakfast. I got a schnitzel donair and a small coffee. 
                     We noticed many beautiful balconies decorated with floral gardens and vines crawling up the old brick Soviet-era buildings as we crossed into East Berlin.
                     It was very interesting to note the difference in pedestrian signs in between East and West Berlin. 
-                    East Berlin has hatted figures in red and green lights, and West Berlin has more regular looking figures also in red and green. 
+                    East Berlin has hatted figures in red and green lights, and West Berlin has more regular looking figures. 
                     I purchased my first Augustiner beer at the donair place. 
                     We returned to wake the others, and spent our morning listening to classical music with the cool breeze and bird chirps entering through the open window.
                     Soon we will get Chase and Josh breakfast and be at Checkpoint Charlie for 9am.
                 </p>
-                <img src="../images/Europe 2022/Berlin-Ampelman-Green.JPG">
+                <figure>
+                    <img src="../images/Europe 2022/Berlin-Ampelman-Green.JPG">
+                    <figcaption>Green Ampelmann</figcaption>
+                </figure>
+                
                 <p>
                     The Checkpoint Charlie Museum doesn't open until 10am, and we already booked the Spy Museum at that time so we decided to go there first after taking some photos of the actual checkpoint.
                     We took the scenic route, taking many photos of the old architecture and German and EU flags.
                     We found the Canadian embassy by the Mall of Berlin and the Spy Museum. Currently, we're just waiting for the Spy Museum to open. 
                 </p>
-                <img src="../images/Europe 2022/Berlin-CheckpointCharlie.JPG">
+                <figure>
+                    <img src="../images/Europe 2022/Berlin-CheckpointCharlie.JPG">
+                    <figcaption>Checkpoint Charlie, the crossing between East and West Berlin</figcaption>
+                </figure>
+                
                 <p>
                     The Spy Museum was quite fun. It brought back many memories to the 2019 trip I did with school, specifically the Laser Maze. 
                     I did not complete it :(. The Checkpoint Charlie Museum was interesting in some aspects, however it was a lot of text rather than artifacts.
                     It was very informative about the progression after the Cold War, and told the story of Raoull Wallberg, a man who diplomatically saved hundreds of Hungarian Jews in Budapest from the Holocaust in WWII.
                     When the Soviets took over, he was placed in a camp and was never seen again. One of the many unsung heroes of the war. 
                 </p>
-                <img src="../images/Europe 2022/CC-Museum.JPG">
+                <figure>
+                    <img src="../images/Europe 2022/CC-Museum.JPG">
+                    <figcaption>Checkpoint Charlie Museum</figcaption>
+                </figure>
+                
                 <p>
                     We visited the Reichstag, Brandenburg Gate, and the Holocaust Memorial. We've seen so much today, and the lively banter between us and the energy of the city makes it a perfect summer vibe. There's no place I'd rather be.
                     <br><br>
@@ -102,13 +120,21 @@
                     In front, the actual largest German flag I have ever seen flew in the wind. 
                     There was also a nice, beautiful park in front where tourists such as us took all our photos. 
                 </p>
-                <img src="../images/Europe 2022/Berlin-Reichstag.JPG">
+                <figure>
+                    <img src="../images/Europe 2022/Berlin-Reichstag.JPG">
+                    <figcaption>Reichstag</figcaption>
+                </figure>
+                
                 <p>
                     The Brandenburg Gate gave a similar sentiment; a large pillared structure holding up a Romanesque statue of horses and a soldier on a chariot
                     Many embassies surrounded the gate, as signalled by their country's flags. The intense heat had us searching for a nice, refreshing, cold, German beer which we eventually found: Warsteiner Pilsener.
                     It was delicious and sweet, but mostly it was large :).
                 </p>
-                <img src="../images/Europe 2022/Berlin-Brandenburg.JPG">
+                <figure>
+                    <img src="../images/Europe 2022/Berlin-Brandenburg.JPG">
+                    <figcaption>Brandenburg Gate</figcaption>
+                </figure>
+                
                 <p>
                     Then, we headed for the Memorial to the Murdered Jews of Europe. The size of the stones was very surprising. 
                     The ground between the stones dips down deep, and the stones begin the tower like 14ft tall, making you feel claustrophobic and small. 
@@ -116,14 +142,22 @@
                     The monument is very abstract in terms of what it's representing but it does it well. 
                     The entire experience is uneasy, as intended.
                 </p>
-                <img src="../images/Europe 2022/Berlin-HolocaustMemorial.JPG">
+                <figure>
+                    <img src="../images/Europe 2022/Berlin-HolocaustMemorial.JPG">
+                    <figcaption>Memorial to the Murdered Jews of Europe</figcaption>
+                </figure>
+                
                 <p>
                     We walked the entire length of the East Side Gallery of the Berlin Wall to the Wall Museum.
                     We ended up eating beforehand, as by this point it was 3pm and we were exhausted and hadn't eaten since breakfast. 
                     I got the beef currywurst with fries and I must say that sausage and curry sauce is a great combination. 
                     I also didn't realize how big of a Turkish population there is which is why there are donair, currywurst and kebab places everywhere.
                 </p>
-                <img src="../images/Europe 2022/Berlin-Wall.jpg">
+                <figure>
+                    <img src="../images/Europe 2022/Berlin-Wall.jpg">
+                    <figcaption>East Side Gallery, Berlin Wall</figcaption>
+                </figure>
+                
                 <p>
                     After currywurst, we opted to skip the Wall Museum for the sake of time and go straight to the Tierpark Zoo.
                     At this point, all our feet were terribly sore since it was 4pm and we had been walking since 7am. 
@@ -133,7 +167,11 @@
                     Overall, I'm quite satisfied with how the day turned out and how much we saw and experienced. 
                     We're gonna check out this really nice Turkish restaurant, and I'm gonna drink my Augustiner Helles Lager and enjoy this fine evening. 
                 </p>
-                <img src="../images/Europe 2022/Berlin-Tierpark.JPG">
+                <figure>
+                    <img src="../images/Europe 2022/Berlin-Tierpark.JPG">
+                    <figcaption>Berlin Tierpark Zoo</figcaption>
+                </figure>
+                
             </section>
         </div>
         <div class="day">
@@ -151,11 +189,19 @@
                     It very accurately and engagingly depicts life in East Berlin. There were rooms that laid out how a typical home would look like with a living room, kitchen, and bathroom. 
                     The museum does a great job at engaging the visitors by making them open doors and cabinets to see, feel, and read things. There was also a bench with headphones that played East German music from the era which I think I enjoyed the most. 
                 </p>
-                <img src="../images/Europe 2022/Berlin-DDR.JPG">
+                <figure>
+                    <img src="../images/Europe 2022/Berlin-DDR.JPG">
+                    <figcaption>Deutsche Demokratische Republik (DDR) Museum, e.g. East Germany</figcaption>
+                </figure>
+                
                 <p>
                     We strolled around Museum Island and gazed upon the old architecture and statues atop each museum. The Berliner Dom Cathedral next to the river was also a beautiful sight.
                 </p>
-                <img src="../images/Europe 2022/Berliner-Dom.JPG">
+                <figure>
+                    <img src="../images/Europe 2022/Berliner-Dom.JPG">
+                    <figcaption>Berliner Dom (Berlin Cathedral)</figcaption>
+                </figure>
+                
                 <p>
                     The highlight of the day so far, however, must be our lunch at Zollpackhof. It was the best place we could have picked to eat at. 
                     The building looked like a very German restaurant. We dined on the patio out side next to their beer garden. 
@@ -163,7 +209,11 @@
                     A massive tree stood in the middle of the beer garden and towered over the entire place, providing a nice element of nature to the scenery and shade. 
                     Past the tree, you could see the river flowing and shimmering with large tour boats going down it.
                 </p>
-                <img src="../images/Europe 2022/Zollpackhof.JPG">
+                <figure>
+                    <img src="../images/Europe 2022/Zollpackhof.JPG">
+                    <figcaption>Zollpackhof restaurant</figcaption>
+                </figure>
+                
                 <p>
                     I ordered the Augustiner Hefelweisen which was a light, slightly hoppy beer with hints of clove in it. Very refreshing!
                     The food was the best part though. An oven-roasted pork knuckle that just fell off the bone and melted in my mouth, with Kartoffelklöße that were so soft and squishy, and the best sauerkraut I have ever tasted topped with an Augustiner dark beer sauce. 
@@ -171,7 +221,11 @@
                     I think the restaurant atmosphere and the feeling was the best I've ever experienced dining.
                     Any time I visit Berlin in the future, I will go back there for sure.
                 </p>
-                <img src="../images/Europe 2022/PorkKnuckle.jpg">
+                <figure>
+                    <img src="../images/Europe 2022/PorkKnuckle.jpg">
+                    <figcaption>Oven-roasted pork knuckle, Kartoffelklöße, on a bed of sauerkraut with Augustiner dark beer sauce</figcaption>
+                </figure>
+                
                 <p>
                     We got back from the Iron Maiden concert... <br>
                     WOW! This made me realize that the audience is half the show. You would never see this kind of energy in Calgary. 
@@ -187,10 +241,12 @@
                     Then, someone passed him a beer which he slammed on his head to open and threw it into the crowd! 
                     Very energetic, I will have to check their music out!
                 </p>
-                
-                <video id="Airbourne" height="400" controls muted loop autoplay>
-                    <source src="../images/Europe 2022/Airbourne-BeerThrowing.mp4" type="video/mp4">
-                </video>
+                <figure>
+                    <video id="Airbourne" height="400" controls muted loop autoplay>
+                        <source src="../images/Europe 2022/Airbourne-BeerThrowing.mp4" type="video/mp4">
+                    </video>
+                    <figcaption>Airbourne, throwing beers into the crowd</figcaption>
+                </figure>
 
                 <p>
                     Just as Airbourne finished, Josh and I raced to the top of the Waldbühne to grab more beer for us. 
@@ -199,7 +255,11 @@
                     Chase made a German friend named Jonas whose father had recently passed. 
                     I saw him tearing up during the song Blood Brothers. 
                 </p>
-                <img src="../images/Europe 2022/IronMaiden-Group.jpg">
+                <figure>
+                    <img src="../images/Europe 2022/IronMaiden-Group.jpg">
+                    <figcaption>New merch!</figcaption>
+                </figure>
+                
                 <p>
                     At this point, I had finished two litres of Beck's beer and had to pee. 
                     I climbed the Waldbühne steps into the trees to go, and when I returned I couldn't find my friends. 
@@ -212,9 +272,12 @@
                     At some point, I ended up knocking a guy to the ground. I promptly helped pick him up and carried on. 
                     I also ran into a guy pretty hard and my finger bent backwards, but luckily it wasn't bad. Eventually, it got too dangerous to keep my glasses on so I had to pocket them to keep moshing. 
                 </p>
-                <video id="IronMaiden" height="400" controls muted loop autoplay>
-                    <source src="../images/Europe 2022/NumberoftheBeast.mp4" type="video/mp4">
-                </video>
+                <figure>
+                    <video id="IronMaiden" height="400" controls muted loop autoplay>
+                        <source src="../images/Europe 2022/NumberoftheBeast.mp4" type="video/mp4">
+                    </video>
+                    <figcaption>Number of the Beast</figcaption>
+                </figure>
                 <p>
                     By the time the concert ended, we were exhausted, hyped on adrenaline, and our lungs were filled with dirt kicked up by the moshpit. 
                     We walked three train stations to avoid the crowd, and ended up running into four older German gentlemen who barely spoke English.
@@ -236,7 +299,11 @@
                     We spent an hour there. My favourite part was the Ishtar Gate because of its blue colour and its art depicting animals. It was created by King Nebuchadnezzar II in 575 BCE in the city of Babylon in Mesopotamia. 
                     The Persian rugs in the Islamic culture section were also very interesting to learn about. 
                 </p>
-                <img src="../images/Europe 2022/Pergamonmuseum.JPG">
+                <figure>
+                    <img src="../images/Europe 2022/Pergamonmuseum.JPG">
+                    <figcaption>Ishtar Gate, Pergamonmuseum</figcaption>
+                </figure>
+                
                 <p>
                     The Natural History Museum was pretty quick for us. We checked out many dinosaur bones but mostly focused on the extinct species. I liked the entrance with the giant long-necked dinosaur bones. 
                     After that, we went to this store called The Fresh Seed and I got a spicy beef burrito and a tumeric latte smoothie. 
@@ -244,7 +311,11 @@
                     The tumeric latte smoothe was also delicious. It reminded me of pumpkin pie or a chai latte. We sat in a park and ate our food while listening to the East Berlin music I downloaded from the DDR Museum. 
                     Then, we headed to the airport to go to Amsterdam!                    
                 </p>
-                <img src="../images/Europe 2022/Berlin-NatHist.JPG">
+                <figure>
+                    <img src="../images/Europe 2022/Berlin-NatHist.JPG">
+                    <figcaption>Natural History Museum, Berlin</figcaption>
+                </figure>
+                
                 <p>
                     We have arrived in Amsterdam, and I must say it is absolutely gorgeous. Once we passed into the main circular area of the city with all the canals, I was in awe of the beauty. 
                     The old architecture of the canalside buildings, the bikes everywhere, and the views from the bridge overlooking the Amstel River had me eager to explore!
@@ -257,7 +328,11 @@
                     Then we headed back to our hostel room to shower and sleep. 
                     I must say, navigating Amsterdam is quite interesting as a pedestrian since you not only have to watch out for cars, but also the hundreds of cyclists that are constantly passing by. 
                 </p>
-                <img src="../images/Europe 2022/Amsterdam-Streets.JPG">
+                <figure>
+                    <img src="../images/Europe 2022/Amsterdam-Streets.JPG">
+                    <figcaption>Arrival in Amsterdam</figcaption>
+                </figure>
+
                 <p>
                     One thing that I absolutely love about Amsterdam so far is its liveliness. 
                     While approaching our hostel through the Oosterpark, crowds of people were in the fields with their bikes parked. 
@@ -276,6 +351,10 @@
         <div class="day">
             <section id="July 6">
                 <h3>Amsterdam, Netherlands. July 6, 2022.</h3>
+                <figure>
+                    <img src="../images/Europe 2022/Dutch-Flag.JPG">
+                    <figcaption>Dutch flag in Amsterdam</figcaption>
+                </figure>
                 <p>
                     I currently sit in the Amstelhaven patio on the canal, waiting to order a beer. Today was hectic, though not as tiring as the first day in Berlin. 
                     I will likely finish this back and the hostel room, but since we did so much today I figured I'd get some journaling done now. 
@@ -297,7 +376,11 @@
                     I feel like it shows the action so well that you can see the battle taking place there. We had the Van Gogh Museum booked two hours later, and I didn't expect all of us to enjoy the Rijksmuseum so much so we had to cut the visit short unfortunately. 
                     I only saw 1/3 floors. The Battle of Waterloo painting was also spectacular because of its drama and insane size. The painting must have been baout 14ft tall. 
                 </p>
-                <img src="../images/Europe 2022/ForestScene.JPG">
+                <figure>
+                    <img src="../images/Europe 2022/ForestScene.JPG">
+                    <figcaption>Forest Scene, Rijksmuseum</figcaption>
+                </figure>
+                
                 <p>
                     Anyways, we left and biked over to the Van Gogh Museum. I saw almost all the paintings I had researched. It was super cool seeing the development of his style over time. 
                     We saw him go from the dark, solemn depictions of country life in the Potato Eater, all the way to his final paintings of the Wheatfield with Crows, and everything in between. 
@@ -306,13 +389,21 @@
                     Joey pointed out: the Rijksmuseum shows the evolution of art, and the Van Gogh Museum shows the evolution of a man. 
                     I personally thought the Rijksmuseum paintings were more beautiful, but the Van Gogh Museum was more interesting. 
                 </p>
-                <img src="../images/Europe 2022/VanGoghWheatfield.JPG">
+                <figure>
+                    <img src="../images/Europe 2022/VanGoghWheatfield.JPG">
+                    <figcaption>Wheatfield with Crows, Van Gogh</figcaption>
+                </figure>
+                
                 <p>
                     Afterwards, we sat under a tree outside of the Van Gogh Museum while listening to a saxophonist play in the street. We sat and viewed the player from the park. 
                     Then, we went back to the hostel to drop off some stuff and went for sushi and a local restaurant. I got salmon and tuna sashimi, since I want to eat as much seafood as I can have in this port city. 
                     We took it to the Oosterpark by our hostel and ate it on the grass by the pond with ducks.
                 </p>
-                <img src="../images/Europe 2022/ParkSushi.JPG">
+                <figure>
+                    <img src="../images/Europe 2022/ParkSushi.JPG">
+                    <figcaption>Eating sushi in the park</figcaption>
+                </figure>
+                
                 <p>
                     We left for the National Maritime Museum. I loved biking by the canals and through the towering apartments on each side. Biking allowed us to see so much of the city so quickly. 
                     When we got there, we went in and viewed the paintings first. I set off the alarm for getting too close ... whoops! 
@@ -321,7 +412,11 @@
                     We were also the last group to get to do the VR which was lucky. In the rest of the museum, we looked and the cool gold navigating tools, the surprisingly accurate cartography they did, and the section on the whales they encountered. 
                     The latter was particularly cool because they had a life-sized whale head you could enter to see the scale of it.
                 </p>
-                <img src="../images/Europe 2022/JoshMaritimeMuseum.JPG">
+                <figure>
+                    <img src="../images/Europe 2022/JoshMaritimeMuseum.JPG">
+                    <figcaption>Josh at the National Maritime Museum</figcaption>
+                </figure>
+                
                 <p>
                     After the National Maritime Museum, I saw a stand serving raw herring that I wanted to try since it is a staple of Dutch cuisine. The man serving was very friendly. 
                     He said
@@ -334,14 +429,22 @@
                     I ate the rest of the fish with the pickles, which enhanced it 100x. The fish itself was alright, but adding the slight crunch to it saves the mushy texture, and I actually found it delicous.
                     I devoured the rest on my own because it was so good. 
                 </p>
-                <img src="../images/Europe 2022/Herring.JPG">
+                <figure>
+                    <img src="../images/Europe 2022/Herring.JPG">
+                    <figcaption>Raw Herring</figcaption>
+                </figure>
+                
                 <p>
                     After that, we had tickets to the Anne Frank House, but opted to take the scenic route there to see the De Oude Church and the Royal Palace of Amsterdam. We biked into central Amsterdam and passed the Red Light District. 
                     The whole area there seemed like a fairytale land. 
                     The long, winding paths, odd shops with drugs and sex paraphernalia, and the lurching buildings over the canals made it seem like I was in an psychedelic Pixar film. 
                     I did see a prostitute in the window of a brothel, but I rode past so fast I didn't even realize until after. At first, I thought she was a mannequin. 
                 </p>
-                <img src="../images/Europe 2022/RedLight-1.JPG">
+                <figure>
+                    <img src="../images/Europe 2022/RedLight-1.JPG">
+                    <figcaption>Red Light District</figcaption>
+                </figure>
+                
                 <p>
                     We reached Anne Frank's House, and it was way bigger than I thought. It was Otto Frank's office building. 
                     A doorway covered by a hinged bookcase was the entrance from the regular, accessible building to the secret annex that was actually three stories tall. 
@@ -360,7 +463,268 @@
             <section id="July 7">
                 <h3>Amsterdam, Netherlands. July 7, 2022.</h3>
                 <p>
-                    Today has been an interesting day so far. 
+                    <b>Today has been an interesting day so far. We started off with the plan to purchase some truffles from a smartshop. 
+                    But the gloomy, rainy weather in the morning deterred us. 
+                    The plan would have been to sit in a park while we trip, but it would've been wet and cold.</b>
+                    <br><br>
+                    We started our day off by hitting the Yusu Cafe again. This time, I got a matcha latte and a fig cheesecake. 
+                    The cheesecake was amazing. The latte was good but I preferred the chai from yesterday. 
+                    Joey started getting very sick. Chase had been sick the prior day and likely passed it onto Joey, so after the cafe he left us to go sleep. 
+                    <b>Josh, Chase and I decided to hit up the pharmacy and general store for some Advil and other goods, then we decided to find a coffeeshop.
+                    We pulled up on our bikes again. I had found a Donkey Republic bike that was unlocked, so I just used that without paying or locking it. 
+                    The coffeeshop was called Coffeeshop Papillon. It featured a dark purple lighting on the outside with the name. 
+                    Inside was a narrow corridor. On the left, a cashier counter with a clear, plastic shield separation. 
+                    The right had windows that showed a lounge area. The whole store was quite dark and gloomy.
+                    Josh bought a brownie and Chase and I shared the purchase of a joint and a lighter. 
+                    It came in a clear, plastic container and was loosely packed, but massive. 
+                    We biked to Vondelpark to smoke it. 
+                    Josh took his edible, and Chase and I found a spot by a creek to smoke. 
+                    I had a bout 7 puffs, but it barely got me high. It just mellowed us out. </b>
+                </p>
+                <figure>
+                    <img src="../images/Europe 2022/Amsterdam-Latte.JPG">
+                    <figcaption>Matcha latte and fig cheesecake, Yusu Cafe</figcaption>
+                </figure>
+                <p>
+                    We decided to bike around all of Vondelpark. We did a full loop around the park, plus some detours to get photos of the statues and look at the birds in the water. 
+                    There was a garden of white flowers in a "V" shape with other flowers surrounding. 
+                    The sign said the garden was dedicated to Dutch veterans.
+                    After a nice bike ride, we had built up an appetite.
+                    We decided to check in on Joey prior to getting food. He was passed out with a heavy cough, incapacitated. 
+                    It was best to just let him sleep. 
+                </p>
+                <figure>
+                    <img src="../images/Europe 2022/Vondelpark.JPG">
+                    <figcaption>Biking through Vondelpark, trying not to fall while recording</figcaption>
+                </figure>
+                <p>
+                    I wanted to try some Dutch pancakes, so we went to the De Carousel Pannenkoeken that we had biked past earlier. 
+                    The interior looked like a merry-go-round with beautiful, bright lights and a '50s diner vibe to the decor. 
+                    I told the waiter I wanted to try poffertjes, and he suggested the strawberry/nutella one. 
+                    Josh got rum flavour and Chase got banana. The poffertjes themselves were these tiny bite-sized pancakes with powdered sugar sprinkled over, with the strawberries and nutella on the side. 
+                    It also came with a thick whipped cream to put on there. 
+                    Mine were the best tasting because of the nutella, Josh's just came with a shot of rum to dip it in which wasn't very good. 
+                    I also ordered a flat white coffee to go with mine, but I still don't know what it actually is. 
+                    Anyways, the poffertjes were absolutely delicious; super sweet. 
+                </p>
+                <figure>
+                    <img src="../images/Europe 2022/Poffertjes.jpg">
+                    <figcaption>Strawberry and Nutella poffertjes</figcaption>
+                </figure>
+                <p>
+                    Afterwards, we headed to the Rijksmuseum for the second time, where we intended to finish what we had missed the first visit. 
+                    We had only checked out the 1800 - 1900 section. But there was a Special Collection, 1100 - 1600, 1600 - 1650, 1650 - 1700, 1700 - 1800, and 1950 - 2000. 
+                    I unfortunately did not do it in chronological order, which I know for next time. 
+                    But I did check out every section in depth. 
+                    The Special Collection contained models of Dutch ships that were used to help with their construction. 
+                    There were also many muskets, flint-lock pistols, and bladed weapons from both teh Dutch Empire and Java. 
+                    I recall a Javaian dagger that was zig-zagged along teh blade. It was crested with small jewels and was very beautiful. 
+                    The 1100 - 1600 section depicted many Christian and Catholic art, mainly about the birth of Christ or the passion of the Christ. 
+                    The colours used were nice and aesthetically pleasing, but the paintings lacked depth. 
+                    They looked flat with almost solid colours. In contrast to that, the 1600-1700s saw notable artists like Pieter Lastman and Rembrandt van Rijn especially create new experimental techniques for using light to create depth. 
+                    I personally loved Rembrandt's works. Oddly enough, I think my favourite Rembrant is the Self Portrait as Apostle Paul. 
+                    Despite the typical boringness of some portraits, this one surpasses all his group works for me. 
+                    I think it's because in this later stage in his life he had developed his style so well. 
+                    The symbolicism of being teh Apostle Paul with the divine light shining in from the top left, and the sword and papers gives it mystic feeling from the lore behind it. 
+                    Every object has a purpose. The evlution of the art itself is also very interesting as through Rembrandt's self portraits we see him turn old. 
+                    This painting was done in 1661, making his age 55. The use of light and shadow to depict his divinity and show the depth in the image is remarkable to view to this day, and would have ben revolutionary at the time. 
+                    Zooming in on his features, the details go so deep as to show the wrinkles and dimploes in his face as cast by the shadows of the curvatures of his face. 
+                </p>
+                <figure>
+                    <img src="../images/Europe 2022/Rembrandt.JPG">
+                    <img src="../images/Europe 2022/Rembrandt1661.JPG">
+                    <figcaption>Self Portait as Apostle Paul, Rembrandt, 1661</figcaption>
+                </figure>
+                <p>
+                    I also found a new painter I like from the same era. Bartholomeus van der Helst and his painting, the Banquet at the Crossbowmen's Guild in Celebration of the Treaty of Munster. 
+                    What drew me into this painting was the expressions and fine details put into their faces, hands, and draping fabrics. 
+                    There is just so much going on in the image with so many details you could stare for hours. 
+                    The Enlightenment period of 1700 - 1800 was a bit disappointing to me. It was mostly portraits of the aristocrats in their expensive clothings. 
+                    Some of them were very well done, but just considering what Rembrandt and done a century earlier, it seemed like it hadn't progressed very much. 
+                    The 1950 - 2000 section was lackluster with random abstract paintings and artifacts. 1600 - 1700, and 1800 - 1900 were my favourite Dutch eras of painting. 
+                    I think my favourite is the 1800 - 1900 era overall, but as an individual painter I liked Rembrandt best. 
+                </p>
+                <figure>
+                    <img src="../images/Europe 2022/BanquetAtCrossbowmensGuild.JPG">
+                    <figcaption>Banquet at the Crossbowmen's Guild, Bartholomeus van der Helst, 1648</figcaption>
+                </figure>
+                <p>
+                    After leaving the Rijksmuseum, we went back to the hostel to check on Joey. He had slept this entire time and was feeling much better. 
+                    We rested as well for a bit until it was time to head to the Heineken Experience. 
+                    The Heineken Experience took place in the former Heineken brewery establish in 1864 in what used to be the outskirts of Amsterdam. 
+                    It was moved since the city expanded and the population density got too large for a brewery there. 
+                    The experience itself was very unique. It began with a guided tour of the history of the company. 
+                    There were three Dutchmen who were like 6'8" on our tour as well. 
+                    We walked into where they mixed and stored all the ingredients in the process. They were giant copper containers with a central tube that attached to the ceiling, and a spinning metal piece inside used for mixing. 
+                    Then there was a "simulation" show that had us in a room with videos playing on the ceiling, basically showing as if wwe were the beer how it goes from being barley to a packaged beer. 
+                    It was a bit cheesy but fun too! They had fun little photo booths you could use that were Heineken and Amsterdam themed. 
+                    At the end of the show, they served us a small glass of free Heineken, and taught us to say <i>Proost!</i> (Cheers!) when we drink. 
+                    Also, it's apparently supposed to taste like bananas. It does not. 
+                    They get you to go into this cool basement bar after to get two free Heineken beers. 
+                    The room was lit up with neon green lights and Heineken logos behind the bar. 
+                    We all drank and cheersed, and then went to the giftshop. I got a bottle with "Crebo" on it and a t-shirt. 
+                </p>
+                <figure>
+                    <img src="../images/Europe 2022/Heineken.JPG">
+                    <figcaption>Heineken Experience</figcaption>
+                </figure>
+                <p>
+                    To end the night, we went to dine at The Pantry, a homey, cozy, small restaurant specializing in traditional Dutch cuisine. 
+                    It was packed so we had to split our group of four into groups of two. I sat with Joey and we both ordered the first meal combo:
+                </p>
+                <ul>
+                    <li>Appetizer: Dutch pea soup with slices of sausage, with smoked bacon, rye bread, and spciy dijon mustard on the side</li>
+                    <li>Main: Dutch sausage with three kinds of stamppot (kale, carrot, and sauerkraut)</li>
+                    <li>Dessert: Vlaflip, a thin yogurt mixed with a vanilla syrup and a drizzle of strawberry syrup</li>
+                </ul>
+                <p>
+                    This food took Zollpackhof a run for its money. The pea soup was fantastic to start. 
+                    Perfect seasoning and a full, rich flavour. The little sausages inside were a nice touch, and I really liked the spicy mustard that went with the sides. 
+                    The main course ... I never knew a sausage could be packed with so much flavour! 
+                    I would describe it as, every other sausage I've ever eaten is a watered down version of this. 
+                    It was just juicier and packed with flavour. And the stamppot (mashed potatoes with veggies mixed in) was an amazing side. 
+                    Joey got the same meal, and we both debated on which flavour was better. He said the carrot stamppot because it was sweeter. 
+                    It tasted kind of like mashed yams. I couldn't decide between the carrot or sauerkraut stamppot because the sauerkraut also had a very alluring tangy flavour I enjoyed. 
+                    The vlaflip was a nice end to the delicious meal. It was creamy and sweet. Chase also shared a Dutch cheese he got for dessert which was super rich with flavour. 
+                    It makes me want to visit the Cheese Museum tomorrow to try more!
+                    <br><br>
+                    But the best part about the restaurant was the people we chatted with. 
+                    To our left, a couple from Birmingham. The man began our conversation by joking about the Dutch soup being bad since we had gotten the same thing. 
+                    We told them we were heading to London and they got very excited. It was their anniversary trip and they had just arrived that day. 
+                    Throughout the course of our meals, the banter was excellent. They gave us recommendations for places to visit and food to get like pie mash and Sunday roast. 
+                    We shared stories about our countries, and the differences between them. 
+                    The group behind us even jumped into the conversation when we mentioned we were seeing an orchestra, they were from New York. 
+                    Then, after both groups had paid their bills and left, another couple sat down and began chatting with us as well. 
+                    They were from London of all places! 
+                    The man recognized the area we were staying in and gave us some more recommendations on where to go and how to get around. 
+                    The woman was so friendly, and she really wanted us to visit Camden town so I will try to fit it in the itinerary. 
+                    We eventually left after saying our goodbyes, but that was the most fun I've had at a restaurant ever. 
+                    I want to meet more travellers!
+                </p>
+                <figure>
+                    <img src="../images/Europe 2022/ThePantry.JPG">
+                    <figcaption>Dutch sausage and stamppot at The Pantry</figcaption>
+                </figure>
+            </section>
+        </div>
+        <div class="day">
+            <section id="July 8">
+                <h3>Amsterdam, Netherlands. July 8, 2022.</h3>
+                <p>
+                    Today we began by giving Josh our farewells, since he was going home now. 
+                    Chase, Joey and I biked over to Bakers and Roasters for breakfast. I had a black coffee and a super high protein meal with chicken breast, egg whites, beans, cottage cheese and rice. 
+                    We finished our food and biked over to the Amsterdam Canal Cruise, which we decided to do last minute. 
+                    They were selling stroopwaffel which Chase and I tried. It was a little waffle-shaped cookie with a soft, sweet, thin filling inside. Very good!
+                </p>
+                <figure>
+                    <img src="../images/Europe 2022/CanalCruise.JPG">
+                    <figcaption>View from canal cruise, Amsterdam</figcaption>
+                </figure>
+                <p>
+                    The canal tour was fantastic! The city is so beautiful from the canals, and I got so many great photos. 
+                    The blend of nature with the old architecture was the most visually appealling. 
+                    It was a nice, sunny day with clear skies, unlike the day prior which was dark and overcast. 
+                </p>
+                <figure>
+                    <img src="../images/Europe 2022/Jared-CanalCruise.JPG">
+                    <figcaption>Me on the canal cruise, wearing my Heineken Experience shirt</figcaption>
+                </figure>
+                <p>
+                    We also saw many cool boats parked on the sides of the canals, and houseboats with people watering their flower on the roof. 
+                    Bikes were parked all long the archways and sides of the canals. 
+                </p>
+                <figure>
+                    <img src="../images/Europe 2022/Canal-Watering.JPG">
+                    <figcaption>Boats on the canal</figcaption>
+                </figure>
+                <p>
+                    After the canals, Joey went back to the Rijksmuseum since he had missed our excursion the day prior. 
+                    Chase and I decided to find a Dutch cheese shop to taste different cheeses. 
+                    The shopkeep was extremely nice. He let us try the homemade sausages and explained each different one. 
+                    Chase and I shared a Grillworst Naturel which was super thick and red with spices. 
+                    They had all their cheeses out on display with samples too. My favourite was the aged goat cheese.
+                </p>
+                <figure>
+                    <img src="../images/Europe 2022/DutchSausage.JPG">
+                    <figcaption>Grillworst Naturel</figcaption>
+                </figure>
+                <p>
+                    After purchasing the sausage, I wanted to see the Red Light District. We got lost on the bike ride over, but eventually made it to the centre of the city. 
+                    Chase and I walked around for about an hour exploring. You could see many brothels, strip clubs, coffeeshops (weed stores), and smartshops (truffle stores) around next to just regular restaurants which was very bizarre. 
+                    We went inot a smartshop to browse the menu and ask the shopkeep about truffles and their legality in Amsterdam. 
+                    Truffles are the roots of the magic mushroom, the part that stays underground, and they are the only part of the mushroom that is legal. 
+                    The art and vibe in the stores are very cool and unique. I also found the sexual merchandise you could buy in the district was hilarious, like bongs shaped like penises. 
+                </p>
+                <figure>
+                    <img src="../images/Europe 2022/RedLightDistrict-2.JPG">
+                    <img src="../images/Europe 2022/Smartshop.JPG">
+                    <img src="../images/Europe 2022/ThisIsWhereTheMagicHappens.JPG">
+                    <figcaption>Views from the Red Light District</figcaption>
+                </figure>
+                <p>
+                    Chase and I biked back to near the Heineken Experience and ate our sausage by a nice fountain. We met up with Joey and returned our bikes, and then transitted to the airport for London!
+                    <br><br>
+                    Upon arrival in London, I bought a SIM card for £30 and a pen for £4. The bus ticket into London from the Stansted airport was £15 for an hour-long bus ride! 
+                    This place is expensive...
+                    We bussed into London and then walked to our hostelin the Green Man Pub in Paddington. It was very cramped, and the showers are communal (with privacy barriers of course). 
+                    We are rooming with three people from Spain. Two brothers named Danny and Ruen, and their mother Chelo (I probably spelt those incorrectly). 
+                    We spoke Spanish to them and they were very friendly, and complimented my Spanish-speaking ability. They were here to learn English. 
+                </p>
+            </section>
+        </div>
+        <div class="day">
+            <section id="July 9">
+                <h3>London, England. July 9, 2022.</h3>
+                <p>
+                    
+                </p>
+            </section>
+        </div>
+        <div class="day">
+            <section id="July 10">
+                <h3>Amsterdam, Netherlands. July 10, 2022.</h3>
+                <p>
+                    
+                </p>
+            </section>
+        </div>
+        <div class="day">
+            <section id="July 11">
+                <h3>Amsterdam, Netherlands. July 8, 2022.</h3>
+                <p>
+                    
+                </p>
+            </section>
+        </div>
+        <div class="day">
+            <section id="July 12">
+                <h3>Amsterdam, Netherlands. July 8, 2022.</h3>
+                <p>
+                    
+                </p>
+            </section>
+        </div>
+        <div class="day">
+            <section id="July 13">
+                <h3>Amsterdam, Netherlands. July 8, 2022.</h3>
+                <p>
+                    
+                </p>
+            </section>
+        </div>
+        <div class="day">
+            <section id="July 14">
+                <h3>Amsterdam, Netherlands. July 8, 2022.</h3>
+                <p>
+                    
+                </p>
+            </section>
+        </div>
+        <div class="day">
+            <section id="July 15">
+                <h3>Amsterdam, Netherlands. July 8, 2022.</h3>
+                <p>
+                    
                 </p>
             </section>
         </div>

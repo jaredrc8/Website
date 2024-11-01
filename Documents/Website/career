@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="robots" content="noindex, nofollow">
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/2faed38072.js" crossorigin="anonymous"></script>
@@ -44,15 +45,13 @@
                 <h2>Education</h2>
             </div>
             <div class="education">
-                <a href="https://schulichuav.ca/" ><img src="images/Capstone-Group.jpg" alt="Education Image"></a>
-                <a href="https://schulich.ucalgary.ca/future-students/undergraduate/programs/bsc-mechanical-engineering">
-                    <h2>BSc ('25), Mechanical Engineering</h2>
-                    <p><b>
-                        University of Calgary<br>
-                        Minor in Astrophysics<br>
-                        Former President of Schulich UAV 
-                    </p></b>
-                </a>
+                <a href="https://schulich.ucalgary.ca/future-students/undergraduate/programs/bsc-mechanical-engineering"><img src="images/Capstone-Group.jpg" alt="Education Image"></a>
+                <h2>BSc ('25), Mechanical Engineering</h2>
+                <p><b>
+                    University of Calgary<br>
+                    Minor in Astrophysics<br>
+                    Former President of Schulich UAV 
+                </p></b>
             </div>
         </div>
         <div class="career-card">
