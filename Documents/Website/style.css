@@ -75,15 +75,16 @@ body .main {
     background: #eae0d5;
     display: flex;
     flex-direction: row;
-    height: calc(800px);
+    height: clamp(400px, 40vw, 1200px);
     justify-content: center;
     align-items: center;
 }
 
 body .main a {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    height: calc(1080px * 0.5);
+    height: fit-content;
     flex-wrap: wrap;
     background: #eae0d5;
     border-radius: 20px;
@@ -94,8 +95,8 @@ body .main a {
 }
 
 body .main img {
-    height: inherit;
-    border-radius: calc(1080px * 0.6 * 0.5);
+    height: clamp(100px, 25vw, 500px);
+    border-radius: 250px;
 }
 
 body .main a .main-header {
@@ -103,13 +104,13 @@ body .main a .main-header {
     flex-direction: column;
     justify-content: center;
     height: inherit;
-    width: calc(1920px * 0.45);
+    width: clamp(400px, 50vw, 1000px);
     padding: 20px;
 }
 
 body .main a .main-header h2 {
     color: #5e503f;
-    font-size: 5em;
+    font-size: clamp(2em, 5vw, 5em);
     text-decoration: none;
     padding-left: 20px;
     text-align: left;
@@ -117,7 +118,7 @@ body .main a .main-header h2 {
 
 body .main a .main-header ul {
     color: #5e503f;
-    font-size: 1.7em;
+    font-size: clamp(0.8em, 2vw, 1.7em);
     padding-left: 20px;
     text-align: left;
     list-style-type: none;
@@ -125,7 +126,7 @@ body .main a .main-header ul {
 
 body .main a .main-header p {
     color: #5e503f;
-    font-size: 1.3em;
+    font-size: clamp(0.5em, 1.2vw, 1.3em);
     padding-left: 20px;
     text-align: left;
     text-decoration: none;
@@ -135,9 +136,7 @@ body .card-container {
     display: flex;
     justify-content: center;
     max-width: 100%;
-    min-height: 750px;
-    height: 40vw;
-    max-height: 900px;
+    height: fit-content;
     gap: 5px;
     flex-wrap: wrap;
     padding: 10px;
@@ -162,7 +161,7 @@ body .card a {
     display: block;
     padding: 15px;
     padding-bottom: 40px;
-    font-size: 2.5em;
+    font-size: clamp(1.5em, 3vw, 2.5em);
     text-decoration: none;
     color: #22333B;
 }
@@ -180,7 +179,7 @@ body .card img {
 body .card p {
     text-align: left;
     padding: 3%;
-    font-size: 1.3em;
+    font-size: clamp(0.8em, 1.5vw, 1.3em);
     color: #22333B;
     font-family: 'Lora', 'serif';
 }
@@ -603,10 +602,11 @@ body .days {
     justify-content: start;
     align-items: center;
     height: calc(100vh - 132px);
-    width: 100%;
-    overflow: scroll;
+    width: 100vw;
     gap: 20px;
-    padding: 20px
+    padding: 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 body .days .day {
@@ -621,17 +621,27 @@ body .days .day {
     padding-top: 50px;
 }
 
-body .days .day h3 {
+body .days .day section {
+    display: inherit;
+    flex-direction: inherit;
+    width: inherit;
+    height: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    gap: inherit;
+}
+
+body .days .day section h3 {
     color: #5e503f;
     font-size: 2em;
 }
 
-body .days .day img {
-    height: 600px;
-    width: fit-content;
+body .days .day section img {
+    max-width: 50vw;
+    max-height: 80vh;
 }
 
-body .days .day p {
+body .days .day section p {
     color: #5e503f;
     font-size: 1.2em;
 }
@@ -639,4 +649,39 @@ body .days .day p {
 body .journal-title {
     color: #5e503f;
     font-size: 3em;
+}
+
+body .contents {
+    position: fixed;
+    top: 220px;
+    left: 3vw;
+    width: 16vw;
+    height: fit-content;
+    padding: 15px;
+    border: 1px solid #C6AC8F;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+body .contents p {
+    color: #5e503f;
+    font-size: 1.3em;
+}
+
+body .contents ul {
+    list-style-type: none;
+}
+
+body .contents ul li {
+    padding: 5px;
+}
+
+body .contents ul li a {
+    text-decoration: none;
+    color: #5e503f;
+}
+
+body .contents ul li:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
 }
