@@ -163,9 +163,11 @@
                 Then, someone passed him a beer which he slammed on his head to open and threw it into the crowd! 
                 Very energetic, I will have to check their music out!
             </p>
-            <video width="600" autoplay loop muted>
+            
+            <video id="Airbourne" height="400" controls muted loop autoplay>
                 <source src="../images/Europe 2022/Airbourne-BeerThrowing.mp4" type="video/mp4">
             </video>
+
             <p>
                 Just as Airbourne finished, Josh and I raced to the top of the Waldbühne to grab more beer for us. 
                 As we were walking down carrying two litres of beer each, Senjutsu began playing.
@@ -173,7 +175,7 @@
                 Chase made a German friend named Jonas whose father had recently passed. 
                 I saw him tearing up during the song Blood Brothers. 
             </p>
-            <img src="">
+            <img src="../images/Europe 2022/IronMaiden-Group.jpg">
             <p>
                 At this point, I had finished two litres of Beck's beer and had to pee. 
                 I climbed the Waldbühne steps into the trees to go, and when I returned I couldn't find my friends. 
@@ -208,6 +210,4 @@
         </ul>
     </footer>
 </body>
-
-
 </html>
