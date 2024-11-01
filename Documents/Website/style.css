@@ -676,6 +676,7 @@ body .contents {
     left: 3vw;
     width: 16vw;
     height: fit-content;
+    max-height: calc(100vh - 220px - 66px);
     padding: 15px;
     border: 1px solid #C6AC8F;
     border-radius: 8px;
