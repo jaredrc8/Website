@@ -8,7 +8,7 @@
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/2faed38072.js" crossorigin="anonymous"></script>
-    <title>Jared Crebo - Home</title>
+    <title>Jared Crebo - Travel Journal</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,6 +16,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 
     <!-- Custom Styling -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"/>
+    <style>
+        #map {
+            width: 40vw;
+            max-width: 720px;
+            height: 400px;
+            border-radius: 15px;
+        }
+    </style>
     <link rel="stylesheet" href="../style.css">
 </head>
 
@@ -31,6 +40,168 @@
             <li><a href="../blog#">Blog</a></li>
         </ul>
     </header>
+    <div class="contents">
+        <p>
+            Contents
+        </p>     
+        <ul>
+            <li><a href="#April 26">Tokyo. April 26</a></li>
+            <li><a href="#April 27">Tokyo. April 27</a></li>
+            <li><a href="#April 28">Tokyo. April 28</a></li>
+            <li><a href="#April 29">Tokyo. April 29</a></li>
+            <li><a href="#April 30">Tokyo. April 30</a></li>
+            <li><a href="#May 1">Tokyo. May 1</a></li>
+            <li><a href="#May 2">Fujiyoshida. May 2</a></li>
+            <li><a href="#May 3">Lake Kawaguchi. May 3</a></li>
+            <li><a href="#May 4">Osaka. May 4</a></li>
+            <li><a href="#May 5">Koyasan. May 5</a></li>
+            <li><a href="#May 6">Nara. May 6</a></li>
+            <li><a href="#May 7">Osaka. May 7</a></li>
+            <li><a href="#May 8">Osaka. May 8</a></li>
+            <li><a href="#May 9">Kyoto. May 9</a></li>
+            <li><a href="#May 10">Kyoto. May 10</a></li>
+            <li><a href="#May 11">Kyoto. May 11</a></li>
+            <li><a href="#May 12">Kanazawa. May 12</a></li>
+            <li><a href="#May 13">Kanazawa. May 13</a></li>
+            <li><a href="#May 14">Shirakawa-go. May 14</a></li>
+            <li><a href="#May 15">Takayama. May 15</a></li>
+            <li><a href="#May 16">Tokyo. May 16</a></li>            
+        </ul>
+    </div>
+    <div class="journal-title">
+        <p>Japan 2024 Travel Journal</p>
+        <div id="map"></div>
+        <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+        <script>
+            const map = L.map('map', {
+                scrollWheelZoom: false,
+                doubleClickZoom: false,
+                touchZoom: false,
+                dragging: true,
+                zoomControl: false
+            }).setView([10, 80], 4);
+            L.tileLayer('https://api.mapbox.com/styles/v1/jaredrc8/cm2xhtey200nt01r6a3l595ps/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiamFyZWRyYzgiLCJhIjoiY20yeGhxZDV0MDVkbDJrcTI3eTVrc280eiJ9.ErTKzFjOLEtvUgf2C7ckrw', {
+            maxZoom: 18,
+            tileSize: 512,
+            zoomOffset: -1,
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>'
+        }).addTo(map);
+
+        const coords = [
+            [35.6764, 139.6500], // Tokyo
+            [35.4880, 138.8072], // Fuji
+            [34.6937, 135.5023], // Osaka
+            [34.2125, 135.5864], // Koya
+            [35.0116, 135.7681], // Kyoto
+            [36.5597, 136.6520], // Kanazawa
+            [36.2710, 136.8986], // Shirakawa
+            [36.1461, 137.2522],  // Takayama
+            [35.6764, 139.6500] // Tokyo
+        ];
+
+        const theIcon = document.createElement('i');
+        theIcon.classList.add('fas', 'map-pin');
+        theIcon.style.color = 'gold';
+        theIcon.style.fontSize = '24px';
+
+        coords.forEach(coord => {
+            L.marker(coord).addTo(map);
+        });
+
+        const route = L.polyline(coords, {
+            color: 'black',
+            weight: 4,
+            opacity: 0.7
+        }).addTo(map);
+
+        map.fitBounds(route.getBounds());
+
+        map.setZoom(map.getZoom() - 1);
+
+        </script>
+    </div>
+    <div class="days">
+        <div class="day">
+            <section id="April 26">
+                <h3>
+                    Shinjuku City, Tokyo. April 26, 2024
+                </h3>
+                <p>
+                    Our flight from Vancouver landed at the Narita Airport at 3pm, Japan time. 
+                    I had barely slept in 24 hours. 
+                    Max, Khanh, and Cole waited for Chase's flight at the airport while I trained down to my hostel in Shinjuku, Tokyo. 
+                    At first, I was very intimidated once I left the group. 
+                    This will be the first time I have navigated a country alone, and the first time I really have no grasp of the language. 
+                    I eventually figured out to get on the Skyliner train to Tokyo. 
+                    I had to buy a separate Skyliner ticket and then pay the IC card fee. 
+                    <br><br>
+                    I hopped on the Skyliner that sped through Tokyo to Nippori station, where I switched to the normal subway train to Shinjuku City. 
+                    My hostel, Tokyo House Inn, has two entrances for a part A and B. 
+                    I accidentally went into the wrong one the first time, and then the next attempt found myself in a random cafe instead. 
+                    I finally found my room at the hostel. 
+                    I was bunked with a man and a young woman. 
+                    Neither spoke English, so instead of embarassing myself trying to communicate I dropped off my bags and headed out to explore Shinjuku. 
+                </p>
+                <figure>
+                    <img src="">
+                    <figcaption></figcaption>
+                </figure>
+                <p>
+                    My first stop was Don Quijote next door. 
+                    Oh my god, they have everything. 
+                    It's so stimulating in there with flashy signs and speakers on the shelves advertising their products. 
+                    I walked all around Shinjuku and eventually to the Shinjuku Golden Gai, a neighbourhood of back alley bars. 
+                    Very unique spot. 
+                    I spotted a yellow Hellcat with underglow honking at an old lady crossing in front of him. 
+                    I saw tattoos on the driver, maybe he was yakuza? Very interesting. 
+                    Walking into Kabukicho, a big guy tried to ask me if I wanted a "sexy massage". 
+                    There are 18+ signs and prompts everywhere in the red light district for that. 
+                    I kept walking around, exploring. 
+                    I found the Godzilla Head on top of the cinema and took a nice photo from the crosswalk from way back. 
+                </p>
+                <figure>
+                    <img src="">
+                    <figcaption></figcaption>
+                </figure>
+                <p>
+                    I also got ramen at Tenkaippan ramen in Kabukicho. 
+                    It was cash only and I saw locals going in so I thought I'd try it out. 
+                    I got Kottori ramen with seasoned egg and bamboo shoot. 
+                    It was the best ramen I have ever had, so creamy and the egg was marinated and savoury. 
+                    Kabukicho is so stimulating. There are lights and hundreds of people everywhere at all times. 
+                    It is by far the busiest place I have been. 
+                </p>
+                <figure>
+                    <img src="">
+                    <figcaption></figcaption>
+                </figure>
+                <p>
+                    I returned to my hostel to write this journal and relax. 
+                    The girl across the bunk from me ordered food and offered me some. 
+                    I didn't understand at first, but she Google Translated it to say "do you want takoyaki?"
+                    I responded "hai" as politely as possible because I knew no other response. 
+                    She split the takoyaki and chicken and fries for us and we talked a bit over the translate app. 
+                    She is from Tokyo and 18 years old. 
+                    I was confused as to why she is from Tokyo and staying in a hostel here but I didn't know how to ask. 
+                    We finished our meal and I gave her thanks. 
+                </p>
+                <figure>
+                    <img src="">
+                    <figcaption></figcaption>
+                </figure>
+            </section>
+        </div>
+        <div class="day">
+            <section id = "April 27">
+                <h3>
+                    Shibuya City, Tokyo. April 27, 2024
+                </h3>
+                <p>
+                    
+                </p>
+            </section>
+        </div>
+    </div>
 
     <footer>
         <ul class="social-media">

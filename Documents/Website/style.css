@@ -142,7 +142,7 @@ body .card-container {
     flex-wrap: wrap;
     padding: 10px;
     overflow: hidden;
-    background-color: #C6AC8F;
+    background-color: #eae0d5;
     border-top: 2px solid #C6AC8F;
 }
 
@@ -164,7 +164,7 @@ body .card a {
     padding-bottom: 40px;
     font-size: clamp(1.5em, 3vw, 2.5em);
     text-decoration: none;
-    color: #22333B;
+    color: #5e503f;
 }
 
 body .card a:hover {
@@ -181,16 +181,16 @@ body .card p {
     text-align: left;
     padding: 3%;
     font-size: clamp(0.8em, 1.5vw, 1.3em);
-    color: #22333B;
+    color: #5e503f;
     font-family: 'Lora', 'serif';
 }
 
 body .line {
     position: relative;
-    top: 160px;
-    height: 350px;
-    width: 3px;
-    background-color: #5e503f;
+    top: calc(3vw + 110px);
+    height: calc(30vw * 3 / 4 - 60px);
+    width: 2px;
+    background-color: #C6AC8F;
 }
 
 footer {
@@ -243,8 +243,8 @@ body .about {
 }
 
 body .about img {
-    height: 60vh;
-    border-radius: calc(60vh * 0.5);
+    height: 27vw;
+    border-radius: calc(27vw * 0.5);
 }
 
 body .about .about-text {
@@ -536,7 +536,7 @@ body .map-container {
     background-image: url(images/Huacachina-Desert2.JPG);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: -450px;
+    background-position-y: center;
     border-bottom: 2px solid #C6AC8F;
 }
 
@@ -648,7 +648,7 @@ body .days .day section figure {
 
 body .days .day section figure img {
     max-width: inherit;
-    max-height: 80vh;
+    max-height: 70vh;
     padding: 10px;
 }
 
@@ -666,8 +666,19 @@ body .days .day section p {
 }
 
 body .journal-title {
+    display: flex;
+    flex-direction: column;
+    position: relative;
     color: #5e503f;
     font-size: 3em;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+body .journal-title p {
+    text-decoration: underline;
+    overflow: hidden;
 }
 
 body .contents {
@@ -717,4 +728,9 @@ body .days .day section ul li {
     font-size: 1em;
     font-style: italic;
     padding: 5px;
+    text-align: center;
+}
+
+body .days .day section p .redacted {
+    display: none;
 }

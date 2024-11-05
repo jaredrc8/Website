@@ -16,6 +16,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 
     <!-- Custom Styling -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"/>
+    <style>
+        #map {
+            width: 40vw;
+            max-width: 720px;
+            height: 400px;
+            border-radius: 15px;
+        }
+    </style>
     <link rel="stylesheet" href="../style.css">
 </head>
 
@@ -57,6 +66,51 @@
     <div class="days">
         <div class="journal-title">
             <p>Western Europe 2022 Travel Journal</p>
+            <div id="map"></div>
+            <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+            <script>
+                const map = L.map('map', {
+                    scrollWheelZoom: false,
+                    doubleClickZoom: false,
+                    touchZoom: false,
+                    dragging: true,
+                    zoomControl: false
+                }).setView([10, 80], 4);
+                L.tileLayer('https://api.mapbox.com/styles/v1/jaredrc8/cm2xhtey200nt01r6a3l595ps/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiamFyZWRyYzgiLCJhIjoiY20yeGhxZDV0MDVkbDJrcTI3eTVrc280eiJ9.ErTKzFjOLEtvUgf2C7ckrw', {
+                maxZoom: 18,
+                tileSize: 512,
+                zoomOffset: -1,
+                attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>'
+            }).addTo(map);
+
+            const coords = [
+                [52.5000, 13.4050], // Berlin
+                [52.3676, 4.9041], // Amsterdam
+                [51.5072, 0.1276], // London
+                [49.3358, 0.4526], // Juno Beach
+                [48.8575, 2.3514] // Paris
+            ];
+
+            const theIcon = document.createElement('i');
+            theIcon.classList.add('fas', 'map-pin');
+            theIcon.style.color = 'gold';
+            theIcon.style.fontSize = '24px';
+
+            coords.forEach(coord => {
+                L.marker(coord).addTo(map);
+            });
+
+            const route = L.polyline(coords, {
+                color: 'black',
+                weight: 4,
+                opacity: 0.7
+            }).addTo(map);
+
+            map.fitBounds(route.getBounds());
+
+            map.setZoom(map.getZoom() - 1);
+
+            </script>
         </div>
         <div class="day">
             <section id="July 3">
@@ -264,7 +318,7 @@
                     At this point, I had finished two litres of Beck's beer and had to pee. 
                     I climbed the Waldbühne steps into the trees to go, and when I returned I couldn't find my friends. 
                     I did, however, find the <b>moshpit</b>.
-                    That was one of the most fun experiences I have ever had!
+                    That was one of the funnest experiences I have ever had!
                     Just straight up pure aggression enticed by the insane performance by Iron Maiden!
                     After a song, I proceeded to look for my friends again, who I found had also joined another moshpit!
                     For the rest of the night, we were in the moshpits and it was just so much fun. 
@@ -336,7 +390,7 @@
                 <p>
                     One thing that I absolutely love about Amsterdam so far is its liveliness. 
                     While approaching our hostel through the Oosterpark, crowds of people were in the fields with their bikes parked. 
-                    A group of people played volleyball on the side while many were having picnics in the middle. Children played in teh water with the ducks and skateboarded around. 
+                    A group of people played volleyball on the side while many were having picnics in the middle. Children played in the water with the ducks and skateboarded around. 
                     As we got to the door of the hostel, across was a skatepark with a competition happening. And later on while Joey, Josh and I were grabbing food, a group of young people were dancing with the music blasting in a gazebo in the park. 
                     Not to mention, seeing everyone bike around adds the cherry on top to the energetic vibe of the city. 
                     I even saw very old people biking places. It's no wonder they live healthier than us in North America.
@@ -371,7 +425,7 @@
                     I also saw the sunlight shining on the wrecked crew, which I viewed as God saving them. 
                     <br><br>
                     Then there was the Encounter during the Battle of Kijkdun. It really stood out from the other naval battle depictions because of the use of smoke to show the action. 
-                    The first use of smoke I noticed was the cannonfire between each of two ships, depicted by teh smoke and red flame coming from the cannon. 
+                    The first use of smoke I noticed was the cannonfire between each of two ships, depicted by the smoke and red flame coming from the cannon. 
                     A ship on fire sat in the background. What really added the dramatic effect was the knowledge upon reading the description that the painting actually takes place in the daytime, but the plumes of smoke from the battle block the sun and make the sky dark. 
                     I feel like it shows the action so well that you can see the battle taking place there. We had the Van Gogh Museum booked two hours later, and I didn't expect all of us to enjoy the Rijksmuseum so much so we had to cut the visit short unfortunately. 
                     I only saw 1/3 floors. The Battle of Waterloo painting was also spectacular because of its drama and insane size. The painting must have been baout 14ft tall. 
@@ -463,14 +517,14 @@
             <section id="July 7">
                 <h3>Amsterdam, Netherlands. July 7, 2022.</h3>
                 <p>
-                    <b>Today has been an interesting day so far. We started off with the plan to purchase some truffles from a smartshop. 
+                    <span class="redacted">Today has been an interesting day so far. We started off with the plan to purchase some truffles from a smartshop. 
                     But the gloomy, rainy weather in the morning deterred us. 
-                    The plan would have been to sit in a park while we trip, but it would've been wet and cold.</b>
+                    The plan would have been to sit in a park while we trip, but it would've been wet and cold.</span>
                     <br><br>
                     We started our day off by hitting the Yusu Cafe again. This time, I got a matcha latte and a fig cheesecake. 
                     The cheesecake was amazing. The latte was good but I preferred the chai from yesterday. 
                     Joey started getting very sick. Chase had been sick the prior day and likely passed it onto Joey, so after the cafe he left us to go sleep. 
-                    <b>Josh, Chase and I decided to hit up the pharmacy and general store for some Advil and other goods, then we decided to find a coffeeshop.
+                    <span class="redacted">Josh, Chase and I decided to hit up the pharmacy and general store for some Advil and other goods, then we decided to find a coffeeshop.
                     We pulled up on our bikes again. I had found a Donkey Republic bike that was unlocked, so I just used that without paying or locking it. 
                     The coffeeshop was called Coffeeshop Papillon. It featured a dark purple lighting on the outside with the name. 
                     Inside was a narrow corridor. On the left, a cashier counter with a clear, plastic shield separation. 
@@ -479,7 +533,7 @@
                     It came in a clear, plastic container and was loosely packed, but massive. 
                     We biked to Vondelpark to smoke it. 
                     Josh took his edible, and Chase and I found a spot by a creek to smoke. 
-                    I had a bout 7 puffs, but it barely got me high. It just mellowed us out. </b>
+                    I had a bout 7 puffs, but it barely got me high. It just mellowed us out. </span>
                 </p>
                 <figure>
                     <img src="../images/Europe 2022/Amsterdam-Latte.JPG">
@@ -517,15 +571,15 @@
                     I unfortunately did not do it in chronological order, which I know for next time. 
                     But I did check out every section in depth. 
                     The Special Collection contained models of Dutch ships that were used to help with their construction. 
-                    There were also many muskets, flint-lock pistols, and bladed weapons from both teh Dutch Empire and Java. 
-                    I recall a Javaian dagger that was zig-zagged along teh blade. It was crested with small jewels and was very beautiful. 
+                    There were also many muskets, flint-lock pistols, and bladed weapons from both the Dutch Empire and Java. 
+                    I recall a Javaian dagger that was zig-zagged along the blade. It was crested with small jewels and was very beautiful. 
                     The 1100 - 1600 section depicted many Christian and Catholic art, mainly about the birth of Christ or the passion of the Christ. 
                     The colours used were nice and aesthetically pleasing, but the paintings lacked depth. 
                     They looked flat with almost solid colours. In contrast to that, the 1600-1700s saw notable artists like Pieter Lastman and Rembrandt van Rijn especially create new experimental techniques for using light to create depth. 
                     I personally loved Rembrandt's works. Oddly enough, I think my favourite Rembrant is the Self Portrait as Apostle Paul. 
                     Despite the typical boringness of some portraits, this one surpasses all his group works for me. 
                     I think it's because in this later stage in his life he had developed his style so well. 
-                    The symbolicism of being teh Apostle Paul with the divine light shining in from the top left, and the sword and papers gives it mystic feeling from the lore behind it. 
+                    The symbolicism of being the Apostle Paul with the divine light shining in from the top left, and the sword and papers gives it mystic feeling from the lore behind it. 
                     Every object has a purpose. The evlution of the art itself is also very interesting as through Rembrandt's self portraits we see him turn old. 
                     This painting was done in 1661, making his age 55. The use of light and shadow to depict his divinity and show the depth in the image is remarkable to view to this day, and would have ben revolutionary at the time. 
                     Zooming in on his features, the details go so deep as to show the wrinkles and dimploes in his face as cast by the shadows of the curvatures of his face. 
@@ -666,7 +720,7 @@
                     <br><br>
                     Upon arrival in London, I bought a SIM card for £30 and a pen for £4. The bus ticket into London from the Stansted airport was £15 for an hour-long bus ride! 
                     This place is expensive...
-                    We bussed into London and then walked to our hostelin the Green Man Pub in Paddington. It was very cramped, and the showers are communal (with privacy barriers of course). 
+                    We bussed into London and then walked to our hostel in the Green Man Pub in Paddington. It was very cramped, and the showers are communal (with privacy barriers of course). 
                     We are rooming with three people from Spain. Two brothers named Danny and Ruen, and their mother Chelo (I probably spelt those incorrectly). 
                     We spoke Spanish to them and they were very friendly, and complimented my Spanish-speaking ability. They were here to learn English. 
                 </p>
@@ -675,57 +729,876 @@
         <div class="day">
             <section id="July 9">
                 <h3>London, England. July 9, 2022.</h3>
+                <figure>
+                    <img src="../images/Europe 2022/BritishMuseum.JPG">
+                    <figcaption>The British Museum</figcaption>
+                </figure>
                 <p>
-                    
+                    We begun today by hopping on the bus to go to the British Museum. 
+                    When we arrived, the lineup was so long it ran around the block on both sides of the entrance!
+                    The building itself was absolutely massive, featuring Roman-style pillars and sculptures on the front and top, remeniscent of a Parthenon. 
+                    Once we got inside, we began exploring the Africa section. 
+                    It was interesting to note that the Benin Bronzes from Nigeria might have been taken during British colonisation, a subject of controversy surrounding this museum. 
+                </p>
+                <figure>
+                    <img src="../images/Europe 2022/NigerianPieces.JPG">
+                    <figcaption>Benin Bronzes from Nigeria, British Museum</figcaption>
+                </figure>
+                <p>
+                    The ancient sections were the most interesting. 
+                    First, we looked at ancient Egypt. I saw the real Rosetta Stone!
+                    The top had hieroglyphs carved into it, the middle was another language, and the bottom had ancient Greek, allowing for it to be translated to Greek and then to other languages to understand the Egyptian culture. 
+                    I also saw mummies, sarcophagi, and many cool statues of Egyptian gods and kings. 
+                    The other cool section was ancient Rome and Greece. It featured scultpures of Socrates, Alexander the Great, Homer, and many more. 
+                    They had walls of engraved art depicting warriors in battle. 
+                </p>
+                <figure>
+                    <img src="../images/Europe 2022/Rosetta-Stone-Zoomed.JPG">
+                    <img src="../images/Europe 2022/IMG_2109.JPG">
+                    <figcaption>Rosetta Stone (top), and Greek Warriors (bottom)</figcaption>
+                </figure>
+                <p>
+                    The Assyrian section had these massive sculptures of a creature with the head of a bearded man, and the torso of a horse with wings from around 700 BCE. 
+                    There were more engraved artworks on the walls depicting men on horses throwing spears into a pack of lions. 
+                    Clearly, the lion hunt was very symbolic for them. 
+                </p>
+                <figure>
+                    <img src="../images/Europe 2022/Assyrian-Sculpture.JPG">
+                    <img src="../images/Europe 2022/LionHunt.JPG">
+                    <figcaption>Lamassu (top), lion hunt (bottom)</figcaption>
+                </figure>
+                <p>
+                    We continued on to the Asian sections. 
+                    Ancient Japan on the top floor was very interesting. The Buddhist sculptures, samurai armour, and their art stood out the most to me. 
+                    Finally, I wanted to see China before we left. 
+                    It was very cool to see the different artifacts from all the different dynasties. 
+                    Again, the Buddhist artifacts were very intriguing that depict people or animals. 
+                    The Qing Dynasty armour was very cool to look at. 
+                    But the most interesting part of the China exhibit was probably the jade section, where it explains the significance of jade in the 7000 years of Chinese history and how its use developed over time. 
+                    It makes me want to get a jade necklace now. 
+                </p>
+                <figure>
+                    <img src="../images/Europe 2022/Buddhist.JPG">
+                    <figcaption>Chinese Buddhist figures</figcaption>
+                </figure>
+                <p>
+                    After that, I found a badge in the gift shop of the museum and used the pin on the back to open my SIM card slot on my phone so I could put in the new one I bought. 
+                    Finally, I could help navigate here. We walked over to the National Gallery, which was in front of the beautiful Trafalgar Square. 
+                    There were steps leading down to the main square with fountains on either side spouting water. 
+                    In the middle, a towering obelisk with a statue on top took centre stage.
+                    Big Ben could be seen in the background, and a mix of British flags and Canadian flags surrounded the area (Canadian becuase of the Canada House that was next door). 
+                </p>
+                <figure>
+                    <img src="../images/Europe 2022/TrafalgarSquare.JPG">
+                    <figcaption>Trafalgar Square, view from National Gallery</figcaption>
+                </figure>
+                <p>
+                    Inside the National Gallery was a beautiful variety of paintings. I saw Leonardo da Vinci's Virgin of the Rocks which had beautiful lighting as well as its detailed background. 
+                    The tiny details in the painting pulled it all together, even the tiniest pebbles had so much to them. 
+                    I also really enjoyed Titian's series of paintings of the goddess Diane, especially her encounters with Achtaeon. 
+                    I found them comical, but also that they told the story quite well of how Diana kills him. 
+                    The first painting, Diana and Achtaeon, is the comical one that shows the encounter in a light-hearted manner. 
+                    The sequel, The Death of Achtaeon, is a much darker atmosphere as it shows Diana killing Achtaeon. 
+                    I also really liked Bacchus and Ariadne. The contrast between their faces and the beautiful blue background was very visually appealing, and the love story behind it is beautiful too. 
+                    The variety of paintings made it stand out against the other art museums. 
+                    I also enjoyed Van Dyck and Rubens very much. 
+                    And a new artist I found that I liked was Joseph Mallard William Turner and his painting of Ulysses deriding Polyphemus, Homer's Odyssey. 
+                    The blend of colours is extraordinary to look at. 
+                </p>
+                <figure>
+                    <img src="../images/Europe 2022/BacchusAriadne.JPG">
+                    <figcaption>Bacchus and Ariadne</figcaption>
+                </figure>
+                <p>
+                    We carried on from the National Gallery to the Churchill War Rooms to learn about the life of Winston Churchill and the underground office where he commanded and lived from during WWII. 
+                    He was born into an aristocratic family, yet volunteered to the front lines of WWI as a war reporter and soldier. 
+                    After that, he was very popular and started his politcal career like his father. 
+                    In 1940, he took the Prime Minister's office from Neville Chamberlain which was around the time that the Blitz began. 
+                    Him and his war cabinet lived here underground to avoid the bombs. 
+                    The location was secret, and thus they almost never left. 
+                    Obviously, the Allies won and Churcill was hailed a hero. 
+                    He would give speeches and broadcast from his bedroom underground. 
+                    He also smoked about 8 cigars a day. 
+                </p>
+                <figure>
+                    <img src="../images/Europe 2022/WarRooms.JPG">
+                    <figcaption>Churchill War Rooms</figcaption>
+                </figure>
+                <p>
+                    We finished our first day in London with a walk around Big Ben, Westminster Abbey, and Buckingham Palace. 
+                    We all agreed that London has the best architecture we've seen in Europe so far. 
+                    We took a double-decker bus back to our hostel after. 
+                    Chase had trouble getting let on the bus so we ended up trekking to the nearest train station to get him an Oyster card, since the tap on his credit card stopped working. 
+                    Upon returning to our hostel, we enjoyed a tall pint of Guiness and a burger each from the pub below our stay. 
+                    We also had some loaded fries and tried another pint of the Deya Pale Ale they had on tap. 
                 </p>
             </section>
         </div>
         <div class="day">
             <section id="July 10">
-                <h3>Amsterdam, Netherlands. July 10, 2022.</h3>
+                <h3>London, England. July 10, 2022.</h3>
+                <figure>
+                    <img src="../images/Europe 2022/BigBen.JPG">
+                    <figcaption>Big Ben</figcaption>
+                </figure>
                 <p>
-                    
+                    We woke up early with plans to tour Stonehenge. 
+                    However, upon arriving at the bus station it appeared the bus had broken down. 
+                    We decided to take the refund instead of waiting for the next tour. 
+                    It was funny watching this Spanish family yelling at the tour guide. 
+                    We just gave him our names and left. 
+                    We decided on getting breakfast at Pimlico Grid. 
+                    I got a pot of tea, and a marinated prune yogurt bowl. 
+                    The yogurt was light and the prunes were super sweet. 
+                    I really enjoyed the tea as well. 
+                    I tried it on its own and then with some milk. 
+                    Obviously, I had to drink it with my pinky up.  
                 </p>
+                <figure>
+                    <img src="../images/Europe 2022/EnglishTea.jpg">
+                    <figcaption>Morning tea</figcaption>
+                </figure>
+                <p>
+                    Later, we bussed to the Tower of London. 
+                    The tower was a beautiful castle with the moat below turned into a colourful flower bed. 
+                    We walked past the tower to the Thames River to view the Tower Bridge. 
+                    We decided to walk over to the Tower Bridge and cross the river to check out the HMS Belfast, the WWII ship that was turned into a museum. 
+                    But a cruise ship was blocking any good photos, so we decided to check the area for other things to do. 
+                </p>
+                <figure>
+                    <img src="../images/Europe 2022/TowerBridge.JPG">
+                    <figcaption>Tower Bridge</figcaption>
+                </figure>
+                <p>
+                    I took us to the Maltby Street Market for a drink and some food. 
+                    We all got a bottle of Spanish beer, and I bought some Ethiopian food which consisted of beef and chicken on rice with a side of cooked spinach and squash curry. 
+                    The beef was some of the most flavourful meat ever, and for £12 it was quite the portion size. 
+                    It was fairly spicy too but it was a good amount for me. 
+                </p>
+                <figure>
+                    <img src="../images/Europe 2022/EthiopianFood.jpg">
+                    <figcaption>Ethiopian food, Maltby Street Market</figcaption>
+                </figure>
+                <p>
+                    We had some time to kill after, so we found a park nearby and just chilled out for an hour or so. 
+                    When it was time for our next excursion, we packed it up and crossed the London Bridge to get to the London Bridge Station. 
+                    As we neared the station, some guy just handed us a White Claw each, no questions asked! 
+                    It was very refreshing for a hot summer day. 
+                    We trained over to South Kensington to see the Natural History Museum. 
+                    This one was a lot more impressive than the one in Berlin, and Chase really enjoyed explaining what all the different skeletons were that he knew. 
+                    We realized, however, that the Royal Tyrrell Museum in Drumheller, AB still beats both of these by a long shot. 
+                </p>
+                <figure>
+                    <img src="../images/Europe 2022/London-NatHist.jpg">
+                    <figcaption>Natural History Museum London</figcaption>
+                </figure>
+                <p>
+                    We decided to look for some Sunday roast for dinner like the lady in Amsterdam had recommended for us. 
+                    I called a few places to no avail, until I called Hunter's Moon, who were able to seat us at 5pm. 
+                    We booked the reservation and rushed over, since we had to be at the Royal Albert Hall at 7pm for our show. 
+                    We all got the beef roast with a Yorkshire pudding, carrot puree, roasted potatoes, beans and a horseradish butter and au jus on the beef. 
+                    It was the best meal of London. 
+                    The potatoes had such a crispy outside and soft innards. The beef was sliced thin and very tender and thus paired well with the horseradish butter. 
+                    The Yorkshire pudding absorbed all the flavours on the plate, and especially with the sweet carrot puree it was a sweet and savoury emulsion of flavours and sauces. 
+                    Chase and I got the Pinot Noir 2020 from France, and we all got the Hunter's Lager as well. 
+                    To finish, we shared a dish of profiteroles, one light, one lemoney, and one chocolate. 
+                    The lemon was the best. 
+                    The fantastic English classic meal came at a cost though: £151 for three of us. 
+                </p>
+                <figure>
+                    <img src="../images/Europe 2022/SundayRoast.JPG">
+                    <figcaption>Sunday roast at Hunter's Moon</figcaption>
+                </figure>
+                <p>
+                    After paying the bill, we headed over to the Royal Albert Hall. Wow...
+                    The building itself is its own experience.
+                    As we walked down the street, the surrounding buildings had the spotlight with their unique Victorian architecture, until the Hall appeared as we rounded the corner. 
+                    It looked like a more modern Roman Colosseum, with many entrances around the building. 
+                    It was 31°C that day, so we entered this prestigious building drenched in sweat in our t-shirts and shorts, while everyone else was dressed up in suits and formal wear. 
+                    It was pretty fancy, and we were not dressed for the occasion. 
+                    <br><br>
+                    We got to our seats in the Hall, and the inside was magnificent. 
+                    It was covered in red velvet, with an upper deck and floor. 
+                    We had the mid-back section. 
+                    It was pretty far, but the screen was large enough that it didn't hinder the experience at all. 
+                    We saw Titanic Live!, where they played the movie Titanic on the large projector screen while an orchestra plays the music soundtrack live in sync with the film. 
+                    It was a surreal experience, despite being underdressed. 
+                    At many points, I forgot the music was even live because it was so perfectly in sync to the movie and because the movie was so captivating. 
+                    The music was almost the same as the real film, but I believe they added many embellishments that added to the experience. 
+                    I had forgotten how good this movie was too. 
+                    The last time I had seen it was with Mom on the VCR at home when I was around 7. 
+                    The ending of the film obviously had us very emotional, and the orchestra kept playing into a fantastic rendition of My Heart Will Go On with an opera singer in a red dress singing the part perfectly. 
+                    At the peak chorus of the song, everyone stood and applauded as she hit the highest notes. 
+                    The whole experience was a beautiful night. 
+                </p>
+                <figure>
+                    <img src="../images/Europe 2022/Orchestra.JPG">
+                    <figcaption>Titanic Live! at the Royal Albert Hall</figcaption>
+                </figure>
+                <p>
+                    That was until we had to get our bus after the show...
+                    It was 40 minutes late! But at least we had a gorgeous view to look at. 
+                    The Royal Albert Hall had red and blue lights illuminating each section of its pillars and frames. 
+                    Across from the hall was a large statue with a gold-plated top. 
+                    We hopped on our double-decker bus finally and like 11:30pm and sat up in the front row on the top deck. 
+                    That night was definitely the highlight of London. 
+                </p>
+                <figure>
+                    <img src="../images/Europe 2022/RoyalAlbertHall.JPG">
+                    <figcaption>Royal Albert Hall</figcaption>
+                </figure>
             </section>
         </div>
         <div class="day">
             <section id="July 11">
-                <h3>Amsterdam, Netherlands. July 8, 2022.</h3>
+                <h3>London, England. July 11, 2022.</h3>
                 <p>
-                    
+                    We woke up this morning and realized we were no longer sharing our hostel room with the Spanish family anymore. 
+                    We had a new roommate, an Australian fellow. 
+                    A young guy, but definitely older than us. He was only there for the night and was heading to Istanbul. 
+                    He talked about how he had driven all over England, and we shared our trip so far too. 
+                    Again, it was nice to meet another traveller. 
+                    <br><br>
+                    We packed our stuff and hauled our bags to the Royal Air Force Museum. 
+                    We walked through all the exhibits that showed planes from WWI all the way to the modern era. 
+                    The most intersting ones were the Spitfire, the F-35, and the Harrier, as well as the Rolls-Royce engines. 
                 </p>
+                <figure>
+                    <img src="../images/Europe 2022/Spitfire.JPG">
+                    <figcaption>Spitfire</figcaption>
+                </figure>
+                <p>
+                    We had some time to kill before we headed to the airport, so we took the train back to the Thames River at London Bridge station. 
+                    I found the Borough Market for us, this fresh food marketplace under a train bridge. 
+                    They had so many options for both hot food and raw, fresh ingredients like fish. 
+                    We all got the hake fish and chips, and I got a pickled egg on the side. 
+                    The batter was light and crispy, and the fish was thick and cooked perfectly. 
+                    It was a nice, fatty meal. We also got some British meat pies to go. 
+                    I decided to try the steak and kidney since that's an English classic. 
+                </p>
+                <figure>
+                    <img src="../images/Europe 2022/FishnChips.jpg">
+                    <figcaption>Fish n Chips, Borough Market</figcaption>
+                </figure>
+                <p>
+                    We took our pies to some random park and just waited out the clock. 
+                    I eventually ate mine and it just tasted like beef. It was good though, I didn't taste the kidney at all. 
+                    Lastly, before heading to the airport we did a walk around the area and came across a beautiful cathedral. 
+                    We went inside and rested in the cool air, filled our waters, took some photos, and then hopped back on the train to the Gatwick Airport. 
+                    It was so hot out. 
+                </p>
+                <figure>
+                    <img src="../images/Europe 2022/LondonCathedral.JPG">
+                    <figcaption>Cathedral in London</figcaption>
+                </figure>
+                <p>
+                    When we got to Paris, it was a nightmare figuring out the transit. 
+                    First of all, it was already 9pm when we landed. 
+                    We went to the busses and realized we didn't know how to get on, so we ran down to the train station to buy tickets and it turns out you need some Navigo card to use the transit system. 
+                    So then we had to go wait in line at the ticket office. 
+                    When we got to the front, the lady spoke English and was very nice, but the card costed €27.78 each, and we needed to get photos for them on our own. 
+                    We headed up two floors in the airport to the self serve photobooth that every airport has and then had to pay another €8 for the four consecutive photos option. 
+                    One person would take their photo, and then it would count down from 3 before the next photo was taken and we would have to switch out of the booth so the next person could get their photo taken. 
+                    We needed a couple of tries, it was ridiculous. 
+                    But after that, we brought the photos back to the lady and she gave us our Navigo cards. 
+                    We proceeded to train to our Airbnb at like 11pm, and probably didn't get there till midnight. 
+                    The Airbnb itself was a very nice change from the hostels before. It was nice to have space again. 
+                    Joey and Chase offered me the queen size bed for planning the whole trip, which I gladly accepted. 
+                    They got the bunk beds. 
+                </p>
+
             </section>
         </div>
         <div class="day">
             <section id="July 12">
-                <h3>Amsterdam, Netherlands. July 8, 2022.</h3>
+                <h3>Paris, France. July 12, 2022.</h3>
+                <figure>
+                    <img src="../images/Europe 2022/FrenchFlag.JPG">
+                    <figcaption>French flag over Paris</figcaption>
+                </figure>
                 <p>
-                    
+                    I woke up early around 7am, and decided to find a grocery store to find us a cheaper breakfast than what we had been having. 
+                    I went to the Franprix grocery store and bought a dozen eggs and half a dozen breakfast sausages. 
+                    I walked home and cooked for the others while they woke up. After breakfast, we began our Paris excursion by visiting the Sainte-Chapelle. 
+                    <br><br>
+                    We encircled the Saint-Chapelle on our walk, stopping at the bridge by the river for photos. 
+                    It was extremely hot, around 31-33°C with not a single cloud in the sky. 
+                    We continued walking on that little island by the river until we came across the Notre-Dame in reconstruction. 
+                    The entire area was blocked off by construction fence and scaffolding so it was tough to see. 
+                    All the stones are perfectly intact, but you could see the wooden frames within being rebuilt above the stone and scaffolding. 
+                    It was very interesting to see how much they had rebuilt in three years since the 2019 fire. 
+                </p>
+                <figure>
+                    <img src="../images/Europe 2022/NotreDame.JPG">
+                    <figcaption>Notre Dame Cathedral in reconstruction</figcaption>
+                </figure>
+                <p>
+                    We decided next to stop at a cafe for a coffee. Joey and I both bought a cappucino each, while Chase decided on a cafe chocolat. 
+                    It was a nice break from the heat, sitting in the patio under the shade. 
+                    Once we finished, we headed over to our wine tasting tour at Wine Tasting in Paris. 
+                    We were the first to arrive, being greeted by Thierry Givone, our guide. 
+                    The room we were seated in was small, with the long tables shaped in a V so that everyone was slightly tilted towards the projector screen up front. 
+                    Slowly, everyone else crept in that had booked the same tour. 
+                    The lady to my left was from Thailand. Next over was a couple from Vancouver, and another couple from Summerland at the tip of the V. 
+                    Across the table was another couple from Calgary and then a couple from Australia. 
+                    <br><br>
+                    Thierry explained how there were many different regions of France that produce wine, and that they are the #2 exporter of wine in the world behind Italy. 
+                    He was from the region of Burgundy, and was a professional sommelier. 
+                    He explained the AOC classification system for wine, and how the French wines are often labelled by their region rather than the grape used. 
+                    France started brewing wine in the 1st century, so over the generations they learned which grapes produce the best wine in each region and only grow those types there. 
+                    We had four wines, paired with four cheeses. And they were all so delicious. 
+                    He explained how to drink the wine too. Look, smell, taste. 
+                    For whites, a darker colour signifies a sweeter taste, or that it comes from the more southern part of France versus the north. 
+                </p>
+                <figure>
+                    <img src="../images/Europe 2022/WineTour.jpg">
+                    <figcaption>Wine Tasting in Paris </figcaption>
+                </figure>
+                <p>
+                    After the tasting, we were all feeling a bit of a buzz, as well as the excitement of learning how to properly enjoy wine. 
+                    I purchased a bottle of wine from the Languedoc region. 
+                    We had plans to see the Marie Curie Museum that day but it was closed unfortunately. 
+                    Instead, we took a stroll over to the Pantheon building. Its grand dome towered over the surrounding buildings while the French flag on top flew in the wind. 
+                    I stood in the plaza in front to take photos. We decided it was too expensive to go inside, and so we kept walking. 
+                </p>
+                <figure>
+                    <img src="../images/Europe 2022/Pantheon.JPG">
+                    <figcaption>Pantheon</figcaption>
+                </figure>
+                <p>
+                    Down the street, there was this stall a bit bigger than a telephone booth that was actually a washroom. 
+                    Chase kept trying to enter, but as he was going in the automatic door would slide open behind him. 
+                    An old man was waiting behind us, so we let him go first to see how to use it. 
+                    He went in and came out and asked if we needed help. 
+                    He gave us options of languages since he didn't speak English including Italian, Spanish, and other that I can't recall. 
+                    We told him we speak Spanish luckily and he proceeded to explain how the bathroom worked in perfect Spanish. 
+                    The toilet flips back into the wall and self cleans, so you just need to wait for the green light. 
+                    He asked where we were from, and when we said Canada he replied "but not the part that speaks French?"
+                    It indeed would have been nice to know French here. 
+                    Not as many people speak English here as the other countries we were in. 
+                    I used the washroom last, but not before a taxi driver parked next to it and cut in front of me. 
+                    Luckily, she was quick. I guess she was working so it wasn't a huge deal. 
+                </p>
+                <figure>
+                    <img src="../images/Europe 2022/StreetsParis.JPG">
+                    <figcaption>Streets of Paris, view from under the Pantheon</figcaption>
+                </figure>
+                <p>
+                    We decided to check out some gardens afterwards. 
+                    We walked to the Botanical Gardens first. There were lots of thick trees which gave us nice shade from the sun. 
+                    It was like 33°C out so it was definitely needed. 
+                    We only stayed there a short time though. 
+                    We took a bus over to the Luxembourg Palace, which was a nice building, but the show-stealer was the Luxembourg Gardens behind it. 
+                    It was one of the most beautiful parks I had ever been in. 
+                    Everyone was seated in lawn chairs reading, which seemed very peaceful. 
+                    On the left side where we were walking in, there was a long pool of water with flowers surrounding it leading up to a statue. 
+                    Joey and I stopped to take photos. 
+                    We continued our walk into the garden, where grand, circular steps separated by large flowers surrounded a gorgeous fountain in the centre. 
+                    In the pool of water, were little sailboats swimming around. 
+                    Facing away from the palace and past the central fountain was a large, perfectly kept patch of grass with two large statues lined up on it. 
+                    Behind that were rows of perfectly rectangular hedges that provided us again with some much needed shade. 
+                </p>
+                <figure>
+                    <img src="../images/Europe 2022/LuxembourgGarden.JPG">
+                    <figcaption>Luxembourg Garden</figcaption>
+                </figure>
+                <p>
+                    We walked through the entire park, and then headed over near the Catacombs of Paris to find dinner before our booking. 
+                    We found the Maison Peret restaurant, and took a seat in their patio. 
+                    We all got escargot to start. It was so delicious. 
+                    They were very large shells that came in a small little platter with divets for each shell. 
+                    There was a little set of tongs for holding the shell and a small two-digit fork for scooping the meat out. 
+                    Inside was filled with melted butter and some kind of basil sauce, maybe pesto. 
+                    It was so, so good! Chase and I ordered the beef tartare and egg yolk on top with caramelized onions mixed in. 
+                    The red wine was a nice pairing with the beef. 
+                    It also came with a side of fries and a salad. 
+                    Chase didn't like the beef tartare, but I thought it was fantastic. 
+                    <span class="redacted">He couldn't get over the fact that it was raw which is understandable, but he tried to give a scientific explanation for not enjoying it which I found amusing. </span>
+                </p>
+                <figure>
+                    <img src="../images/Europe 2022/Escargot.JPG">
+                    <figcaption>Escargot at Maison Peret</figcaption>
+                </figure>
+                <p>
+                    After dinner, we walked to the Catacombs. It was super cool walking through the bones and skulls of real humans who once lived in Paris. 
+                    Deep under the bustling city, rows upon rows of millions of bones lie. 
+                    We only walked a section of it, yet it felt so long. 
+                    Every once in a while you'd encounter a plaque with some French words and a date usually around the 1700s. 
+                </p>
+                <figure>
+                    <img src="../images/Europe 2022/Catacombs.JPG">
+                    <figcaption>The Catacombs of Paris</figcaption>
+                </figure>
+                <p>
+                    We headed home early since we have to wake up early tomorrow to go to Normandy!
                 </p>
             </section>
         </div>
         <div class="day">
             <section id="July 13">
-                <h3>Amsterdam, Netherlands. July 8, 2022.</h3>
+                <h3>Paris, France. July 13, 2022.</h3>
+                <figure>
+                    <img src="../images/Europe 2022/StreetsParis2.JPG">
+                    <figcaption>Streets of Paris</figcaption>
+                </figure>
                 <p>
-                    
+                    We woke up at 6am to reach the Hertz car rental agency across the city by 8am.
+                    We chose this agency so that we would be able to easily exit Paris without having to drive through it too much. 
+                    The train ride was a full hour, and upon checking in I realized I needed my passport which I didn't think I would need having never rented a car before. 
+                    So we had to train back the full hour to the Airbnb to get my passport. 
+                    The lady at Hertz phoned a closer location for us so we wouldn't have to commute back again. 
+                    We were approved for the rental by 11am, and proceeded to the 6th floor below ground in the parking garage to acquire it. 
+                    It was a manual drive Fiat 500, meaning only I could drive it since neither Chase nor Joey knew how. 
+                    I hadn't driven a stick shift in nearly three years since Dad's old 2005 Honda Civic was sold, so I stalled it in the garage at first. 
+                    Once I got going though, it came back very quickly. 
+                </p>
+                <figure>
+                    <img src="../images/Europe 2022/Car.jpg">
+                    <figcaption>Fiat 500 rental car</figcaption>
+                </figure>
+                <p>
+                    The first thing I noticed about driving in Paris is that it's absolute chaos. 
+                    Some sections of the road have no lanes, so it's such a jumbled frenzy of cars. 
+                    And they all drive so fast and aggressively, even for me. 
+                    The cost of scratching the rental would have been €12k, so I was very concerned. 
+                    With Joey and Chase in the passenger seats guiding using my phone, I was able to make it out of Paris alright. 
+                    Once we got on the highway it was smooth sailing.
+                    The drivers are super aggressive, yet refuse to pass anybody on the right. 
+                    If you're in the middle lane going slow and a faster car is approaching on the right, it will switch all the way to the left to pass and then all the way back to the right. 
+                    Also, the highway speed limit is 130kph, and there are so many tolls that it ended up costing €20 just to drive to Caen, Normandy. 
+                    It was 37°C in Paris today, so when we reached Caen after the 3 hour drive we were drenched in seat since the car had no A/C. 
+                    <br><br>
+                    Chase wanted to see the Normandy WWII Museum in Caen before visiting the actual landing sites. 
+                    The museum was within these castle walls in Caen. 
+                    We entered and climbed on top for the view of the city. It was sprinkled with churches and cathedrals everywhere. 
+                    Caen had a very old and authentic vibe to it which was a pleasant change from the massive cities we had been visiting. 
+                    Inside the castle, we walked to the ticket building. 
+                    The tickets were free for under 26 years old. 
+                    We got our tickets and entered the museum. And before long, we realized we had entered the Normandy Museum and not the Normandy WWII Museum. 
+                    The entire exhibit was on things like ancient rocks and the clothes and pottery they made in the Normandy region. 
+                    I also had some insane sweat stains from the heat on the parts of my body that were carrying things with straps. 
+                    I had a giant spot on my chest from the travel bag slung around me, and my back from my backpack. 
+                    Joey couldn't stop laughing. 
+                </p>
+                <figure>
+                    <img src="../images/Europe 2022/NormandyCastle.JPG">
+                    <figcaption>Inside the castle walls in Caen</figcaption>
+                </figure>
+                <p>
+                    We were out of there in 10 mins, and I started holding my bags in hand instead. 
+                    We decided that we had wasted enough time there in Caen, and we should hit the actual Normandy landing sites now. 
+                    I drove us to the Canadian War Cemetery. 
+                    The drive in the French countryside is beautiful. 
+                    It is very hilly, but no mountains. 
+                    It reminds me of the hills in British Columbia, but with less trees and more open space. 
+                    There are old farmhouses and little quaint towns we would pass through in Normandy that were absolutley stunning. 
+                    The roads are super narrow, and the speed limits are way faster than they should be (like 80kph on a windy road), but at this point I had gotten used to it. 
+                    We'd pass by medieval buildings and 300 year old houses, then exit the town to an open wheatfield with farmhouses in the distance. 
+                    Some towns had flowers along the road too. 
+                    The cemetery was seemingly in the middle of nowhere. 
+                    We just parked along the side of the highway and walked in. 
+                </p>
+                <figure>
+                    <img src="../images/Europe 2022/CanadianWarCemertryEntrance.JPG">
+                    <figcaption>Entrance to the Canadian War Cemetery</figcaption>
+                </figure>
+                <p>
+                    The French and Canadian flags flew high over the entrance. The front stone read: 
+                </p>
+                <ul>
+                    <li>Canadian War Cemetery</li>
+                    <li>Beny-Sur-Mer</li>
+                    <li>Reviers</li>
+                </ul>
+                <p>
+                    and the same in French on the left. 
+                    Inside, a stone plaque read:
+                </p>
+                <ul>
+                    <li>1939-1945</li>
+                    <li>THE LAND</li>
+                    <li>ON WHICH THIS</li>
+                    <li>CEMETERY STANDS</li>
+                    <li>IS THE GIFT OF THE</li>
+                    <li>FRENCH PEOPLE</li>
+                    <li>FOR THE PERPETUAL</li>
+                    <li>RESTING PLACE</li>
+                    <li>OF THE SAILORS</li>
+                    <li>SOLDIERS AND</li>
+                    <li>AIRMEN WHO ARE</li>
+                    <li>HONOURED HERE</li>
+                </ul>
+                <p>
+                    There is a small patch of grass with two trees separating this entrance from the cemetery itself. 
+                    There are two viewing points above archways on each side that lead to the graves. 
+                    The cemetery itself is almost like a garden from how well-kept it is and how many flowers there are. 
+                    A square with hedges surrounds it in the middle, and a large cross behind it. 
+                </p>
+                <figure>
+                    <img src="../images/Europe 2022/CanadianWarCemetery.JPG">
+                    <figcaption>Canadian War Cemetery</figcaption>
+                </figure>
+                <p>
+                    Each gravestone had a maple leaf, their name, age, regiment, religion, and words from their family at the bottom. 
+                    All the men at this gravesite died at or following the D-Day invasion of Normandy. 
+                    Most of the men were between 20 and 23 years old. 
+                    The saddest part was walking through the rows and reading what the family had written on their graves. 
+                    Especially the ones that said their mother, brother, and sister missed them. 
+                    Some gravestones had no information pertaining to the soldier, likely because they were unrecognizable or their dog tag was lost. 
+                    There were over 2000 graves here. 
+                </p>
+                <figure>
+                    <img src="../images/Europe 2022/UnknownGrave.JPG">
+                    <figcaption>The grave of an unidentified Canadian soldier</figcaption>
+                </figure>
+                <figure>
+                    <img src="../images/Europe 2022/CalgaryHighlander.JPG">
+                    <figcaption>The grave of a soldier from my home city of Calgary</figcaption>
+                </figure>
+                <p>
+                    We left the cemetery and drove to Juno Beach next. 
+                    Surprisingly, we saw that it was just a regular beach with people playing in the water and relaxing on the sand. 
+                    There was a bouncy house and a bungee trampoline set up there. 
+                    The beach was filled with townhouses and condos where people were vacationing. 
+                    It was still quite hot out. Not as hot as 37°C in Paris but it was 25°C with extra humidity here. 
+                    The first thing we did was get ice cream. I got salted caramel. 
+                    Then we walked around in search of WWII related things. 
+                    There were a few memorials scattered around. The most notable was all the flags scattered about the beach. 
+                    It must have been at least 20 different flags, which may have been all the Allied flags, but I'm not certain. 
+                    We did end up finding some old bunkers which were buried in the sand at that point. 
+                    The Juno Beach Centre had some artillery units posted outside as well. 
+                    Joey took some sand from Juno Beach for his mother and offered to share with us. 
+                    It began getting late, so we left to try to make it to Omaha Beach before the cemetery closed at 6pm. 
+                    It was an hour drive and we left at 5:04pm. I stepped on the gas when I could to try to make up the time. 
+                    The roads were still very narrow and the other drivers still aggressive. 
+                    I felt like I was rally racing through the French countryside, especially because I was driving manual again. 
+                    Unfortunately, but luckily as well, the car was extremely fuel efficient but lacked in horsepower. 
+                </p>
+                <figure>
+                    <img src="../images/Europe 2022/JunoBeach.JPG">
+                    <figcaption>Juno Beach</figcaption>
+                </figure>
+                <p>
+                    Again, the countryside of Normandy was just gorgeous. We passed byu Gold Beach on the way to Omaha. 
+                    We arrived at the American War Cemetery at Omaha Beach at 6:01pm, but it turned out the last entry was 5:45pm so we never would have made it anyways. 
+                    I drove us down to the beach for a quick visit. 
+                    It was similar to Juno in how casual it was, but much less busy. 
+                    I could see the cliffs in the distance, but we had been driving all day with only ice cream in our stomachs, so it was time for dinner. 
+                    I took us back to Caen to find a restaurant. 
+                </p>
+                <figure>
+                    <video id="Normandy" height="500" autoplay controls muted loop>
+                        <source src="../images/Europe 2022/DrivingNormandy.mp4" type="video/mp4">
+                    </video>
+                    <figcaption>Driving through Normandy countryside</figcaption>
+                </figure>
+                <p>
+                    We dined at Le Bistronome, and shared a plate of foie gras and a meat and cheese charcuterie board. 
+                    I first tried the foie gras on its own, and it had a very unique savoury flavour. 
+                    Then I spread it over the warm toast and topped it with caramelized onions and it was even better. 
+                    For my main dish, I got Saint-Jacques which was scallops on a bed of vegetable salad. 
+                    The scallops came with extra meat still attached to the bottom. 
+                    I also tried Chase's coalfish burger and Joey's croque monsier sandwich which were both delicious as well. 
+                </p>
+                <figure>
+                    <img src="../images/Europe 2022/FoieGras.jpg">
+                    <figcaption>Foie gras and charcuterie board</figcaption>
+                </figure>
+                <p>
+                    I started driving us back to Paris around 8pm. It was July 13, the eve of Bastille Day. 
+                    As we approached Paris all you could see in every direction was fireworks going off in all regions of the city! 
+                    The skies were completely clear, and the orange moon shone near the horizon. It was a mesmerizing sight. 
+                    <br><br>
+                    We bought gas and didn't know how to use the machine or how to close the gas tank either. 
+                    They grade their fuels differently in Europe nad the gas tank is locked by the car key. 
+                    Upon returning to Paris, I got another taste of the big city driving. 
+                    When turning left at a light, there were no lanes. It boggles my mind how the traffic works here. 
+                    <br><br>
+                    I drove us back to our Airbnb and parked the car on the street. We got home at around midnight. 
                 </p>
             </section>
         </div>
         <div class="day">
             <section id="July 14">
-                <h3>Amsterdam, Netherlands. July 8, 2022.</h3>
+                <h3>Paris, France. July 14, 2022.</h3>
+                <figure>
+                    <img src="../images/Europe 2022/LesMinions.jpg">
+                    <figcaption>Les Minions</figcaption>
+                </figure>
                 <p>
+                    We began our day by driving the retail car to the Pere Lachaise Cemetery at the request of Joey. 
+                    His barber had previously lived in Paris and recommended it. 
+                    It was super dense, with some graves having massive stones and statues dedicated to them. 
+                    We visited the graves of Frederic Chopin, Jim Morrison, and Oscar Wilde. 
+                    Some sweaty British guy came asking for directions to Jim Morrison's grave which was pretty funny. 
+                    He even said he wasn't much of a fan. 
+                </p>
+                <figure>
+                    <img src="../images/Europe 2022/JimMorrisonGrave.jpg">
+                    <figcaption>Grave of Jim Morrison</figcaption>
+                </figure>
+                <p>
+                    We had to leave the tranquility of the cemetery quickly to drop off the car rental before 11am. 
+                    I sped over to the Gare du Nord station where I picked it up, but we couldn't find the parking garage entrance and time was running out. 
+                    Chase thankfully found a forum post of this exact problem, and we were able to pull into the correct garage just in time. 
+                    <br><br>
+                    Since we were already at a train station, the commute to the Eiffel Tower was very easy. 
+                    We got off at Trocadero station, the train station that Hitler had posed on top of in his famous photo in front of the Eiffel Tower. 
+                    We walked out of the station to the top and gazed at the magnificence of the tower. 
+                    It was a sight to behold, much taller than I imagined it to be. 
+                    There are no buildings next to it either which just makes it protrude even more. 
+                </p>
+                <figure>
+                    <img src="../images/Europe 2022/EiffelTowerDay.JPG">
+                    <figcaption>Eiffel Tower, taken from the Champ de Mars</figcaption>
+                </figure>
+                <p>
+                    We decided to get breakfast at a patisserie called Ah Paris Patisserie. 
+                    I got milfoil cake, and split a strawberry shortcake with Chase. 
+                    They were both amazing. 
+                    Joey got his own shortcake and a box of macarons which he saved for later. 
+                    The lady in the shop was super nice when she explained what each pastry was. 
+                    You could tell she was very passionate about her profession. 
+                </p>
+                <figure>
+                    <img src="../images/Europe 2022/ParisPastries.JPG">
+                    <figcaption>Milfoil cake and strawberry shortcake</figcaption>
+                </figure>
+                <p>
+                    After breakfast, we went to the Army Museum to see the Tomb of Napoleon Bonaparte and his family. 
+                    The building was large with a plaza out front, and a large dome atop the circular building. 
+                    Inside, there were two floors and a giant hole in the first floor that exposed a top view of Napoleon's Tomb in the basement floor. 
+                    On the first floor, a gold shrine with a cross and gold decorations was on display on the wall. 
+                    The whole building was like a small palace with statues and gold everywhere. 
+                </p>
+                <figure>
+                    <img src="../images/Europe 2022/NapoleonTomb.JPG">
+                    <figcaption>Tomb of Napoleon Bonaparte</figcaption>
+                </figure>
+                <p>
+                    We took the train to the Louvre Museum next. This museum was very much unlike the other art museums we had seen previously. 
+                    First and foremost, it was the biggest. 
+                    Situated in a former palace, there was a whole section dedicated to the preserved apartments of Napoleon III who had lived there. 
+                    There were also many Roman and Greek sculptures, and of course French as well. 
+                    I went looking for da Vinci's works, but could only find the Mona Lisa. 
+                    The room where it was kept was completely filled with people lined up to see it. 
+                    The painting itself was only a couple feet tall. It had multiple security guards around it as well as glass and a wooden table that extended from the wall so you couldn't reach over and touch the glass. 
+                    I was very disappointed that I couldn't stand and appreciate the art because of the crowd. 
+                    Everyone just wanted to get photos. 
+                </p>
+                <figure>
+                    <img src="../images/Europe 2022/MonaLisa.JPG">
+                    <figcaption>Crowds at the Mona Lisa</figcaption>
+                </figure>
+                <p>
+                    My favourite art pieces in the Louvre were the French Revolution paintings anyways. 
+                    The Death of Marat and Liberty Leading the People were my favourites to appreciate. 
+                    I can only imagine how they would have fuelled a revolutionist when they were first painted. 
+                    By now, it was late afternoon and we had planned to sit in the Champ de Mars for the Bastille Day fireworks, so we went to prepare. 
+                    I had been carrying my wine all day for this special occasion, we just needed food. 
+                    We visited a boulangerie for a baguette and croissant and a fromagerie for cheeses. 
+                    I bought a block of the strongest blue cheese they had. 
+                    We took our food to the Champ de Mars where we had to get through security to get in. 
+                    I had read that glass bottles were illegal in the park. 
+                    Luckily, they barely searched my bag.
+                    The security opened my bag and asked me a question in French. I gave a blank look, dumbfounded, and he just let me walk through thankfully. 
+                    <br><br>
+                    Inside the park, we found a little grass spot on the outskirts since the middle was already crowded. 
+                    It was 7pm and the fireworks didn't begin until 11pm, so we had plenty of time to relax. 
+                    We sat under this tree in the Champ de Mars, eating our baguettes with cheese, but we didn't have a cork screw for the wine. 
+                    There were many people walking through the park trying to sell cheap wine. 
+                    We aksed this one guy in a blue shirt if he had a corkscrew and he went and got us one. 
+                    At last, as the classical music and opera played over the speakers, and the smell of weed filled the air we all sat in this beautiful park filled with tens of thousands, sipping some amazing French wine to go with our baguettes and cheese. 
+                    It was the perfect way to celebrate Bastille Day. 
+                    Once we finished the wine, Chase and I wanted more to drink. 
+                    We called over the same blue-shirt guy to buy a bottle of wine. 
+                    It was shitty wine obviously, and the cheapest one he was offering was €20. 
+                    I tried to haggle him to €16 but he just threw in a free Heineken and we said sure. 
+                    Chase and I were splitting it anyways. 
+                    The wine was weak and sour, but it was alcohol. 
+                    Definitely not as good as the wine we got from the wine tasting. 
+                </p>
+                <figure>
+                    <img src="../images/Europe 2022/ConcertdeParis-Orchestra.JPG">
+                    <figcaption>Concert de Paris 2022</figcaption>
+                </figure>
+                <p>
+                    After finishing the wine and our food, we packed our garbage in my bag and headed into the middle of the crowd for a better view. 
+                    The live show had begun called the Concert de Paris. 
+                    It had to have been one of the most memorable concerts of my life. 
+                    It was a live orchestra with opera singers too. 
+                    Every piece they played was just so beautiful and with the Eiffel Tower perfectly behind the stage it felt like magic. 
+                    As the sun set, the lights on the Eiffel Tower got brighter, and there would be little lights that would sparkle and shimmer at the peaks of songs. 
+                    My favourite piece they played was Amazing Grace. 
+                    That was until they played the French national anthem. 
+                </p>
+                <figure>
                     
+                    <video id="Amazing Grace" height="600" loop autoplay controls muted>
+                        <source src="../images/Europe 2022/Amazing-Grace.mp4" video="type/mp4">
+                    </video>
+                    <!--
+                    <img src="../images/Europe 2022/ConcertdeParis.JPG">
+                    <figcaption>Concert de Paris 2022</figcaption>
+                    -->
+                </figure>
+                <p>
+                    At the end of the anthem, the Eiffel Tower lit up with red, white and blue, and simultaneously there were red, white and blue coloured fireworks that began going off behind the tower as the anthem came to a conclusion. 
+                    Then it swithced over to a setlist through the speakers as the fireworks went off. 
+                    It was so beautiful and exciting I couldn't believe where I was. 
+                    They played various French songs with the fireworks and lights matching the themes of each song. 
+                    They did a Ukrainian song at one point, and lit up the Tower with yellow and blue as a tribute to the ongoing Russian invasion of Ukraine. 
+                    At the end of the fireworks show, they lit up the French flag once again on the Tower. 
+                    The night was absolutely phenomenal, one of the best, beautiful, and most exciting nights I have ever had. 
+                </p>
+                <figure>
+                    
+                    <video id="French National Anthem" height="600" loop autoplay controls muted>
+                        <source src="../images/Europe 2022/French-NationalAnthem.mp4" video="type/mp4">
+                    </video>
+                    <figcaption>French National Anthem<br><br></figcaption>
+                    <video id="Fireworks Show" height="600" loop autoplay controls muted>
+                        <source src="../images/Europe 2022/Fireworks-Show.mp4" video="type/mp4">
+                    </video>
+                    <figcaption>Fireworks show at the Eiffel Tower</figcaption>
+                    <!--
+                    <img src="../images/Europe 2022/Fireworks-EiffelTower.JPG">
+                    <figcaption>Fireworks show at the Eiffel Tower</figcaption>
+                    -->
+                </figure>
+                <p>
+                    At the end of the show I looked around the Champ de Mars and ther must have been 100,000 people gathered there. 
+                    We hopped a fence to get out of the centre and started making our way with the crowd to the train station. 
+                    The crowd completely filled the streets, and no cars could get through. 
+                    Literally for blocks there was just an ocean of people walking between cars that couldn't move. 
+                    When we got to the train station, it was closed off.
+                    So we had to walk down the train line to the next stop. 
+                    And again it was closed. 
+                    I suggested we find a train away from the crowd, so we kept walking all the way across the river and two train stations up. 
+                    Finally, the density of people was at a normal level and we could get on the train. 
+                    In the tunnel, the security cut off the train right after we passed through. 
+                    We could finally train home. 
+                    For a perspective on how long we walked, we didn't get home until about 1am and the fireworks had ended at 11:30pm. 
+                    And finally, we slept. 
+                    <br><br>
+                    The best part about of all of today was that we didn't even know we were going to be in Paris for Bastille Day when we planned this trip. 
+                    It was by pure coincidence that we were here on this day. 
+                    <br><br>
+                    <a href="https://www.youtube.com/watch?v=QU4WlM4U62s">Link to the full Concert de Paris 2022 on YouTube.</a>
                 </p>
             </section>
         </div>
         <div class="day">
             <section id="July 15">
-                <h3>Amsterdam, Netherlands. July 8, 2022.</h3>
+                <h3>Paris, France. July 15, 2022.</h3>
+                <figure>
+                    <img src="../images/Europe 2022/PalaceofVersailles.JPG">
+                    <figcaption>Entrance to the Palace of Versailles</figcaption>
+                </figure>
                 <p>
-                    
+                    We woke up late this morning for obvious reasons, and immediately trained to Versailles. 
+                    When we got to the most western point of the train line, we hopped on the bus that takes you to the Palace of Versailles. 
+                    But, the bus was PACKED. 
+                    We squeezed in and had to ride this bus pushed up against everyone for close to 40 mins. 
+                    <br><br>
+                    We finally got to the Palace of Versailles around noon. This must have been the grandest palace I have ever seen, and I've been to the Habsburgs Palaces and Buckingham Palace. 
+                    The security at the palace was so relaxed. They saw the plastic knife in Joey's bag from the cheese and baguettes on Bastille Day, and they asked me if I had a knife. 
+                    So they got the bag wrong, and then she asked me to check it and when I said I didn't see a knife she just let me through!. 
+                    The inside was relatively the same as the other palaces. 
+                    Lots of gold and art everywhere. But, the grandest part of the palace was the 2000+ acres of gardens behind it. 
+                    We took a tour of the palace and then decided to get some food before exploring the gardens. 
                 </p>
+                <figure>
+                    <img src="../images/Europe 2022/VersaillesPool.JPG">
+                    <figcaption>Courtyard behind the Palace of Versailles</figcaption>
+                </figure>
+                <p>
+                    We walked over to this crepe place a few blocks from the palace. 
+                    I got a saucisse galette and a rois crepe. 
+                    The saucisse galette was a savoury pancake with sausage slices and sauce on top. 
+                    The rois crepe was a crepe with a poached pear and some sort of sweet, textured sauce on it like a half-blended puree. 
+                    They were super delicious and filling. 
+                </p>
+                <figure>
+                    <img src="../images/Europe 2022/Crepe.jpg">
+                    <figcaption>Rois crepe</figcaption>
+                </figure>
+                <p>
+                    We returned to the palace grounds and into the gardens. 
+                    The sheer size was indescribable. There were flower beds on the plaza direction behind the palace. 
+                    Left of the upper plaza was a ledge with more gardens below and a massive body of water. 
+                    Continuing down the steps in the back was a labyrinth of hedges. 
+                    In some areas between the hedges it would open up to a statue and fountain, or sometimes an open theatre. 
+                    It was so massive you couldn't possible see everything. 
+                    We walked to this body of water where a speaker in the hedges was playing classical music. 
+                    At the centre of the water was a fountain show to go along with the music. 
+                    Past the hedges was a huge pool in the shape of a cross. 
+                    This pool was the size of a small lake though. You could rent row boats and go on the water. 
+                    It was cute watching the little row boats go by with the people holding umbrellas to block the sun. 
+                    We decided to stop here along the water for a quick nap. 
+                </p>
+                <figure>
+                    <img src="../images/Europe 2022/VersaillesPool-2.JPG">
+                    <figcaption>Cross-shaped pool</figcaption>
+                </figure>
+                <p>
+                    Afterwards, we headed east towards Trianon. 
+                    We visited the Grand Trianon and the Petit Trianon, which was the private estate of Marie Antoinette. 
+                    They were less than average as far as palaces go, but still massive houses fit for royalty. 
+                    The real treasure of Trianon is the Queen's Hamlet. 
+                    Further east, is a pond with a rustic village commissioned by Marie Antionette. 
+                    It was by far the best and most beautiful part of the palace. 
+                    It looked like the Shire. Vegetable gardens were growing in the yards of these houses. 
+                    Sunflowers and hedge archways. 
+                    It was like a village surrounded by nature. Like all things this trip, it was beautiful. 
+                </p>
+                <figure>
+                    <img src="../images/Europe 2022/ChaseJoeyVersailles.JPG">
+                    <figcaption>Chase and Joey walking through an archway in the Queen's Hamlet</figcaption>
+                    <img src="../images/Europe 2022/QueensHamlet2.JPG">
+                    <figcaption>The Queen's Hamlet of Versailles</figcaption>
+                </figure>
+                <p>
+                    After getting our photos, we took the scenic route back through this cobblestone path in the brush. 
+                    We walked back for quite a while, and since the palace was now closed, all the gates leading out were closed too. 
+                    So we jumped a metre-high wall and headed back to the cross-lake, to the hedge labyrinth, and back up to the Palace of Versailles. 
+                </p>
+                <figure>
+                    <img src="../images/Europe 2022/LeavingVersailles.JPG">
+                    <figcaption>Our path leaving the Palace of Versailles</figcaption>
+                </figure>
+                <p>
+                    We took the same bus back, but thankfully it was less packed this time. 
+                    When we got off the train at Robespierre station we realized we were hungry again, so we stopped in this pizza shop on the walk back. 
+                    I got Bonne Louis pizza which had BBQ sauce and sausages on it. 
+                    We arrived home at 8pm, the earliest I can recall this whole trip. 
+                    I ate my entire pizza and got an actual full night of sleep. 
+                </p>
+            </section>
+        </div>
+        <div class="day">
+            <section id="July 16">
+                <h3>Paris, France. July 16, 2022.</h3>
+                <p>
+                    I was the last one to wake up for the first time this whole trip. 
+                    Usually I was up an hour before the others, but today I guess it finally caught up to me. 
+                    We left our Airbnb for the last time at 10am, and went to the Kohmehgi Coffee House. 
+                    I got the Viennois Cafe Caramel. It was sweet and delicious. 
+                    Then we walked over to a boulangerie for the last time to get breakfast. 
+                    I got a very tasty croissant. 
+                </p>
+                <figure>
+                    <img src="../images/Europe 2022/VienneseCoffee.JPG">
+                    <figcaption>Viennese Coffee</figcaption>
+                </figure>
+                <p>
+                    We headed off to the airport next. Joey almost didn't make our flight because he put his name as "Joey" on his ticket instead of his birthname "Joseph" on his passport. 
+                    The flight got delayed 10 mins while they sorted it out. 
+                </p>
+                <figure>
+                    <img src="../images/Europe 2022/Berlin-Walking.JPG">
+                    <figcaption>The fellas</figcaption>
+                </figure>
             </section>
         </div>
     </div>
