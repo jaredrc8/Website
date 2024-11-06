@@ -68,64 +68,69 @@
             <li><a href="#May 16">Tokyo. May 16</a></li>            
         </ul>
     </div>
-    <div class="journal-title">
-        <p>Japan 2024 Travel Journal</p>
-        <div id="map"></div>
-        <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
-        <script>
-            const map = L.map('map', {
-                scrollWheelZoom: false,
-                doubleClickZoom: false,
-                touchZoom: false,
-                dragging: true,
-                zoomControl: false
-            }).setView([10, 80], 4);
-            L.tileLayer('https://api.mapbox.com/styles/v1/jaredrc8/cm2xhtey200nt01r6a3l595ps/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiamFyZWRyYzgiLCJhIjoiY20yeGhxZDV0MDVkbDJrcTI3eTVrc280eiJ9.ErTKzFjOLEtvUgf2C7ckrw', {
-            maxZoom: 18,
-            tileSize: 512,
-            zoomOffset: -1,
-            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>'
-        }).addTo(map);
-
-        const coords = [
-            [35.6764, 139.6500], // Tokyo
-            [35.4880, 138.8072], // Fuji
-            [34.6937, 135.5023], // Osaka
-            [34.2125, 135.5864], // Koya
-            [35.0116, 135.7681], // Kyoto
-            [36.5597, 136.6520], // Kanazawa
-            [36.2710, 136.8986], // Shirakawa
-            [36.1461, 137.2522],  // Takayama
-            [35.6764, 139.6500] // Tokyo
-        ];
-
-        const theIcon = document.createElement('i');
-        theIcon.classList.add('fas', 'map-pin');
-        theIcon.style.color = 'gold';
-        theIcon.style.fontSize = '24px';
-
-        coords.forEach(coord => {
-            L.marker(coord).addTo(map);
-        });
-
-        const route = L.polyline(coords, {
-            color: 'black',
-            weight: 4,
-            opacity: 0.7
-        }).addTo(map);
-
-        map.fitBounds(route.getBounds());
-
-        map.setZoom(map.getZoom() - 1);
-
-        </script>
-    </div>
+    
     <div class="days">
+        <div class="journal-title">
+            <p>Japan 2024 Travel Journal</p>
+            <div id="map"></div>
+            <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+            <script>
+                const map = L.map('map', {
+                    scrollWheelZoom: false,
+                    doubleClickZoom: false,
+                    touchZoom: false,
+                    dragging: true,
+                    zoomControl: false
+                }).setView([10, 80], 4);
+                L.tileLayer('https://api.mapbox.com/styles/v1/jaredrc8/cm2xhtey200nt01r6a3l595ps/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiamFyZWRyYzgiLCJhIjoiY20yeGhxZDV0MDVkbDJrcTI3eTVrc280eiJ9.ErTKzFjOLEtvUgf2C7ckrw', {
+                maxZoom: 18,
+                tileSize: 512,
+                zoomOffset: -1,
+                attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>'
+            }).addTo(map);
+    
+            const coords = [
+                [35.6764, 139.6500], // Tokyo
+                [35.4880, 138.8072], // Fuji
+                [34.6937, 135.5023], // Osaka
+                [34.2125, 135.5864], // Koya
+                [35.0116, 135.7681], // Kyoto
+                [36.5597, 136.6520], // Kanazawa
+                [36.2710, 136.8986], // Shirakawa
+                [36.1461, 137.2522],  // Takayama
+                [35.6764, 139.6500] // Tokyo
+            ];
+    
+            const theIcon = document.createElement('i');
+            theIcon.classList.add('fas', 'map-pin');
+            theIcon.style.color = 'gold';
+            theIcon.style.fontSize = '24px';
+    
+            coords.forEach(coord => {
+                L.marker(coord).addTo(map);
+            });
+    
+            const route = L.polyline(coords, {
+                color: 'black',
+                weight: 4,
+                opacity: 0.7
+            }).addTo(map);
+    
+            map.fitBounds(route.getBounds());
+    
+            map.setZoom(map.getZoom() - 1);
+    
+            </script>
+        </div>
         <div class="day">
             <section id="April 26">
                 <h3>
                     Shinjuku City, Tokyo. April 26, 2024
                 </h3>
+                <figure>
+                    <img src="../images/Japan 2024/Tokyo-BrightStreets.jpg">
+                    <figcaption>Shinjuku City</figcaption>
+                </figure>
                 <p>
                     Our flight from Vancouver landed at the Narita Airport at 3pm, Japan time. 
                     I had barely slept in 24 hours. 
@@ -143,8 +148,8 @@
                     Neither spoke English, so instead of embarassing myself trying to communicate I dropped off my bags and headed out to explore Shinjuku. 
                 </p>
                 <figure>
-                    <img src="">
-                    <figcaption></figcaption>
+                    <img src="../images/Japan 2024/Tokyo-Hostel.jpg">
+                    <figcaption>My hostel bed in Shinjuku City</figcaption>
                 </figure>
                 <p>
                     My first stop was Don Quijote next door. 
@@ -160,8 +165,8 @@
                     I found the Godzilla Head on top of the cinema and took a nice photo from the crosswalk from way back. 
                 </p>
                 <figure>
-                    <img src="">
-                    <figcaption></figcaption>
+                    <img src="../images/Japan 2024/Tokyo-GodzillaHead.jpg">
+                    <figcaption>Godzilla Head in Kabukicho, Shinjuku City</figcaption>
                 </figure>
                 <p>
                     I also got ramen at Tenkaippan ramen in Kabukicho. 
@@ -172,8 +177,8 @@
                     It is by far the busiest place I have been. 
                 </p>
                 <figure>
-                    <img src="">
-                    <figcaption></figcaption>
+                    <img src="../images/Japan 2024/Tokyo-FirstRamen.jpg">
+                    <figcaption>First bowl of ramen in Japan</figcaption>
                 </figure>
                 <p>
                     I returned to my hostel to write this journal and relax. 
@@ -186,8 +191,8 @@
                     We finished our meal and I gave her thanks. 
                 </p>
                 <figure>
-                    <img src="">
-                    <figcaption></figcaption>
+                    <img src="../images/Japan 2024/Tokyo-SharedMeal.jpg">
+                    <figcaption>Our shared meal in our hostel room</figcaption>
                 </figure>
             </section>
         </div>
@@ -196,6 +201,277 @@
                 <h3>
                     Shibuya City, Tokyo. April 27, 2024
                 </h3>
+                <figure>
+                    <img src="../images/Japan 2024/Tokyo-MarriedCouple.jpg">
+                    <figcaption>Newly-weds at the Meiji Jingu Shrine</figcaption>
+                </figure>
+                <p>
+                    First thing in the morning I went to Family Mart and got a salmon onigiri and a Boss cafe drink. 
+                    I started my war to the Meiji shrine around 6am. 
+                    Around Shinjuku, there was lots of garbage on the streets from last nights partying. 
+                    A few drunk people walked the empty streets and a couple of salarymen were passed out on the curb, sleeping with their faces in their laps. 
+                    I hopped on the bus to the shrine and entered through the large wooden shrine gate. 
+                    Trees crossed overtop of the large pathway, providing shade and cover from the light drizzle this morning. 
+                </p>
+                <figure>
+                    <img src="../images/Japan 2024/Tokyo-MeijiEntrance.jpg">
+                    <figcaption>Pathway to the Meiji Jingu Shrine</figcaption>
+                </figure>
+                <p>
+                    At the shrine, you purify yourself with the water fountain outside. 
+                    You are instructed to clean your hands, rinse your mouth, and then clean your hands again. 
+                    As people enter the gates, they bow at the structure upon entering and leaving. 
+                    Inside the shrine is a large courtyard with the temple struture on both sides. 
+                    I went to the entrance and paid respects. 
+                    Bow twice, clap twice, bow once. 
+                    The doors are plated with gold and monks can be seen in long, white robes inside.
+                </p>
+                <figure>
+                    <img src="../images/Japan 2024/Tokyo-MeijiShrine.jpg">
+                    <figcaption>Meiji Jingu Shrine</figcaption>
+                </figure>
+                <p>
+                    Next, I walked to the Shinjuku Gyoen National Garden, cutting through a quiet neighbourhood in the early morning. 
+                    I was the first person there when it opened at 9am, and went to the Japanese Garden. 
+                    The cherry blossoms were still slightly visible on the trees, but most had fallen to the ground by now. 
+                    I walked all through the gardens and stopped at the Rakuu-Tei tea house. 
+                </p>
+                <figure>
+                    <img src="../images/Japan 2024/Tokyo-CherryBlossomFalling.jpg">
+                    <figcaption>Cherry blossom tree in Shinjuku Gyoen National Garden</figcaption>
+                </figure>
+                <p>
+                    I ordered a Sencha tea (green tea) and sat on a pillow on the floor. 
+                    The tea was served to me on a low table and it was delicious. 
+                    I overlooked the gardens as I drank it. 
+                </p>
+                <figure>
+                    <img src="../images/Japan 2024/Tokyo-TeaHouse.jpg">
+                    <figcaption>Sencha tea at Rakuu-Tei tea house</figcaption>
+                </figure>
+                <p>
+                    I trained back to the Meiji Jingu to see the Bugaku performance at 11am. 
+                    This is an ancient imperial court and dance. 
+                    The monks dressed in orage and colourful robes with a wavy-shaped headdress on. 
+                    A group of them sat playing flutes and pipes while some others were dancing. 
+                    It was difficult to see because of its elevated position and the public wasn't allowed to get close. 
+                </p>
+                <figure>
+                    <img src="../images/Japan 2024/Tokyo-Bugaku.jpg">
+                    <figcaption>Bugaku performance within Meiji Jingu Shrine</figcaption>
+                </figure>
+                <p>
+                    I then walked through Harajuku and Takeshita St to browse the vintage thrift stores. 
+                    It was super busy here. 
+                    I met with my friend, Masaya, who had been an international student at the University of Calgary with me when I was in my first year. 
+                    We met up at the Hachiko statue outside of Shibuya station. 
+                    It had been about 5 years since I last saw him. 
+                    We exchanged hugs and I showed him the Kappa Sigma sweater I bought him. 
+                    He was wearing his old Kappa Sigma shirt to greet me. 
+                    We crossed the Shibuya Scramble crosswalk and he took me to his favourite ramen shop in Tokyo, Tsujita. 
+                </p>
+                <figure>
+                    <img src="../images/Japan 2024/Tokyo-ShibuyaScramble.jpg">
+                    <figcaption>Shibuya Scramble with Masaya (with some free promotional Redbulls)</figcaption>
+                </figure>
+                <p>
+                    He ordered a fish broth with egg that was super creamy and the noodles were served separate from the broth. 
+                    You dip the noodles in the broth and then eat it. 
+                    It was even better than the one I had the night before!
+                    He also ordered a pork rice bowl, also very delicious. 
+                </p>
+                <figure>
+                    <img src="../images/Japan 2024/Tokyo-Tsujita.jpg">
+                    <figcaption>Tsujita, Masaya's favourite ramen shop</figcaption>
+                </figure>
+                <p>
+                    We walked to the Pokemon center and Omotesando Hills, the boujee shopping district. 
+                    We chatted and caught up on each others lives. 
+                    He worked as an investment banker working 14 hour days, but now works at a MUFG fund that invests in renewable energy. 
+                    It is a Mitsubishi bank. Mitsubishi apparently generates 10% of Japan's GDP and is involved in every industry, not just cars. 
+                    He wants to do an MBA in California, and is going there to visit soon.
+                    <br><br>
+                    After exploring those areas, we headed to his favourite coffee shop, Streamers, and got some iced lattes. 
+                    It was nice, reminiscing on the early uni days. 
+                    He rented us a bike and electric scooter to explore the rest of Tokyo. 
+                    Normally, you need a Japanese drivers license since scooters are only allowed to be ridden on the road, so this was a unique experience he gave me. 
+                    We rode all throughout Tokyo to both Imperial palaces and around the beautiful loop of the main Imperial Palace. 
+                </p>
+                <figure>
+                    <img src="../images/Japan 2024/Tokyo-Streamers.jpg">
+                    <figcaption>Streamers coffee shop</figcaption>
+                </figure>
+                <p>
+                    It was interesting, sharing the road with cars in Tokyo. 
+                    The traffic is very minimal and there are two sets of lights stacked on each other. 
+                    The top lights dictate for everyone if its a stop, slow or go and the bottom ones dictate if only specific directions are allowed. 
+                    You can have a red light on top and a green arrow below pointing forward that means you can only go forwards. 
+                    We visited Masaya's place of work in the main financial district, the MUFG building. 
+                </p>
+                <figure>
+                    <video id="Tokyo Scooter" height="500" autoplay controls loop muted>
+                        <source src="../images/Japan 2024/Tokyo-Scooter.mp4" type="video/mp4">
+                    </video>
+                    <figcaption>Scootering through Tokyo streets</figcaption>
+                </figure>
+                <p>
+                    We rode to the Zozo-ji Temple next to the Tokyo Tower and as we were crossing the street we ran into Matthias, Cooper, Ava, and Riley of all people!
+                    We quickly exchanged hellos while crossing and returned our scooter and bike before meeting up with them in a brewery to say hi. 
+                    What an insane coincidence, to find your friends in the largest city in the world!
+                </p>
+                <figure>
+                    <img src="../images/Japan 2024/Tokyo-Matt.jpg">
+                    <figcaption>Meetup with Matthias, Cooper, Ava, Riley</figcaption>
+                </figure>
+                <p>
+                    After catching up, Masaya and I leave to go meet Khanh, Chase, Max, and Cole at Roppongi station. 
+                    Matt and them were too tired to come with us. 
+                    We ate at Coco for Japanese curry, although I was so full from the ramen I just had a beer. 
+                    We hit Roppongi Hills and got pitchers of yuzu, a drink reminiscent of a gin and tonic.  
+                    We had a few here and then moved to Masaya's favourite spot in Tokyo, Mogambo. 
+                    It is more of a tourist bar, but that is why he likes it. 
+                    We downed beer after beer (Kirin beer) and smoked the Japanese menthols Khanh bought. 
+                    We eventually hit the convenience store to get more beer near the end of the night and then got kebabs after our night out. 
+                    We opted not to go clubbing since my legs were so sore from walking 38,000 steps today. 
+                    I gave Masaya his KS sweater and we parted ways. 
+                </p>
+                <figure>
+                    <img src="../images/Japan 2024/Tokyo-Mogambo.jpg">
+                    <figcaption>A poor quality image of our night at Mogambo</figcaption>
+                </figure>
+                <p>
+                    At the hostel, I met another Canadian named Alex who moved into my room. He lives in Iceland. 
+                </p>
+            </section>
+        </div>
+        <div class="day">
+            <section id="April 28">
+                <h3>
+                    Asakusa, Ueno, & Akihabara, Tokyo. April 28, 2024
+                </h3>
+                <figure>
+                    <img src="../images/Japan 2024/Tokyo-Onigiri.jpg">
+                    <figcaption>Shelf of convenience store onigiri</figcaption>
+                </figure>
+                <p>
+                    I bought a beef onigiri and an egg rice ball to start my day. 
+                    Once again having woken up at like 4-5am, I could beat everyone to the shrines in the morning. 
+                    I first trained to the Nezu shrine. It was dead quiet except for me and a few others. 
+                    I purified myself in the water and paid respects, following the Japanese lady in front of me. 
+                    The grounds were quiet and there was a huge flower garden and a torii to walk through. 
+                </p>
+                <figure>
+                    <img src="../images/Japan 2024/Tokyo-NezuShrine.jpg">
+                    <figcaption>Nezu Shrine</figcaption>
+                </figure>
+                <p>
+                    I then trained over to the Senso-ji Temple and passed through Nakamine St on the way there. 
+                    The shops were just opening up. 
+                    Senso-ji is the largest and grandest temple I have seen so far. 
+                    A giant red lantern with characters on it hangs from the centre of the gate to the grounds. 
+                    On the left side there is a five-story pagoda and the main temple in front has a large staircase leading upwards. 
+                    Inside, there is lots of gold found on the shrine and doors and structures. 
+                    Everything else is coloured red. 
+                    It was getting too busy to pay respects at the shrine so I left. 
+                </p>
+                <figure>
+                    <img src="../images/Japan 2024/Tokyo-Sensoji.jpg">
+                    <figcaption>Senso-ji Temple</figcaption>
+                </figure>
+                <p>
+                    I walked down to the Kappabashi Dougu St to check out the knife shops just opening up. 
+                    They were so beautiful and engraved in Japanese, but the nice ones were $400-500 and even the cheap ones were at least $100. 
+                    I made my way over to the Ueno Park to meet up with Khanh, Chase, Max, and Cole. 
+                    We visited and explored the Tokyo National Museum which held some interesting artifacts like religious masks depicting Buddhist deities and demons, swords, and armour. 
+                    I left ahead of the group and got some street curry and ate it in the park. 
+                </p>
+                <figure>
+                    <video id="Ueno Park" height="500" autoplay controls muted loop>
+                        <source src="../images/Japan 2024/Tokyo-UenoPark.mp4" type="video/mp4">
+                    </video>
+                    <figcaption>Street performer in Ueno Park</figcaption>
+                </figure>
+                <p>
+                    I then made my way over to Akihabara, the anime district. 
+                    It was so busy that they closed off the main roads in the district. 
+                    All the buildings were sprawled with ads for anime. 
+                    I walked around all the buildings for probably close to four hours. 
+                    Khanh and that group had visited this cafe called maidreamin and recommended that I go. 
+                    It was definitely a weird experience. 
+                    All the waitresses are dressed in maid costumes and act very cute and anime. 
+                    There were no photos allowed except for if you pay for it. 
+                    I ordered the omurice and when it came the waitress drew a cute cat on it with ketchup. 
+                    They also told me to do the "nyan cat" emote to get their attention (which I did not do). 
+                    It costed ¥1000 for a photo with a maid (Khanh got one and it's legendary). The omurice was pretty bad though. 
+                </p>
+                <figure>
+                    <img src="../images/Japan 2024/Tokyo-Akihabara.jpg">
+                    <figcaption>The streets of Akihabara</figcaption>
+                    <img src="../images/Japan 2024/Tokyo-Maidreamin.jpg">
+                    <figcaption>Maidreamin</figcaption>
+                </figure>
+                <p>
+                    I left and went around Akihabara looking for specific shops next. 
+                    I visited a few different card trading stores for Pokemon cards, a Jojo anime card, and a baseball card since baseball is so popular in Japan. 
+                    I went to the animate store to look at the different manga and found an entire section of hentai on one of the shelves. 
+                    I also went to the Taito Station game store and played their claw machines. 
+                    For ¥200 per game, I got the Tanjiro Demon Slayer action figure for ¥600 (3 tries). 
+                    I later saw it on a shelf for ¥5000 so I saved so much money there. 
+                    A couple of European guys hyped me up and recorded me winning it. 
+                </p>
+                <figure>
+                    <video id="Claw Machine" height="500" autoplay controls muted loop>
+                        <source src="../images/Japan 2024/Tokyo-ClawMachine.mp4" type="video/mp4">
+                    </video>
+                    <figcaption>Claw machine at Taito Station, Akihabara</figcaption>
+                </figure>
+                <p>
+                    I also got my girlfriend, Mikia, a Totoro stuffy at Radio Kaiku. 
+                    I left Akihabara once my legs started getting sore from walking and went to the Imperial Palace to sit on a bench and relax. 
+                    Once I rested, I walked around the grounds to the East Garden. 
+                    By this time though, it was late and I only got to spend 30 mins there. 
+                    Since it was getting dark soon I took the train to the Shibuya Scramble Crossing again outside of Shibuya station. 
+                    I made my way to the Starbucks that overlooks the crossing. 
+                    At night, the lights make it look incredible and it feels so alive with so many people. 
+                    I also saw some really cool JDM cars at the crossing. 
+                    
+                </p>
+                <figure>
+                    <img src="../images/Japan 2024/Tokyo-ImperialPalace.jpg">
+                    <figcaption>Imperial Palace at sunset</figcaption>
+                    <video id="Shibuya" height="500" autoplay controls muted loop>
+                        <source src="../images/Japan 2024/Tokyo-ShibuyaScrambleNight.mp4" type="video/mp4">
+                    </video>
+                    <figcaption>Cars in Shibuya Scramble Crossing</figcaption>
+                </figure>
+                <p>
+                    After killing some more time people-watching from above, I made my way to Omoide Yokocho with Khanh, Chase, Max, and Cole for dinner. 
+                    Amy, Chase's girlfriend, and her friend Lena joined us in search for a spot. 
+                    Omoide Yokocho is a network of back alleys with hole-in-the-wall bars to drink and eat food. 
+                    We found a spot among the busy mess that housed us on their second floor. 
+                    I got a lemon sour and some skewers (chicken, meatball, pork belly). 
+                    It came with a weird white appetizer with little fish on it. 
+                    <br><br>
+                    After eating, we went to play Pachinko, a gambling game similar to slots but it involves little metal balls. 
+                    You turn a knob that shoots these balls onto a board with pins, like a pinball machine, and it somehow affects the three numbers that appear on screen in front. 
+                    I couldn't understand the point of the balls and the staff had to use their translation apps to communicate with me so I never figured out how to cash out. 
+                    I won some snacks though from ¥1000. 
+                </p>
+                <figure>
+                    <video id="Pachinko" height="500" autoplay controls muted loop>
+                        <source src="../images/Japan 2024/Tokyo-Pachinko.mp4" type="video/mp4">
+                    </video>
+                    <figcaption>Pachinko</figcaption>
+                </figure>
+            </section>
+        </div>
+        <div class="day">
+            <section id="April 29">
+                <h3>Tsukiji & Toyosu, Tokyo. April 29, 2024</h3>
+                <figure>
+                    <img src="">
+                    <figcaption></figcaption>
+                </figure>
                 <p>
                     
                 </p>
