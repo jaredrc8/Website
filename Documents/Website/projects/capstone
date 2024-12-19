@@ -31,6 +31,216 @@
             <li><a href="../blog#">Blog</a></li>
         </ul>
     </header>
+    <div class="project-header">
+        <h3>Aerodynamic Analysis and Development for UAV Dynamics and Control Law Synthesis</h3>
+        <figure>
+            <img src="../images/Capstone/GroupPhotoOutside.JPG" height="600">
+            <figcaption>Our capstone group after a successful flight test</figcaption>
+        </figure>
+    </div>
+    <div class="project-body">
+        <div class="project-text">
+            <section id="Abstract">
+                <h3>Abstract</h3>
+                <p>
+                    In the initial aircraft design phase, testing small-scale prototypes is crucial for evaluating design effectiveness. Various tools, from low-fidelity panel method solvers to high-fidelity RANS simulations, are used to develop the dynamic model. Precision and accuracy considerations guide the choice of method, and this process is concurrent with synthesizing control laws to test the stability and effectiveness of control methods. Challenges arise when selecting an efficient method for timely dynamic model development and assessing the impact of model precision and accuracy on the control system amid known and unknown errors. Distinguishing simulation results from experimental analysis is vital for evaluating CFD methods' effectiveness in capturing dynamics and studying aerodynamic effects. Based on decision matrices, a modification of the RCAM model will be used to replicate the dynamic model of the UAV, Pointwise will be used for meshing of the CAD model, and OpenFOAM will be the CFD software of choice to create the solutions for flow scenarios. To design the control law, a MIMO controller will control altitude and thrust, and parallel PID controllers will be investigated to control the roll angle and increase stability. The comparison between real-life UAV and prototype control systems at 50m altitude showed similarities and differences in throttle usage, elevator adjustments, and control system tunings, emphasizing the need for real-world validation. Flight tests using ArduPilot as a benchmark faced challenges aligning CFD results with real-world data, leading to identified improvements such as angle of attack sensors and involving experienced drone pilots. Continuous refinement is crucial for accurate representation and reliability, with improvements in control law synthesis and CFD verification methods enhancing overall effectiveness and reliability. Listed assumptions and approximations throughout the project highlight sources of error and the importance of careful simplifications.
+                </p>
+                <figure>
+                    <img src="../images/Capstone/Controls.JPG" height="300">
+                    <img src="../images/Capstone/PlacingDrone.JPG" height="300">
+                    <img src="../images/Capstone/Ardupilot.JPG" height="300">
+                    <img src="../images/Capstone/DraggingDrone.JPG" height="300">
+                    <img src="../images/Capstone/ActionDrone.JPG" height="300">
+                </figure>
+                <script>
+                    document.addEventListener("DOMContentLoaded", () => {
+                    const container = document.querySelector("body .project-body .project-text section figure");
+
+                    // Clone images for seamless scrolling
+                    const images = container.innerHTML;
+                    container.innerHTML += images;
+
+                    // Set up variables for smooth scrolling
+                    const containerWidth = container.scrollWidth / 2; // Half is the original set
+                    let scrollPosition = 0;
+
+                    // Function to scroll the container
+                    function scroll() {
+                        scrollPosition -= 1; // Scroll 1px per frame (adjust for speed)
+                        container.style.transform = `translateX(${scrollPosition}px)`;
+
+                        // Reset position when we reach the duplicate set
+                        if (Math.abs(scrollPosition) >= containerWidth/5) {
+                        scrollPosition = 0;
+                        }
+                    }
+
+                    // Start scrolling with a smooth interval
+                    setInterval(scroll, 16); // ~60 FPS
+                    });
+                </script>
+            </section>
+            <section id="Contributions">
+                <h3>Personal Contribution</h3>
+                <p>
+                    <b>1 Computational Fluid Dynamics</b> <br>
+                    My main role in this project was to conduct the computational fluid dynamics analysis to develop a dynamic model based on the acquired aerodynamic coefficients, and integrate that model into the control system framework set up by other members. 
+                    <br><br>
+                    <b>1.1 Spatial Discretization</b> <br>
+                    The analysis of the UAV through CFD attempts to capture the change in aerodynamics with respect to several variables, including the angle of attack, sideslip angle, and control surface deflection angles. The method to capture these aerodynamics involves the creation of five meshes of the UAV for different cases of control surface deflections. These five meshes depict the UAV undergoing various flight maneuvers: 
+                </p>    
+                <ul>
+                    <li>Base: no control surface deflections</li>
+                    <li>Roll: ailerons differentially deflected</li>
+                    <li>Yaw: ruddervators differentially deflected </li>
+                    <li>Pitch Up: ruddervators symmetrically deflected up </li>
+                    <li>Pitch Down: ruddervators symmetrically deflected down </li>
+                </ul>
+                <p>
+                    The UAV is symmetric about the xz plane, allowing for several key simplifications when developing the meshes. 
+                    First, the Base mesh can be cut along the symmetric plane for simulations of the UAV with respect to angle of attack, 
+                    effectively cutting the computational cost in half for those cases. This symmetry also means the Roll and Yaw meshes only 
+                    need to deflect in one direction, since a roll or yaw in one direction will produce equal force as a roll or yaw in the 
+                    opposite direction. The ruddervators in pitch do not exhibit this symmetry and therefore require modelling of each 
+                    direction of deflection. 
+                    <br><br>
+                    <b>1.2 Mesh Description</b><br>
+                    The mesh itself was created using Fidelity Pointwise meshing software. Half of the UAV was meshed along its symmetry for the Base case.
+                    <br>
+                    The fuselage is mostly unstructured except for a large section of the nose. All unstructured surfaces are meshed with the Advancing Front Ortho algorithm that maximizes the number of quad cells and the cell orthogonality. The T-rex growth algorithm in Pointwise is used to propagate the mesh spacing from the small cells at the wing, V-tail, and vertical stabilizer to the rest of the fuselage. This growth propagation begins at Δ𝑠 = 0.00190𝑚  (𝑦 = 100) such that the volumetric first layer from the wing, V-tail, and vertical stabilizer will match. This y+ value targets the log-layer region of the boundary layer (30 < 𝑦 < 300) to make effective use of wall functions in the Spalart-Allmaras turbulence model. 
+                </p>
+                <figure>
+                    <img src="../images/Capstone/BaseMesh.jpg">
+                    <figcaption>Base Mesh, Pointwise</figcaption>
+                </figure>
+                <p>
+                    The Base mesh was designed to include as many structured sections as possible, given the geometric constraints. All lift-generating and control surfaces are structured. This includes the wing, the V-tail, and the vertical stabilizer from the base to near the tip. The tips of each appendage are unstructured to reduce element skewness as the geometry narrows. These tips are highly refined compared to the rest of the body to capture the tip vortices that may be generated. The nodes are distributed about each airfoil using growth parameters such that the tight curvature of the leading and trailing edges is fully captured with small node spacing that propagates to larger spacing in the middle of the airfoil where less drastic geometric changes occur. Spanwise, each appendage also begins with a tight node spacing to match the chordwise spacing 1:1. The spacing grows to the center of the wing and shrinks again to the refined region at the tip. This increases the computational efficiency by only increasing the refinement in regions that will undergo a rapid change in geometry to capture the subsequent change in flow quantities between adjacent cells. This reduces the overall cell count while maintaining refinement in critical regions. 
+                </p>
+                <figure>
+                    <img src="../images/Capstone/FarfieldDimensions.jpg">
+                    <figcaption>Farfield Dimensions of Symmetric Base Mesh</figcaption>
+                </figure>
+                <p>
+                    The volume mesh is propagated from the same first layer spacing of Δ𝑠 = 0.00190𝑚 using the T-rex algorithm and a growth factor of 1.2. The inflation layer grows until no more layers can be generated and then proceeds to grow using voxel blocks to maintain orthogonality. A refinement box with dimensions (2L x 3L x 2L, L is fuselage length) contains the UAV at its center. The spacing at the refinement box is 0.1m. Table 15 above denotes the farfield dimensions. Research points to the farfield needing a minimum of 15 reference lengths in the downstream direction to negate its effect on the simulation of an external flow[29]. The referenced paper holds all other dimensions constant at 10 reference lengths while conducting the research, therefore this too was implemented.
+                </p>
+                <figure>
+                    <img src="../images/Capstone/UAVinComputationalDomain.jpg">
+                    <figcaption>UAV Location Within Computational Domain</figcaption>
+                </figure>
+                <p>
+                    <br><br>
+                    <b>1.3 Grid Convergence Study</b><br>
+                    A grid convergence study is conducted on the mesh. Three meshes of varying refinement levels are simulated to compare the change in solution with respect to the grid per the procedure outlined by P.J. Boache. (1994)[30]. The  parameter used for the refinement ratio is the spacing of the refinement box, and the solution is taken as the lift coefficent of the UAV.                   
+                </p>
+                <figure>
+                    <img src="../images/Capstone/MeshStatistics.jpg">
+                    <figcaption>Mesh Statistics for Grid Convergence Study</figcaption>
+                </figure>
+                <p>
+                    The grid convergence indices (GCI) for the Coarse-Medium and the Medium-Fine comparisons are GCI23 = 0.44% and GCI12=0.16%, respectively. The solution is within the asymptotic range if: 
+                </p>
+                <figure>
+                    <img src="../images/Capstone/GCI_Asymptotic_Formula.jpg">
+                </figure>
+                <p>
+                    where r denotes the refinement ratio and p denotes the order
+                </p>
+                <figure>
+                    <img src="../images/Capstone/GCI_Asymptotic.jpg">
+                </figure>
+                <p>
+                    This result meets the criteria for the solution being in the asymptotic range and therefore independent of the Coarse mesh, at a minimum. All subsequent meshes are therefore derivatives of this coarse, symmetric, and base mesh. To develop the other meshes, the symmetric Base mesh was mirrored along its symmetric plane. The localized regions that differed between meshes were deleted from the Base mesh and the new geometry was imported and appended to the rest of the body to reflect new control surface deflections. This method of recycling the existing grid ensures the grid convergence study is still valid between meshes and hastens the speed these complex meshes can be created.  
+                </p>
+                <figure>
+                    <img src="../images/Capstone/MeshStatistics_Overall.jpg">
+                    <figcaption>Mesh Statistics for CFD Analysis</figcaption>
+                </figure>
+                <p>
+                    The Yaw, Pitch Up, and Pitch Down meshes have a significantly higher cell count due to issues with convergence where the ruddervator is deflected. This region had to be refined significantly for all three meshes due to the aggressive shift in the flow quantities induced by the sudden geometric change.
+                    <br><br>
+                    <b>1.4 Computational Parameters</b><br>
+                    The choice of computational parameters and settings for the simulation in OpenFOAM depends on the desired output parameters. The objective of this CFD analysis is to obtain aerodynamic coefficients of the UAV in various states. This requires an accurate model of the pressure gradient around the UAV and the boundary layer. Computational efficiency must also be a priority when deciding what settings to use.
+                    <br><br>
+                    The UAV is assumed to be steady-state in each simulation to isolate the change in aerodynamics to only the effects of angle of attack, sideslip angle, or control surface deflection. This is a reasonable assumption for the determination of pressure forces and moments associated with each state because they do not change with time except from the effects of flow separation and vortices in the wake which may cause slight oscillations in pressure about a mean value. Therefore, the steady-state assumption is valid and the simpleFoam solver for steady-state, incompressible flow is selected to reduce the computational cost of solving for the pressure gradient. This solver will numerically solve the governing NavierStokes equations for incompressible, steady-state flow using the finite volume method (FVM). 
+                    <br><br>
+                    Three aerodynamic coefficients are not steady-state and require a transient simulation for their derivation. These are p, q, and r; the roll rate, pitching rate, and yaw rate, respectively. The rates of change are a function of time by definition and therefore cannot by modeled with simpleFoam. However, a set of transient simulations requires a computational cost that is unreasonable for the timeline of the project. Therefore, these coefficients will be taken from the OpenVSP analysis.
+                    <br><br>
+                    Spalart-Allmaras[34] was selected as the turbulence model for this simulation for various reasons. It was developed specifically for modelling aerodynamics in the field of aerospace. It is a one-equation RANS turbulence model and therefore serves as a computationally efficient model with good accuracy for external low-Re aerodynamics[35].
+                    <br><br>
+                    The transport of an effective eddy viscosity term, 𝜈, is the basis of the Spalart-Allmaras model. The Boussinesq Hypothesis dictates the eddy viscosity as a property that encompasses both the length and velocity scale of for turbulence. This equation is added to close the system of equations that govern fluid flow to model the Reynold’s stress tensor associated with the turbulence. The constant terms in the formula are experimentally derived. The derivation of the transport equation and the constant values are listed in (Spalart, P. R. and Allmaras, S. R., 1992, "A One-Equation Turbulence Model for Aerodynamic Flows")[34].  
+                    <br><br>
+                    Another turbulence model that was considered was k-ω SST for its exceptional accuracy in modelling both turbulence near the boundary and in the wake by making use of k-ε in the freestream and k-ω at the wall. The additional equation of a two-equation model trades increased computation time for modeling the free shear flow of the wake with better accuracy than Spalart-Allmaras. However, the output parameter of the simulation is the pressure gradient at the boundary of the UAV, rather than the turbulent wake, which is used to calculate the aerodynamic coefficients. 
+                    <br><br>
+                    Wall functions can be applied in OpenFOAM to model the boundary layer within the log-layer region (30 < y+ < 300), or the boundary layer can be resolved with first layer spacing in the viscous sublayer (y+< 1). This decision is a compromise between accuracy and computational cost. For meshes with such a high cell count (8-37 million cells), the computational cost was deemed be too high to resolve the boundary layer. Therefore, wall functions were implemented with the first layer spacing in the log-layer region to approximate the behaviour at the boundary. This is shown in the UAV boundary condition for νT being nutUSpaldingWallFunction.  
+                    <br><br>
+                    The boundary conditions and initial conditions for the OpenFOAM simulation are listed below:
+                </p>
+                <figure>
+                    <img src="../images/Capstone/BoundaryConditions.jpg">
+                    <img src="../images/Capstone/InitialConditions.jpg">
+                    <figcaption>Boundary Conditions and Initial Conditions</figcaption>
+                </figure>
+                <p>
+                    The initial velocity of U is set to 20m/s in the +x direction (downstream) as this is within the range of the cruise regime (17-22m/s) specified by the manufacturer MakeFlyEasy and the targeted velocity when conducting the experimental flight tests. The pressure, p, is initially set to the mean air pressure of Calgary between 1981 and 2010[31]. However, this value can be set arbitrarily since the output parameters depend on the relative pressure gradient around the UAV rather than the absolute pressure values. The parameters for turbulent kinematic viscosity and modified turbulent viscosity are calculated based on the standard 𝜈=1.48𝐸−5	𝑚/𝑠 for air at room temperature. The convergence criteria for each variable U, p, and ṽ were set to a residual tolerance of 1E-7.  
+                    <br><br>
+                    <b>1.5 Computational Fluid Dynamics</b><br>
+                    Access to the Advanced Research Computing (ARC) cluster at the University of Calgary was granted for the purpose of computing the CFD simulations for this project. The ARC cluster is a high-performance compute cluster comprised of hundreds of servers interconnected with a high bandwidth interconnect available for research projects based at the University of Calgary. This allows the spatial domain of each simulation case to be split into hundreds of cores working in parallel to solve the Navier-Stokes equations that govern fluid flow. A total of 11 cases were ran in OpenFOAM v2012, as this is the same version used by the AeroCore lab.
+                </p>
+                <figure>
+                    <img src="../images/Capstone/AeroCoefficients.jpg">
+                    <figcaption>Legend of Relevant Aerodynamic Coefficients and Variables</figcaption>
+                </figure>
+                <figure>
+                    <img src="../images/Capstone/CFDCases.jpg">
+                    <figcaption>CFD Cases</figcaption>
+                </figure>
+                <p>
+                    The coefficients of lift, drag, sideforce, rolling moment, pitching moment, and yawing moment are calculated for the UAV in each state with respect to a specific variable. The values for these are extracted directly from the functions in OpenFOAM. The change in aerodynamic coefficients with respect to each variable is extrapolated for the entire range of variables achievable in real flight. The coefficients are extrapolated linearly for cases with only two datapoints with one being the base, Steady Level, case. The coefficients with respect to the angle of attack, α, are extrapolated with quadratic regression as these functions are nonlinear. This is one of the main advantages to the use of CFD as opposed to Vortex Lattice Method (VLM). Since viscous effects are considered in CFD, the nonlinear lift, drag, and pitching moment curves with respect to angle of attack are fully captured where VLM approximates it to be a linear relationship. 
+                    <br><br>
+                    <b>1.6 CFD Aerodynamic Coefficients</b><br>
+                    This section will detail the results derived from the simulations and discuss the findings. The aerodynamic coefficients were extracted using the OpenFOAM “forceCoeffs” post-processing function on the final timestep (the converged solution) with the following command: 
+                    <i>simpleFoam -postProcess -func “forceCoeffs” -latestTime</i> 
+                    The nonlinear relationship between CL and CD as functions of angle of attack are plotted to determine their respective governing equations through quadratic regression in Excel. 
+                </p>
+                <figure>
+                    <img src="../images/Capstone/Lift_Drag_Coeffs.jpg">
+                    <figcaption>Coefficient of Lift & Coefficient of Drag vs Angle of Attack</figcaption>
+                </figure>
+                <p>
+                    The figure shows CL as a function of angle of attack. The quadratic curve of best fit matches the data with R^2 = 0.997. The equation for this curve is extracted from the graph and indicates a CLstall = 1.32 at a stall angle of 17.9° at 20m/s. The curve intercepts the y axis at CLo = 0.568 for steady, level flight and reaches the x axis at -5.79° before negative lift force is generated. CD as a function of angle of attack is plotted in Figure 36. Its quadratic curve of best fit matches the data with R^2 = 1.000. This intercepts the y axis at CDo = 0.0631 for steady, level flight and at the stall angle CDstall = 0.4214. These high lift, high drag curves are characteristic of a cambered airfoil, an expected result as the 3D scan indicates a high cambered airfoil on the UAV. 
+                </p>
+                <figure>
+                    <img src="../images/Capstone/Moment_Coeff.jpg">
+                    <figcaption>Coefficient of Pitching Moment vs Angle of Attack</figcaption>
+                </figure>
+                <p>
+                    This figure depicts CMy as a function of angle of attack. The linear curve of best fit matches the data with R^2 = 1.000. The base coefficient of pitching moment is 𝐶𝑀𝑦 = −0.00875, meaning the UAV is slightly nose-heavy and will be inclined to pitch down in steady, level flight which requires a trim in elevator deflection to counter this in the control system. These trendline equations fit their respective datasets with R^2 > 0.99 and are therefore implemented into the RCAM model as equations representative of the UAVs dynamics with respect to angle of attack.
+                </p>
+                <figure>
+                    <img src="../images/Capstone/Aero_Coeffs.jpg">
+                    <figcaption>Aerodynamic Coefficients as a Function of Stability and Control Variables</figcaption>
+                </figure>
+                <p>
+                    The decision to decouple the direction of elevator deflection, δE, proved to be a prudent choice since their contributions to the aerodynamics are different in each direction. A positive elevator deflection contributes over twice the magnitude of moment than a negative elevator deflection. The sum of the forces on the UAV act about x = +0.0822m in reference to the leading edge of the wing. This being the center of pressure, the center of gravity is located at x = +0.0631m resulting in a static margin of 8.61% in reference to the mean chord length (0.222m). 
+                </p>
+                <p>
+                    
+                    
+                    <br><br>
+                    <b>2 Control System Integration</b> <br>
+                    The dynamic model
+
+                    <br><br>
+                    <b>UAV Construction</b> <br>
+                    My secondary role was the construction of the UAV. 
+                </p>
+            </section>
+        </div>
+        <a href="../documents/JaredCrebo_Capstone.pdf"><b>[1] <u>Project Report</u></b></a>
+        <figure>
+            <img src="../images/Capstone/Capstone-Poster.jpg" height="1000">
+        </figure>
+    </div>
 
     <footer>
         <ul class="social-media">

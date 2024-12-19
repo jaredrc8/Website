@@ -13,6 +13,8 @@ body {
     background: #eae0d5;
     font-family: 'Lora', serif;
     justify-content: center;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 /* Header */
@@ -739,4 +741,114 @@ body .days .day section ul li {
 
 body .days .day section p .redacted {
     display: none;
+}
+
+/* Project Pages */
+body .project-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+}
+
+body .project-header h3 {
+    font-size: 2.5em;
+    color: #5e503f;
+}
+
+body .project-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body .project-body .project-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+body .project-body .project-text section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0px;
+    width: 100vw;
+}
+
+body .project-body .project-text section h3 {
+    font-size: 2em;
+    color:#5e503f;
+    padding-bottom: 20px;
+}
+
+body .project-body .project-text section p {
+    font-size: 1.4em;
+    color: #5e503f;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+body .project-body .project-text section ul li {
+    font-size: 1.4em;
+    color:#5e503f;
+    
+}
+
+#Abstract figure {
+    display: flex;
+    width: max-content;
+    padding-top: 20px;
+}
+
+#Contributions figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body .project-header figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body .project-header figure figcaption {
+    font-size: 1em;
+    color:#5e503f;
+    font-style: italic;
+}
+
+body .project-body .project-text section figure figcaption {
+    font-size: 1em;
+    color:#5e503f;
+    font-style: italic;
+}
+
+@keyframes scrollImages {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%)
+    }
+}
+
+body .project-body a {
+    text-decoration: none;
+}
+
+body .project-body a:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+body .project-body a b {
+    font-size: 2em;
+    color:#5e503f;
+    text-decoration: none;
 }
