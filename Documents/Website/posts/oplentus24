@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="robots" content="noindex, nofollow">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/2faed38072.js" crossorigin="anonymous"></script>
+    <title>Jared Crebo - Blog</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+    <!-- Custom Styling -->
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1 class="logo-text"><a href="../index#"><span>Jared </span>Crebo</a></h1>
+        </div>
+        <ul class="nav">
+            <li><a href="../about#">About Me</a></li>
+            <li><a href="../career#">Career</a></li>
+            <li><a href="../travel#">Travel</a></li>
+            <li><a href="../blog#">Blog</a></li>
+        </ul>
+    </header>
+
+    <div class="blog-header">
+        <p>Op LENTUS 2024</p>
+        <section id="blog-subtitle">
+            <p>Emergency Response Operation to Alberta Wildfires</p>
+        </section>
+    </div>
+    <div class="blog-page">
+        <section id="Predeployment">
+            <p>
+                In the summer of 2024 I was working full-time at the Currie Barracks in Calgary. At the time I was on Full Time Summer Employment and awaiting orders to hopefully deploy to Op LENTUS this year. Op LENTUS is the recurring operation name for any sort of domestic deployment for natural disasters within Canada. It is enacted when provincial governments request federal resources to assist with wildfires, floods, avalanches, etc. Back in the day it was a rarer occurrence that the army would need to step in to assist provincial emergency services. For the past decade however, Op LENTUS has been activated for our unit almost every year for wildfires in Alberta or BC. The wildfires this year had been making national headlines as the beloved town of Jasper had to be evacuated.
+                <br><br>
+                With my combat engineer trades course being cancelled this summer, I was hoping to get the opportunity to participate in this year's operation, which is why I signed the full time contract for the summer. Near the end of July, Alberta officially requested federal assistance to deal with the wildfires. We saw this in the news first, and then received our warning order for deployment two days later. 
+            </p>
+            <a href="https://calgary.citynews.ca/2024/07/24/alberta-fire-update-evacuees/">Alberta asks for Canadian military help as wildfire danger spikes - CityNews Calgary - July 24, 2024</a>
+            <p>
+                <br>
+                On Monday, July 29, several units from southern Alberta convened at the Currie Barracks and we drove up to Canadian Forces Base (CFB) Edmonton. We stayed in shacks in building 222. Tuesday, July 30, we conducted our predeployment training which involved a FORCE test, a first aid course, and the S100M firefighting course. From already carrying the qualifications of the FORCE test and first aid this year, I only participated in the firefighting training. From 33 Engineer Squadron, 41 Combat Engineer Regiment, out of Calgary (my unit) we had me, Cpl Harris, Pte Perkins, Pte Hermanson, and Cpl McPhee. Joined with us from 25 Engineer Squadron, our sister squadron, was newly promoted Sgt Jacko, Cpl Richards, MCpl King, and Cpl Visscher. Together we were the only combat engineers in the entire company. Most of the company was comprised of infantry and armoured units from across Canada: Victoria to Thunder Bay. 
+                <br><br>
+                Throughout this entire deployment, there was a sense of uncertainty among the troops. We didn't know where we were going, and we were not communicated when we would be returning. A lot of time was wasted during this predeployment period, rounding the entire company together only to tell everyone they just need to talk to a few people. Communication like that could be sent via text. Through the disorganization, some people had to give verbal agreement to their contracts without knowing the terms. Information passed down from my unit indicated we would be home August 12 with a possible extension to August 19. The contract I signed said August 15. However, to be fair, the logistics behind planning an operation such as this within three days would be impossible to get perfect. I was given 72 hours of notice to mobilize, and our officers would have shared that time constraint. 
+                <br><br>
+                Our Tuesday evening was spent in the Jr Ranks Mess, sharing beers and playing pool. Tomorrow we were en route to Hinton, Alberta to assist in the firefighting efforts at Jasper National Park. Simultaneously, a combat engineer trades course was happening at CFD Edmonton. It's one of the courses I was supposed to be on currently, except mine got cancelled. Several guys from my home squadron were on that course, and it felt strange watching them on course being screamed at to do pushups. We seldom spoke except in the mess out of fear of getting roped into their punishments. I was still a no-hook private after all. 
+            </p>
+            <figure>
+                <img src="" alt="Convoy Image">
+                <figcaption>Convoy leaving CFB Edmonton</figcaption>
+            </figure>
+        </section>
+        <section id="Jasper">
+            <p>
+                We arrived in the town of Hinton in the afternoon on August 1. 2 Princess Patricia's Canadian Light Infantry from CFB Borden, Manitoba had been the first to respond to Op LENTUS since they were full-time regular force. The town of Hinton had given the troops their recreational center hockey rink to operate out of. On the concrete rink floor, cots were built in organized rows and columns along each length. The center of the rink had pop-up tables with drinks and snacks. Outside in the parking lot, the cooks have set up a small trailer for serving hot food. The dressing room washrooms and showers were all we had to share with 120 troops. There were two toilets, 8 shower heads, and one urinal for 120 people and 95% of them being guys. The women got their own washroom and showers to themselves. Shortly after we arrived, 2 PPCLI returned from their day of work in Jasper. They came back with black, ashy faces and clothes, sweaty and exhausted. Part of me was excited to be there, and another part was getting a bit nervous. 
+                <br><br>
+                They equipped us with fireproof coveralls from Alberta Wildfire, a red hardhat, safety glasses, leather work gloves, and a respirator. Parks Canada and Alberta Wildfire came and gave us a briefing on the situation in Jasper. One third of the town of Jasper has been burnt to the ground. The fire inside the town has been extinguished but there are still fires in the surrounding area. Wildlife is currently roaming the empty streets of Jasper such as black bears and moose. After the briefing, we got our chow and settled into our cots for the night. Our cots were organized in columns by section, so we had our engineer section all together. 
+            </p>
+            <figure>
+                <img src="" alt="Rec Centre Image">
+                <figcaption>Hinton Recreational Centre</figcaption>
+            </figure>
+            <p>
+                The company was split into three platoons. Our engineer section was 1 Section, 1 Platoon. Our first morning of work 1 Platoon took a bus from Hinton to the town of Jasper. As we approached, spot fires could be seen on the surrounding mountains with plumes of smoke filling the sky. The ground was blackened and scorched. Any remaining trees were stripped of their branches, appearing as just long black trunks that stuck out of the ashy dirt. As we entered the town, we witnessed blocks and blocks of rubble where houses used to stand. The southern portion of town was mostly burned down. They were fenced off with blue construction fencing and the rubble had been consolidated. For many homes, you were able to see into their basements, a truly awful sight. Several landmarks had crumbled as well. I didn't know the town very well, but the Edmontonians who knew it better were naming the buildings that used to stand in these places. 
+            </p>
+            <figure>
+                <img src="" alt="Jasper Image">
+                <figcaption>Town of Jasper</figcaption>
+            </figure>
+            <p>
+                1 Platoon was given a representative from Alberta Wildfire to lead us through the days work. His name was Mo, and he was awesome. We convened our equipment just up the road from Miette Ave on Bonhomme St. This was a road on the southwest border of the town. People had placed all of their flammable objects outside of their homes before leaving such as wooden furniture and propane tanks. The houses on the outskirts sat below a large hill, where a very clear burn line could be seen between the hill and the houses. 
+            </p>
+            <figure>
+                <img src="" alt="Burn Line Image">
+                <figcaption>Burn line up to Jasper homes</figcaption>
+            </figure>
+            <p>
+                The objective the next few days would be to ensure this area was cleared of hotspots so the town does not catch on fire again. Hotspots are fires that smolder underground and their embers can be carried by the wind for miles to reignite other areas. That's how fires can continue to burn and spread for years by remaining dormant underground. Helicopters were dispatched in the night with thermal cameras to locate hotspots in the area, and those coordinates were reported to our officers each day to find and extinguish. Our troops were equipped with shovels, pulaskis (axe + hoe combination), and large packs of water with a hose attachment that we called <i>piss packs</i>. The piss packs were carrying somewhere between 20 - 30 litres of water when full, so that was 20 - 30 kg of weight we had to haul up the hill. 
+            </p>
+        </section>
+    </div>
+    <footer>
+        <ul class="social-media">
+            <li><a href="https://www.linkedin.com/in/jaredcrebo/"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/jaredrc8/"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+            <li><a href="mailto:jaredrc8@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a></li>
+        </ul>
+    </footer>
+</body>
+
+
+</html>
