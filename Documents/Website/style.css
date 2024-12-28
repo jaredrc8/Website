@@ -951,7 +951,12 @@ body .blog-page section p {
 body .blog-page section figure {
     display: flex;
     flex-direction: column;
-    width: 30vh;
+    width: 40vw;
+    align-items: center;
+}
+
+body .blog-page section figure img {
+    width: 40vw;
 }
 
 body .blog-page section figure figcaption {
