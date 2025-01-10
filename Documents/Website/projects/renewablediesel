@@ -31,7 +31,37 @@
             <li><a href="../blog#">Blog</a></li>
         </ul>
     </header>
-
+    <div class="project-header">
+        <h3>Renewable Diesel Experiment</h3>
+        <span>Effects of Renewable Diesel on Mine Mobile Performance</span>
+        <figure>
+            <img src="../images/Renewable-Diesel.jpg" height="600">
+            <figcaption>Next to Renewable Diesel Fuelling Tank</figcaption>
+        </figure>
+    </div>
+    <div class="project-body">
+        <div class="project-text">
+            <section id="Abstract">
+                <h3>Abstract</h3>
+                <p>
+                    Renewable Diesel (RD) is a fuel derived from natural sources such as vegetable oils or animal fats rather than petroleum. It is chemically similar to conventional petroleum diesel and can be directly used in diesel engines without any modifications. This project was a part of Imperial Oil's initiatives to meet Canada's goal of net-zero carbon emissions by 2030. Commonly mistaken for biodiesel, renewable diesel is chemically indistinguishable from petroleum diesel and requires no blending. This project's purpose was to test renewable diesel on all relevant mining equipment at the Kearl Oil Sands Project in northern Alberta. The specific equipment being tested was four Caterpillar 797F haul trucks and one Komatsu PC8000 hydraulic shovel. Engine wear was monitored on the PC8000 shovel due to concerns regarding a lack of natural lubrication from this diesel. For the haul trucks, mine production performance and fuel consumption was monitored. Two equivalently aged haul trucks running renewable diesel were chosen to run on the same autonomous hauling route as two equivalently aged haul trucks running conventional diesel. Running these similar trucks on the same hauling route attempts to isolate the cause of production discrepancies to enginer performance, where the different factor would be the fuel used. The rate of fuel and Diesel Exhaust Fluid (DEF) consumption was also a concern to the company. A dynanometer test was performed as well at the Finning OEM facility in Edmonton on the CAT C175-20 20-cylinder, four-stroke, quad-turbocharged diesel engine using 1000L of renewable diesel and 1000L of conventional diesel. With approximately 6% less specific enthalpy than petroleum-based diesel, it was found that the engine was able to achieve the same power as conventional diesel at a 6% higher rate of fuel consumption. This conclusion was also reflected in the production performance analysis on the haul trucks, as there was no statistically significant difference in production from either haul truck. There was also no significant wear found on the Komatsu PC8000 engine valve. With these factors in consideration, renewable diesel was successfully deployed to all mining equipment at the Kearl Oil Sands in 2023. 
+                </p>
+            </section>
+            <section id="Contributions">
+                <h3>Personal Contributions</h3>
+                <p>
+                    <b>Project Manager, Data Analyst</b>
+                </p>
+                <p>
+                    <b>Project Manager</b><br>
+                    My role as the Project Manager for this operation brought me as the liaison between the corporate decisions on the requirements of the experiment, and the execution on the ground at Kearl. I was told of what metrics the company wanted to know from this experiment, and what concerns they have from the deployment of renewable diesel, and my job was to retrieve that information for them from the experiment. I coordinated with both day and night shift workers on site at Kearl to execute the parallel running haul routes and the logistics with getting the equipment fuelled from alternate sources. I also ensured the quality of the data I was receiving was accurate, whether it was coming in from sensors on the truck or being handwritten by the workers. I also coordinated the logistics with Finning for getting the dynanometer test set up and transporting 2000L of fuel from Kearl to Edmonton. I made sure the PC8000 engine valve was measured prior to the experiment, and then measured again after the experiment was complete to detect any wear on the component. Scientists from ExxonMobil at the Argonne National Laboratory were also interested in the effect of the renewable diesel on the engine oil filters, since Imperial Oil was planning to develop their own renewable diesel at Strathcona they wanted information on its engine effects for marketing purposes. So new filters were installed on the haul trucks running renewable diesel and then shipped to Argonne for analysis. All of the resulting analysis and results were compiled and presented to the corporate committee each week. A final report was written that highlighted everything that was done (it was not legally released to me and I no longer work here), which I also presented to the engineering vice president at the end of my internship. 
+                    <br><br>
+                    <b>Data Analyst</b><br>
+                    Sensor data from the autonomous haul truck system is compiled in a Microsoft Azure Data Lake. I connected to this cloud storage and pulled data to a Power BI dashboard I created to monitor the day-to-day performance metrics of the renewable diesel project. The Power BI dashboard was a great tool for presenting this relevant data each week to the corporate committee, but a more in-depth analysis was done using JMP Statistical Software. This in-depth data analysis investigated whether the use of renewable diesel created statistically significant differences in mining production or fuel consumption. P-values, confidence intervals, and t-tests were calculated which concluded no statistically significant change in mine production, and a 6% increase in fuel consumption on average. 
+                </p>
+            </section>
+        </div>
+    </div>
     <footer>
         <ul class="social-media">
             <li><a href="https://www.linkedin.com/in/jaredcrebo/"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>

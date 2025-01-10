@@ -8,7 +8,7 @@
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/2faed38072.js" crossorigin="anonymous"></script>
-    <title>Jared Crebo - Home</title>
+    <title>Jared Crebo - Capstone</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 
-<body>
+<body id="capstone">
     <header>
         <div class="logo">
             <h1 class="logo-text"><a href="../index#"><span>Jared </span>Crebo</a></h1>
@@ -33,9 +33,14 @@
     </header>
     <div class="project-header">
         <h3>Aerodynamic Analysis and Development for UAV Dynamics and Control Law Synthesis</h3>
+        <span>3rd Place Win in Mechanical Engineering Department, University of Calgary 2024</span>
         <figure>
             <img src="../images/Capstone/GroupPhotoOutside.JPG" height="600">
             <figcaption>Our capstone group after a successful flight test</figcaption>
+        </figure>
+        <a href="../documents/JaredCrebo_Capstone.pdf"><b><u>Project Report Link</u></b></a>
+        <figure>
+            <img src="../images/Capstone/Capstone-Poster.jpg" height="1000">
         </figure>
     </div>
     <div class="project-body">
@@ -51,26 +56,36 @@
                     <img src="../images/Capstone/Ardupilot.JPG" height="300">
                     <img src="../images/Capstone/DraggingDrone.JPG" height="300">
                     <img src="../images/Capstone/ActionDrone.JPG" height="300">
+                    <img src="../images/Capstone/CFD_Streamlines.png" height="300">
+                    <img src="../images/Capstone/ColdDrone.JPG" height="300">
+
+                    <img src="../images/Capstone/Controls.JPG" height="300">
+                    <img src="../images/Capstone/PlacingDrone.JPG" height="300">
+                    <img src="../images/Capstone/Ardupilot.JPG" height="300">
+                    <img src="../images/Capstone/DraggingDrone.JPG" height="300">
+                    <img src="../images/Capstone/ActionDrone.JPG" height="300">
+                    <img src="../images/Capstone/CFD_Streamlines.png" height="300">
+                    <img src="../images/Capstone/ColdDrone.JPG" height="300">
                 </figure>
                 <script>
                     document.addEventListener("DOMContentLoaded", () => {
-                    const container = document.querySelector("body .project-body .project-text section figure");
+                    const container = document.querySelector("#Abstract figure");
 
                     // Clone images for seamless scrolling
                     const images = container.innerHTML;
                     container.innerHTML += images;
 
                     // Set up variables for smooth scrolling
-                    const containerWidth = container.scrollWidth / 2; // Half is the original set
+                    const containerWidth = container.scrollWidth / 4; // Half is the original set
                     let scrollPosition = 0;
 
                     // Function to scroll the container
                     function scroll() {
-                        scrollPosition -= 1; // Scroll 1px per frame (adjust for speed)
+                        scrollPosition += 1; // Scroll 1px per frame (adjust for speed)
                         container.style.transform = `translateX(${scrollPosition}px)`;
 
                         // Reset position when we reach the duplicate set
-                        if (Math.abs(scrollPosition) >= containerWidth/5) {
+                        if (Math.abs(scrollPosition) >= containerWidth) {
                         scrollPosition = 0;
                         }
                     }
@@ -81,7 +96,10 @@
                 </script>
             </section>
             <section id="Contributions">
-                <h3>Personal Contribution</h3>
+                <h3>Personal Contributions</h3>
+                <p>
+                    <b>Computational Fluid Dynamics, Control System Integration, UAV Construction</b>
+                </p>
                 <p>
                     <b>1 Computational Fluid Dynamics</b> <br>
                     My main role in this project was to conduct the computational fluid dynamics analysis to develop a dynamic model based on the acquired aerodynamic coefficients, and integrate that model into the control system framework set up by other members. 
@@ -121,7 +139,7 @@
                     <figcaption>Farfield Dimensions of Symmetric Base Mesh</figcaption>
                 </figure>
                 <p>
-                    The volume mesh is propagated from the same first layer spacing of Δ𝑠 = 0.00190𝑚 using the T-rex algorithm and a growth factor of 1.2. The inflation layer grows until no more layers can be generated and then proceeds to grow using voxel blocks to maintain orthogonality. A refinement box with dimensions (2L x 3L x 2L, L is fuselage length) contains the UAV at its center. The spacing at the refinement box is 0.1m. Table 15 above denotes the farfield dimensions. Research points to the farfield needing a minimum of 15 reference lengths in the downstream direction to negate its effect on the simulation of an external flow[29]. The referenced paper holds all other dimensions constant at 10 reference lengths while conducting the research, therefore this too was implemented.
+                    The volume mesh is propagated from the same first layer spacing of Δ𝑠 = 0.00190𝑚 using the T-rex algorithm and a growth factor of 1.2. The inflation layer grows until no more layers can be generated and then proceeds to grow using voxel blocks to maintain orthogonality. A refinement box with dimensions (2L x 3L x 2L, L is fuselage length) contains the UAV at its center. The spacing at the refinement box is 0.1m. The table above denotes the farfield dimensions. Research points to the farfield needing a minimum of 15 reference lengths in the downstream direction to negate its effect on the simulation of an external flow[29]. The referenced paper holds all other dimensions constant at 10 reference lengths while conducting the research, therefore this too was implemented.
                 </p>
                 <figure>
                     <img src="../images/Capstone/UAVinComputationalDomain.jpg">
@@ -223,23 +241,112 @@
                 <p>
                     The decision to decouple the direction of elevator deflection, δE, proved to be a prudent choice since their contributions to the aerodynamics are different in each direction. A positive elevator deflection contributes over twice the magnitude of moment than a negative elevator deflection. The sum of the forces on the UAV act about x = +0.0822m in reference to the leading edge of the wing. This being the center of pressure, the center of gravity is located at x = +0.0631m resulting in a static margin of 8.61% in reference to the mean chord length (0.222m). 
                 </p>
+                <figure>
+                    <img src="../images/Capstone/CFD_Streamlines.png">
+                    <figcaption>Streamlines of CFD Simulation, Paraview</figcaption>
+                </figure>
+                <figure>
+                    <img src="../images/Capstone/Mesh.jpg">
+                    <figcaption>Longitudinally Sliced View of Mesh</figcaption>
+                </figure>
                 <p>
-                    
-                    
                     <br><br>
                     <b>2 Control System Integration</b> <br>
-                    The dynamic model
-
+                    The Research Civil Aircraft Model (RCAM) was used to model the dynamics of the aircraft in MATLAB. The framework for this model, the simulation, and the tuned control system were developed by my fellow team members. With the dynamic model I developed using CFD, the next step was to implement this model into the simulator and achieve a statically stable trim state at cruise so the control system can be tuned. 
                     <br><br>
-                    <b>UAV Construction</b> <br>
-                    My secondary role was the construction of the UAV. 
+                    <b>2.1 MIMO Longitudinal Controller Design via State Reduction</b><br>
+                    The first step in developing a MIMO control system is to first trim the dynamic system. Trimming is described as the process of finding the adequate control surface deflections, actuator response, and states of the aircraft to meet a specific flight regime. For this project, the UAV was trimmed for steady-level flight at 20m/s, to find its respective thrust output, elevator deflections, and pitching attitude. The mathematics involved in finding the trim points is outlined below. 
+                    First, a summary of the dynamic model is required. The RCAM model simulates 9 states, and an extra state for altitude has been added. These 10 states are denoted by the vector 𝑥⃑. The 4 actuator inputs are denoted by vector 𝑢⃑.  
+                </p>
+                <figure>
+                    <img src="../images/Capstone/State_Vector.jpg">
+                    <img src="../images/Capstone/Actuator_Vector.jpg">
+                </figure>
+                <p>
+                    Deriving the equation of motion for the UAV, where 𝑥⃑ is the state derivative with respect to time, as a function of the simulated states 𝑥⃑ and specified control inputs 𝑢⃑ obtains: 
+                </p>
+                <figure>
+                    <img src="../images/Capstone/EOM.jpg">
+                </figure>
+                <p>
+                    As mentioned above, trimming the UAV is the process of finding a point where it can operate at steady-state at the desired flight regime. As such, trimming is essentially finding the equilibrium operating points. The equilibrium points of the UAV then must adhere to the following constraint. 
+                </p>
+                <figure>
+                    <img src="../images/Capstone/Constraints.jpg">
+                </figure>
+                <p>
+                    This above constraint simply states that for equilibrium to be achieved, the UAV must be operating at state 𝑥⃗ = 𝑥⃗ and control inputs 𝑢⃗ = 𝑢⃗ . Where 𝑥⃗ is a column vector of length 10 (number of simulated states), and 𝑢⃗ is a column vector of length m=4 (number of control inputs), such that the state derivative 𝑥⃗= 0⃗, which implies a steady or equilibrium state.  With that, an equation with 𝑚 + 𝑛 = 14 degrees of freedom need to be solved such that 𝑥⃑= 𝑓(𝑥⃑,𝑢⃑) = 0⃗. This equation is then considered under constrained, and the solution space is generally quite large, as to express the many different equilibrium points that exist for the UAV. To reduce the size of the solution space, and to achieve convergence on a solution which meets the criterion of straight and level flight at 20m/s, additional constraints need to be defined.
+                    First, at steady, straight, and level flight, speeds, attitudes, and altitudes are not changing. As such the first constraint is: 
+                </p>
+                <figure>
+                    <img src="../images/Capstone/Constraints1.jpg">
+                </figure>
+                <p>
+                    Next, flight tests were conducted at 20m/s airspeed so this magnitude needs to be constrained. 
+                </p>
+                <figure>
+                    <img src="../images/Capstone/Constraints2.jpg">
+                </figure>
+                <p>
+                    Now, the above constraints will achieve steady flight at 20m/s, but this is no guarantee that the UAV will fly in a straight path. Therefore, another condition must track a straight flight path. 
+                </p>
+                <figure>
+                    <img src="../images/Capstone/Constraints3.jpg">
+                </figure>
+                <p>
+                    Where the variable 𝛾 denotes the UAV’s flight path angle. With constraining it to a flight path angle of zero degrees, the UAV is guaranteed to fly in a straight path. However, the UAV can still fly straight and level with some sideslip. This flight regime is known as “crabbing”, where the above constraints are met, but the UAV’s attitude is slightly yawed. This regime is commonly found when an aircraft is weather-vaning; pointing its nose into the direction of wind to prevent being pushed off a straight flight path. To restrict this, a constraint is placed on the y-velocity of the vehicle. 
+                </p>
+                <span><br>v = 0<br><br></span>
+                <p>
+                    Now, the UAV is only able to fly in a straight path with no horizontal y-component velocity at 20m/s. However, it can do this without being wings-level. Therefore, the constraint that the roll angle is zero is imposed. 
+                </p>
+                <span>ψ = 0<br><br></span>
+                <p>
+                    Finally, a constraint such that the UAV only flies in a northern direction to increase the possibility of convergence is set for simplicity. 
+                </p>
+                <span><br>ϕ = 0<br><br></span>
+                <p>
+                    With the constraints set, a cost function 𝑓 can be defined to minimize, such that the above constraints are met. The function 𝑓 is defined as. 
+                </p>
+                <figure>
+                    <img src="../images/Capstone/CostFunction.jpg">
+                </figure>
+                <p>
+                    Where Q is a column vector containing the constraints set out above. Note that the constraints have been manipulated into an implicit form. And H is a diagonal matrix of penalty parameters. 
+                </p>
+                <figure>
+                    <img src="../images/Capstone/HQ_Matrices.jpg">
+                </figure>
+                <p>
+                    As such, the cost function 𝑓 can be expressed in a more usable form:
+                </p>
+                <figure>
+                    <img src="../images/Capstone/CostFunction_Expanded.jpg">
+                </figure>
+                <p>
+                    Now, numerical methods in MATLAB can be used to minimize this cost function. The values for 𝑥⃗o and 𝑢⃗o which minimize this function, are the trim point for the UAV at steady and level flight conditions with an airspeed of 20m/s. 
+                    <br><br>
+                    The following tables are the trimmed states for the CFD dynamic model. 
+                </p>
+                <figure>
+                    <img src="../images/Capstone/Aero_TrimState.jpg">
+                    <figcaption>CFD Aerodynamics Trim State for Cruising at 20 m/s</figcaption>
+                </figure>
+                <figure>
+                    <img src="../images/Capstone/Aero_TrimDeflections.jpg">
+                    <figcaption>CFD Trim Actuator Deflections for Cruising at 20 m/s</figcaption>
+                </figure>
+                <p>
+                    Note: Upward elevator deflection in this model is indicated by a negative value, and throttle percentage is mapped from 0 to 1, for 0% to 100% throttle input respectively.  
                 </p>
             </section>
+            <figure id="Flight">
+                <video width="1080" autoplay controls loop muted>
+                    <source src="../images/Capstone/Flight.MP4" type="video/mp4">
+                </video>
+                <figcaption>Autonomous Flight Testing</figcaption>
+            </figure>
         </div>
-        <a href="../documents/JaredCrebo_Capstone.pdf"><b>[1] <u>Project Report</u></b></a>
-        <figure>
-            <img src="../images/Capstone/Capstone-Poster.jpg" height="1000">
-        </figure>
     </div>
 
     <footer>

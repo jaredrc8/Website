@@ -8,7 +8,7 @@
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/2faed38072.js" crossorigin="anonymous"></script>
-    <title>Jared Crebo - Home</title>
+    <title>Jared Crebo - Schulich UAV</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 
-<body>
+<body id="suav">
     <header>
         <div class="logo">
             <h1 class="logo-text"><a href="../index#"><span>Jared </span>Crebo</a></h1>
@@ -31,6 +31,187 @@
             <li><a href="../blog#">Blog</a></li>
         </ul>
     </header>
+
+    <div class="project-header">
+        <h3>Schulich UAV: Hammerhead</h3>
+        <span>AUVSI Student Unmanned Aerial Systems Competition 2023</span>
+        <figure>
+            <img src="../images/SUAV-Competition.jpg" height="600">
+            <figcaption>Our team on competition day</figcaption>
+        </figure>
+        <a href="../documents/JaredCrebo_SUAV.pdf"><b><u>Project Report Link</u></b></a>
+        <a href="https://schulichuav.ca/"><b><u>Official Website Link</u></b></a>
+    </div>
+    <div class="project-body">
+        <div class="project-text">
+            <section id="Abstract">
+                <h3>Abstract</h3>
+                <p>
+                    The purpose of this project was to develop an airframe capable of autonomously following a waypoint path and safely dropping 5 x 0.5kg payloads on specific targets on the ground within a certain radius. The minimum requirements of flight performance are to fly 12 miles at fully loaded weight in a single flight, fly waypoints with a max error of 25ft, turn radius of 150ft, angle of climb and descent of 20 degrees, and taking off of a runway less than 600ft. With the total payload being 2.5kg, the aerodynamics were designed for a total MTOW of 12.5kg and 60km/h cruising speed. It is a modular, highly maneuverable, and stable dual-prop aircraft with a 3.5 meter wingspan. A 2-axis camera gimbal mounts to the nose of the UAV, allowing for omnidirectional object detection in-flight. The UAV was designed and manufactured from the ground up with only the electronic components, propulsion system, and nose landing gear being store-bought. The wing skin and fuselage are comprised of carbon fiber composite materials manufactured in-house at the University of Calgary. It was aptly named <i>Hammerhead</i> as the nose had to be replaced with the large camera gimbal, making the actual nose of the plane abruptly flat. This aircraft was taken to St. Mary's Regional Airport in Maryland, USA to compete in the international AUVSI Student Unmanned Aerial Systems 2023 Competition. This team was the only Canadian team to qualify, and placed 25th overall. 
+                </p>
+            </section>
+            <section id="Contributions">
+                <h3>Personal Contributions</h3>
+                <p>
+                    <b>President, Lead Mechanical Engineer</b>
+                </p>
+                <p>
+                    <b>President</b><br>
+                    As President of Schulich UAV, I was in charge of the high-level management of the project as well as the team. Some of the main achievements of my tenure as President were acquiring partnership with the Airdrie Flying Club to use their airspace and runway at the Airdrie Regional Airport for flight testing. I also established sponsorships with Lockheed Martin, Textreme, Hexagon, and Siemens which gained us funding for manufacturing and engineering softwares. I established new marketing intiatives to acquire new talent through social media and in-person recruiting events, which resulted in our roster doubling within two years. And as the President, I was at the forefront of presenting during these events. 
+                    <br><br>
+                    <b>Lead Mechanical Engineer</b><br>
+                    As the Lead Mechanical Engineer, my role was to manage the mechanical development of the Hammerhead UAV. This includes both systems engineering and project management on the design, as well as recruiting and mentoring new students on the team.  
+                    <br><br>
+                    <b>Aircraft Design</b><br>
+                    The airframe was custom designed and manufactured by the team for this mission. Design decisions relating to the airframe were mainly governed by the following considerations: 1) Gimbal Placement and Payload Deployment, 2) Manufacturability, 3) Transportability, and 4) Cost. 
+                </p>
+                <figure>
+                    <img src="../images/Hammerhead/Schematic.jpg">
+                    <figcaption>Schematic of Aircraft from Solidworks (inches)</figcaption>
+                </figure>
+                <p>
+                    Component placement relative to the fuselage was done in reference to the center of gravity (CG) of the overall UAV such that the CG of the UGV, the CG of the overall UAV, and the center of lift of the wings were all lined up vertically. Table  below summarizes the main mechanical design specifications for the plane. 
+                </p>
+                <figure>
+                    <img src="../images/Hammerhead/MechSpecs.jpg">
+                    <figcaption>General Mechanical Specifications</figcaption>
+                </figure>
+                <p>
+                    <b>Aerodynamics</b><br>
+                    The wing geometry and airfoil selection happened in conjunction to optimize and tailor the specifications of one to the other. As flight endurance was mission critical for this UAV, drag ratio was the primary consideration in airfoil selection and was optimized to be the highest around the cruise operating condition. The airfoil S4310 met these needs at the geometry defined in Table 3 below. A tapered wing design was chosen for increased wing-tip efficiencies, and a higher aspect ratio.  For a MTOW of 12.5 kg, a coefficient of lift of 1.17 was required to takeoff at 45 kph, and appropriate values of angle of attack for the S4310 airfoil wing were chosen to generate that lift. 
+                </p>
+                <figure>
+                    <img src="../images/Hammerhead/WingSpecs.jpg">
+                    <figcaption>Wing Specifications</figcaption>
+                </figure>
+                <p>
+                    Once wing and fuselage design were finalized, an estimate for the CG could be made, leading to tail design and stability analysis. The NACA 0009 airfoil was chosen for both stabilizers in the tail. Other specifications are summarized in below. Stability analysis was done using XFLR5 [2] software. A conventional tail design was chosen because it has a low component count while retaining empennage rigidity.
+                </p>
+                <figure>
+                    <img src="../images/Hammerhead/TailSpecs.jpg">
+                    <figcaption>Tail Specifications</figcaption>
+                </figure>
+                <p>
+                    <b>Propulsion</b><br>
+                    The propulsion system uses twin propellers mounted on each wing rather than a single propeller at the front to reduce size of the fuselage, allowing it to be monocoque and reducing overall weight, as well as eliminating asymmetric propeller thrust and thus adding stability to the system. The blade geometry, battery capacity, and motor selection were all optimized using eCalc to meet the thrust and runtime requirements. The final propulsion setup consists of a LiPo 8000mAh 80/120CC battery connected to an Avroto LIFT 35120-400kV motor which powers a 14” diameter and 14” pitch propeller to run at 58 km/h for 45 mins. This closely matches the desired cruise speed, while also having 15 extra minutes of battery capacity than the required 30 mins of flight time. 
+                    <br><br><b>Structural</b><br>
+                    An in-depth finite element analysis (FEA) study was conducted on the wing assembly using Femap/Nastran. The mesh and geometric setup account for the composite materials used, as well as the added inertial forces that a mounted propulsion system would add to the structure of the wing. The force of lift was distributed along the span of the bottom and top of the wing such that the inboard sections took on more force than the outboard sections as to represent the gradient of lift along the span. 11 limit load cases were created and simulated that account for all possible maneuvers. All components successfully held up under the load cases with a factor of safety of 1.5 or greater, confirming the structural integrity of the wing assembly and its mounting system to the fuselage. 
+                </p>
+                <figure>
+                    <img src="../images/Hammerhead/WingFEA.jpg">
+                    <figcaption>Composite Max Equivalent Stress Plot of Max Load Case, Femap</figcaption>
+                </figure>
+                <figure>
+                    <img src="../images/Hammerhead/WingStructure.jpg">
+                    <figcaption>Left Wing Internal Structure, Solidworks</figcaption>
+                </figure>
+                <p>
+                    The wing structure consists of two carbon fibre tubular spars that run through the wing made of XPS foam. The main spar takes on the main loads of lift and drag and extends to the aluminum bulkhead located midspan of the wing. The aft spar resists the pitching moment only, and thus is not as structurally important to the wing itself. However, it’s mounting to the fuselage must be fixed because displacement of the aft spar results in torsion of the carbon fibre and would likely cause failure, according to our FEA study. Therefore, it extends about 1/3 of the wing and has a fixed connection to the fuselage by a threaded mount. The XPS foam is laid up with plain weave Textreme carbon fibre and painted over for a protective layer and smoother finish. 
+                </p>
+                <figure>
+                    <img src="../images/Hammerhead/Fuselage.jpg">
+                    <figcaption>Fuselage, Solidworks</figcaption>
+                </figure>
+                <p>
+                    The fuselage itself was designed as a monocoque structure, with wood frames inside only to provide mounting space for other components such as the tail, electronics, and camera gimbal (although in reality they would provide extra support). The shape of the fuselage is more rectangular for ease of manufacturing and for flat mounting surfaces for multiple components. The corners were rounded to reduce stress risers, as confirmed by the FEA study. The FEA study was conducted on the fuselage using 2 load cases this time, one representing the maximum force coming from the wings and the other the maximum landing force from the landing gear. In both limit load cases, the fuselage held up with a factor of safety of greater than 1.5 without including the additional supporting structures such as the bulkheads and landing gear. The layup of the fuselage is done with three layers of twill weave carbon fiber with Coremat and Innegra materials. The Coremat is a thick, lightweight fabric that adds thickness to the layers, increasing the second moment of inertia of the fuselage. The Innegra material is a polypropylene-based fiber with greater elasticity than carbon fiber, and will therefore act as a failsafe should the carbon fiber fail.  
+                    <br><br>
+                    A tricycle landing gear configuration was utilized for the UAV. The #674 Robostrut was used as the nose gear and steering was integrated with a servo. The rear gear was designed with 1/8” Aluminum 5052-H38 sheet metal and was water-jet cut and then rolled. Height and track were adjusted to account for wingspan, ground turning speeds, and take-off angles. 
+                    <br><br>
+                    <b>Manufacturing</b><br>
+                    The fuselage was manufactured in two split halves along the longitudinal xz plane of the aircraft. A manufacturing company, Streamline Automation Ltd., was hired to CNC mill each half of the fuselage as a positive plug from EPS foam. EPS was used due to its large available size, despite containing a rougher surface finish. Glued layers of XPS foam or MDF wood were also considered. The rough surface of EPS foam was filled in with foam putty and sanded smooth. Yacht primer was sprayed on the foam to seal the surface from the next layer, the Duratec, which would dissolve the foam. 
+                </p>
+                <figure>
+                    <img src="../images/Hammerhead/FuselageYachtPrimer.JPG" height="500">
+                    <figcaption>Fuselage Plugs Coated in Yacht Primer</figcaption>
+                </figure>
+                <p>
+                    The subsequent layers of Duratec were then sprayed onto the sealed surface. These Duratec layers were built up and then wet sanded down and polished to 1500 grit. This plug will be used to create a reusable fiberglass negative mold inside of which the actual fuselage layup will occur. 
+                </p>
+                <figure>
+                    <img src="../images/Hammerhead/Duratec.JPG" height="500">
+                    <figcaption>Fuselage Plugs Coated in Duratec and Polished</figcaption>
+                </figure> 
+                <p>
+                    First, Chemlease releasing agent was applied to the polished Duratec surface. Release wax was also applied to areas of concern that could not achieve a uniformly polished finish, such as tight corners. With the release agents applied, two layers of gel coat were added. Then, 7 layers of chopped strand fiberglass were laid on the tacky gel coat with a polyester resin as the binder. 
+                </p>
+                <figure>
+                    <img src="../images/Hammerhead/FiberglassLayup.jpg" height="500">
+                    <img src="../images/Hammerhead/FiberglassMold.jpg" height="500">
+                    <figcaption>Fiberglass Layup, Fiberglass Mold</figcaption>
+                </figure>
+                <p>
+                    The fiberglass mold has a gel coat inner surface that takes the same surface finish as the polished Duratec, mirror smooth. The fiberglass layers are extremely rigid for the next step; the carbon fiber layup. This method of creating a mold allows the mold to be reused as many times as needed, meaning the fuselage can be rebuilt after a crash. The layup of the fuselage consists of two layers of carbon fiber, one layer of Coremat, one layer of Innegra, and one last layer of carbon fiber. The carbon fiber used is 2x2 twill weave. These layers are bound by general epoxy resin. The resin is applied to only the carbon fiber and Innegra, so the Coremat does not become saturated with resin which would increase the weight. This entire mold is then vacuum bagged and depressurized to remove all the excess epoxy over a period of 24-48 hours. 
+                </p>
+                <figure>
+                    <img src="../images/Hammerhead/Vacuum.JPG" height="500">
+                    <img src="../images/Hammerhead/CarbonFiberFuselage.jpg" height="500">
+                    <figcaption>Carbon Fiber Wet Layup of Fuselage, Carbon Fiber Fuselage Half</figcaption>
+                </figure>
+                <figure>
+                    
+                    <figcaption></figcaption>
+                </figure>
+                <p>
+                    Both halves were fused together with a double lap joint layup. On the inside of the fuselage, a thin layer of Coremat lines the crack and is covered by two layers of the same twill weave carbon fiber. On the outside, one layer of carbon fiber covers the crack flush. This is bound by the same general epoxy resin, but this time with no vacuum bagging. The resulting layup is a completely intact and rigid fuselage body to begin mounting the wings, tail, electronics, and landing gear. 
+                </p>
+                <figure>
+                    <img src="../images/Hammerhead/CNCSetup.JPG" height="500">
+                    <figcaption>CNC Hotwire Cutter Setup in my House during COVID-19</figcaption>
+                </figure>
+                <p>
+                    The core of the wings and tail is XPS foam, which was cut into the airfoil shape using the team's CNC foam hotwire cutter. The aluminum bulkheads were manufactured by waterjetting, and the carbon fiber spars were ordered online from Rockwest Composites. Rockwest Composites provides the exact layers and orientation of the layers, allowing for proper FEA to be conducted using accurate material properties. 
+                </p>
+                <figure>
+                    <img src="../images/Hammerhead/WingCore.JPG" height="500">
+                    <figcaption>Wing Core Prior to Carbon Fiber Layup</figcaption>
+                </figure>
+                <p>
+                    Servo wires were ran through slits spanwise through the wing that were included in the CNC hotwire cutting. They were epoxied in and the gaps filled with foam putty. On the aileron, a sheet of Kevlar fabric (yellow) was laid over the hinge-line with a strip of painters tape at the center (blue). This allows epoxy to harden the outer fabric but keep the hinge of the Kevlar untouched by epoxy, allowing it to move as a living hinge. This is much more lightweight than adding additional structure to create a mechanical hinge. The wing is suspended by two team members on either end while the rest of the team drapes the epoxied carbon fiber layer over top. This is vacuum bagged and depressurized under vacuum presure for 24-48 hours again to achieve the optimal resin-to-fiber ratio. 
+                </p>
+                <figure>
+                    <img src="../images/Hammerhead/WingVacuum.jpg" height="500">
+                    <figcaption>Vacuum Bagged Wing Layup</figcaption>
+                </figure>
+                <figure>
+                    <img src="../images/Hammerhead/WingTail.JPG" height="500">
+                    <img src="../images/Hammerhead/Integration.jpg" height="500">
+                    <figcaption>Wing and Tail Components, Integration with Fuselage</figcaption>
+                </figure>
+                <p>
+                    The components were painted with Endura EX-2C Low VOC Color Topcoat, which is used typically on aircraft. This type of paint acts as a layer of thin plastic surrounding the component that will improve the surface finish and protect it from scratches and minor dents. This type of paint is designed to flex with the flutter of wings, making it an optimal choice. With all components complete, the UAV was assembled. 
+                </p>
+                <figure>
+                    <img src="../images/Hammerhead/FirstAssembly.jpg" height="500">
+                    <img src="../images/Hammerhead/FirstAssembly2.jpg" height="500">
+                    <figcaption>First Assembly of Hammerhead</figcaption>
+                </figure>
+                <p>
+                    Upon completion of the propulsion system mounting on the wings and all the electronic components mounted, Hammerhead was tested for its maiden flight. 
+                </p>
+                <p>
+                    <b><br>We have liftoff!</b><br>
+                </p>
+                <figure>
+                    <img src="../images/Hammerhead/MaidenVoyage.jpg" height="500">
+                    <img src="../images/Hammerhead/AirDrop.JPG" height="500">
+                </figure>
+                <figure>
+                    <video id="FirstFlight" height="500" autoplay loop controls muted>
+                        <source src="../images/Hammerhead/FirstFlight.mp4" type="video/mp4">
+                    </video>
+                    <figcaption>Maiden Flight. April 10, 2023</figcaption>
+                </figure>
+                <p>
+                    On June 23, 2023 Schulich UAV flew with Hammerhead to Washington, DC competed in the AUVSI Student Unmanned Aerial Systems 2023 Competition at the St Mary's Regional Airport in Maryland. We placed 25th overall and were the only Canadian team to qualify. 
+                </p>
+                <figure>
+                    <img src="../images/Hammerhead/Competition.jpg" height="500">
+                    <img src="../images/Hammerhead/Competition_Setup.jpg" height="500">
+                    <figcaption>Schulich UAV at SUAS 2023</figcaption>
+                </figure>
+            </section>
+        </div>
+    </div>
 
     <footer>
         <ul class="social-media">

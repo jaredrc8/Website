@@ -744,12 +744,13 @@ body .days .day section p .redacted {
 }
 
 /* Project Pages */
+
 body .project-header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 10px;
     padding: 40px;
 }
 
@@ -762,6 +763,7 @@ body .project-body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 30px;
 }
 
 body .project-body .project-text {
@@ -778,6 +780,7 @@ body .project-body .project-text section {
     justify-content: flex-start;
     gap: 0px;
     width: 100vw;
+    padding-bottom: 50px;
 }
 
 body .project-body .project-text section h3 {
@@ -791,12 +794,22 @@ body .project-body .project-text section p {
     color: #5e503f;
     padding-left: 80px;
     padding-right: 80px;
+    text-align: justify;
+}
+
+body .project-body .project-text section span {
+    justify-self: center;
+    font-size: 1.4em;
+    color:#5e503f;
 }
 
 body .project-body .project-text section ul li {
     font-size: 1.4em;
     color:#5e503f;
-    
+}
+
+#Abstract {
+    border-bottom: solid 2px #C6AC8F;
 }
 
 #Abstract figure {
@@ -811,10 +824,24 @@ body .project-body .project-text section ul li {
     align-items: center;
 }
 
+body .project-header span {
+    font-size: 2em;
+    color:#5e503f;
+    border-top: solid 2px #C6AC8F;
+    border-bottom: solid 2px #C6AC8F;
+    width: 100vw;
+    text-align: center;
+    padding: 20px;
+}
+
 body .project-header figure {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-bottom: solid 2px #C6AC8F;
+    width: 100vw;
+    padding-bottom: 20px;
+    justify-content: center;
 }
 
 body .project-header figure figcaption {
@@ -829,26 +856,39 @@ body .project-body .project-text section figure figcaption {
     font-style: italic;
 }
 
-@keyframes scrollImages {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-100%)
-    }
-}
-
-body .project-body a {
+body .project-header a {
     text-decoration: none;
+
 }
 
-body .project-body a:hover {
+body .project-header a:hover {
     transform: scale(1.05);
     transition: 0.5s;
 }
 
-body .project-body a b {
+body .project-header a b {
     font-size: 2em;
     color:#5e503f;
     text-decoration: none;
+}
+
+#capstone {
+    background-color: white;
+}
+
+#Flight {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 60px;
+}
+
+#Flight figcaption {
+    text-align: center;
+    font-size: 1em;
+    color:#5e503f;
+    font-style: italic;
+}
+
+#suav {
+    background-color: white;
 }
