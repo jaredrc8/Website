@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="robots" content="noindex, nofollow">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/2faed38072.js" crossorigin="anonymous"></script>
+    <title>Jared Crebo - Blog</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+    <!-- Custom Styling -->
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1 class="logo-text"><a href="../index#"><span>Jared </span>Crebo</a></h1>
+        </div>
+        <ul class="nav">
+            <li><a href="../about#">About Me</a></li>
+            <li><a href="../career#">Career</a></li>
+            <li><a href="../travel#">Travel</a></li>
+            <li><a href="../blog#">Blog</a></li>
+        </ul>
+    </header>
+
+    <div class="blog-header">
+        <p>Op LENTUS 2024</p>
+        <section id="blog-subtitle">
+            <p>Emergency Response Operation to Alberta Wildfires</p>
+        </section>
+    </div>
+    <div class="blog-page">
+        <section id="Predeployment">
+            <p>
+                In the summer of 2024 I was working full-time at the Currie Barracks in Calgary. At the time I was on Full Time Summer Employment and awaiting orders to hopefully deploy to Op LENTUS this year. Op LENTUS is the recurring operation name for any sort of domestic deployment for natural disasters within Canada. It is enacted when provincial governments request federal resources to assist with wildfires, floods, avalanches, etc. Back in the day it was a rarer occurrence that the army would need to step in to assist provincial emergency services. For the past decade however, Op LENTUS has been activated for our unit almost every year for wildfires in Alberta or BC. The wildfires this year had been making national headlines as the beloved town of Jasper had to be evacuated.
+                <br><br>
+                With my combat engineer trades course being cancelled this summer, I was hoping to get the opportunity to participate in this year's operation, which is why I signed the full time contract for the summer. Near the end of July, Alberta officially requested federal assistance to deal with the wildfires. We saw this in the news first, and then received our warning order for deployment two days later. 
+            </p>
+            <a href="https://calgary.citynews.ca/2024/07/24/alberta-fire-update-evacuees/">Alberta asks for Canadian military help as wildfire danger spikes - CityNews Calgary - July 24, 2024</a>
+            <p>
+                <br>
+                On Monday, July 29, several units from southern Alberta convened at the Currie Barracks and we drove up to Canadian Forces Base (CFB) Edmonton. We stayed in shacks in building 222. Tuesday, July 30, we conducted our predeployment training which involved a FORCE test, a first aid course, and the S100M firefighting course. From already carrying the qualifications of the FORCE test and first aid this year, I only participated in the firefighting training. From 33 Engineer Squadron, 41 Combat Engineer Regiment, out of Calgary (my unit) we had me, Cpl Harris, Pte Perkins, Pte Hermanson, and Cpl McPhee. Joined with us from 25 Engineer Squadron, our sister squadron, was newly promoted Sgt Jacko, Cpl Richards, MCpl King, and Cpl Visscher. Together we were the only combat engineers in the entire company. Most of the company was comprised of infantry and armoured units from across Canada: Victoria to Thunder Bay. 
+                <br><br>
+                Throughout this entire deployment, there was a sense of uncertainty among the troops. We didn't know where we were going, and we were not communicated when we would be returning. A lot of time was wasted during this predeployment period, rounding the entire company together only to tell everyone they just need to talk to a few people. Communication like that could be sent via text. Through the disorganization, some people had to give verbal agreement to their contracts without knowing the terms. Information passed down from my unit indicated we would be home August 12 with a possible extension to August 19. The contract I signed said August 15. However, to be fair, the logistics behind planning an operation such as this within three days would be impossible to get perfect. I was given 72 hours of notice to mobilize, and our officers would have shared that time constraint. 
+                <br><br>
+                Our Tuesday evening was spent in the Jr Ranks Mess, sharing beers and playing pool. Tomorrow we were en route to Hinton, Alberta to assist in the firefighting efforts at Jasper National Park. Simultaneously, a combat engineer trades course was happening at CFB Edmonton. It's one of the courses I was supposed to be on currently, except mine got cancelled. Several guys from my home squadron were on that course, and it felt strange watching them on course being screamed at to do pushups. We seldom spoke except in the mess out of fear of getting roped into their punishments. I was still a no-hook private after all. 
+            </p>
+            <figure>
+                <img src="../images/Op Lentus 24/Convoy.jpeg" alt="Convoy Image">
+                <figcaption>Convoy leaving CFB Edmonton</figcaption>
+            </figure>
+        </section>
+        <section id="Jasper">
+            <p>
+                We arrived in the town of Hinton in the afternoon on August 1. 2 Princess Patricia's Canadian Light Infantry from CFB Borden, Manitoba had been the first to respond to Op LENTUS since they were full-time regular force. The town of Hinton had given the troops their recreational center hockey rink to operate out of. On the concrete rink floor, cots were built in organized rows and columns along each length. The center of the rink had pop-up tables with drinks and snacks. Outside in the parking lot, the cooks have set up a small trailer for serving hot food. The dressing room washrooms and showers were all we had to share with 120 troops. There were two toilets, 8 shower heads, and one urinal for 120 people and 95% of them being guys. The women got their own washroom and showers to themselves. Shortly after we arrived, 2 PPCLI returned from their day of work in Jasper. They came back with black, ashy faces and clothes, sweaty and exhausted. Part of me was excited to be there, and another part was getting a bit nervous. 
+                <br><br>
+                They equipped us with fireproof coveralls from Alberta Wildfire, a red hardhat, safety glasses, leather work gloves, and a respirator. Parks Canada and Alberta Wildfire came and gave us a briefing on the situation in Jasper. One third of the town of Jasper has been burnt to the ground. The fire inside the town has been extinguished but there are still fires in the surrounding area. Wildlife is currently roaming the empty streets of Jasper such as black bears and moose. After the briefing, we got our chow and settled into our cots for the night. Our cots were organized in columns by section, so we had our engineer section all together. 
+            </p>
+            <figure>
+                <img src="../images/Op Lentus 24/HintonRecCenter.jpeg" alt="Rec Centre Image">
+                <figcaption>Hinton Recreational Centre</figcaption>
+            </figure>
+            <p>
+                The company was split into three platoons. Our engineer section was 1 Section, 1 Platoon. Our first morning of work 1 Platoon took a bus from Hinton to the town of Jasper. As we approached, spot fires could be seen on the surrounding mountains with plumes of smoke filling the sky. The ground was blackened and scorched. Any remaining trees were stripped of their branches, appearing as just long black trunks that stuck out of the ashy dirt. As we entered the town, we witnessed blocks and blocks of rubble where houses used to stand. The southern portion of town was mostly burned down. They were fenced off with blue construction fencing and the rubble had been consolidated. For many homes, you were able to see into their basements, a truly awful sight. Several landmarks had crumbled as well. I didn't know the town very well, but the Edmontonians who knew it better were naming the buildings that used to stand in these places. 
+            </p>
+            <figure>
+                <img src="../images/Op Lentus 24/JasperHome.jpeg" alt="Jasper Image">
+                <figcaption>A home in Jasper</figcaption>
+            </figure>
+            <p>
+                1 Platoon was given a representative from Alberta Wildfire to lead us through the days work. His name was Mo, and he was awesome. We convened our equipment just up the road from Miette Ave on Bonhomme St. This was a road on the southwest border of the town. People had placed all of their flammable objects outside of their homes before leaving such as wooden furniture and propane tanks. The houses on the outskirts sat below a large hill, where a very clear burn line could be seen between the hill and the houses. 
+            </p>
+            <figure>
+                <img src="../images/Op Lentus 24/BurnLine.jpeg" alt="Burn Line Image">
+                <figcaption>Burn line up to Jasper homes</figcaption>
+            </figure>
+            <p>
+                The objective the next few days would be to ensure this area was cleared of hotspots so the town does not catch on fire again. Hotspots are fires that smolder underground and their embers can be carried by the wind for miles to reignite other areas. That's how fires can continue to burn and spread for years by remaining dormant underground. Helicopters were dispatched in the night with thermal cameras to locate hotspots in the area, and those coordinates were reported to our officers each day to find and extinguish. Our troops were equipped with shovels, pulaskis (axe + hoe combination), and large packs of water with a hose attachment that we called <i>piss packs</i>. The piss packs were carrying somewhere between 20 - 30 litres of water when full, so that was 20 - 30 kg of weight we had to haul up the hill. 
+            </p>
+            <figure>
+                <img src="../images/Op Lentus 24/CarryingPissPack.jpeg" alt="Equipment Image">
+                <figcaption>Me carrying a piss pack</figcaption>
+            </figure>
+            <p>
+                The initial strategy we had for finding these hotspots was by doing sweeps near the coordinates. We would hike up the hill with all our gear and make a line leading up the hill. The inclination of the hill was almost 45 degrees, and we would traverse across them on our sweeps. The first day, I volunteered to take a piss pack up with Mo and another Cpl from the King's Own Calgary Regiment to deal with a tree trunk we spotted with smoke spewing from within. Mo said he's had his eye on this one for a while, it had been burning for several days. Mo directed us how to open up the trunk and hose it down. The goal is to saturate the area of the wood with water to cool the temperature, and the pulaski is used to open up the inner part of the trunk to allow the water to saturate the inside where its burning the most. We took some time to break it and hose it down, but the surrounding area we were walking on was scorched black and white. No other vegatation was at risk of catching, so after some fruitless effort it was deemed that we should just let this burn out. The ash on the ground was like walking through light, fluffy sand that poofed into the air when stepped on. It was 30 degrees and dry most days, so we avoided wearing our respirators when we could despite the danger. The smoke was not the main adversary, it was the ash that would get kicked up into the air. 
+            </p>
+            <figure>
+                <img src="../images/Op Lentus 24/TraverseTerrain.jpeg" alt="Sweeping Image">
+                <figcaption>Sweeping areas</figcaption>
+            </figure>
+            <p>
+                Traversing through such terrain was also difficult and dangerous because of the nearly burnt trees that hadn't fallen yet. We called these trees <i>widowmakers</i>. The were often trees that had been burnt at the base of their trunk but remained intact above, weighing down on the crumbling structure. This is often how wildland firefighters get killed. 
+            </p>
+            <figure>
+                <img src="../images/Op Lentus 24/Widowmaker.jpeg" alt="Widowmaker Image">
+                <figcaption>Widowmaker</figcaption>
+            </figure>
+            <p>
+                Hotspots were found by spotting visual smoke rising from the ground, along with heat radiating from where you stepped. Troops from previous years had warned me that stepping in a hotspot could melt your boots if you don't have the proper kind. The sweep line was halted when a hotspot was found. Pulaskis were used to break apart the ground using the hoe end, and break up tree roots with the axe end. Shovels would come in and dig out the roots and burning mulch, exposing the smoldering fuel to the air. Then the piss packs would spray water on the exposed flame. This process would repeat for however deep the enflamed roots were until no heat could be detected. We checked if the hotspot was cool by putting the back of our hands on the dirt where the smoke was coming from and around the area. The water should cool it very quickly so if any heat is felt then that means there is more burning underneath, and we will have to dig deeper. 
+            </p>
+            <figure>
+                <img src="../images/Op Lentus 24/Ground.jpeg" alt="Ground Image">
+                <figcaption>Ground in Jasper</figcaption>
+            </figure>
+            <p>
+                We took a lunch break in the backyard of someone's home. The officers wanted to come by and see how we were doing. As we waited around, a giant plume of smoke could be seen over the hill coming from the northeast direction outside of the town of Jasper. It appeared white like a cloud, but it was pluming upwards almost like a mushroom cloud. As we began our second half of the work day, I spoke to Mo about the fire across the town. I asked how firefighters would be able to stop a fire like that. The only thing we can do is use air support to water bomb the area, because boots-on-the-ground would be too deadly for such a savage fire. After that, you can attempt to contain the fire with fire lines but the fire will basically burn until it runs out of fuel. 
+            </p>
+            <figure>
+                <img src="../images/Op Lentus 24/SmokePlume.jpeg" alt="Giant Smoke Image">
+                <figcaption>Giant plume of smoke from new fire across Jasper</figcaption>
+            </figure>
+            <p>
+                Large-scale sprinkler systems were set up on the outskirts of the town. These systems would spray water and saturate all the vegatation and the nearby houses with water. At the end of the day, we made our way back to the bus within Jasper and returned back to Hinton. We exited the bus and returned to our cots. It was a race for the showers, and then we'd eat dinner and settle down for the night. 2Lt MacNeil was the 1 Platoon IC (in-command), with Sgt Jacko as the 2IC (2nd in-command). Our engineer section was led by MCpl King and Cpl Harris. 2Lt MacNeil was a fantastic leader. He was very clear with his instructions and was very personable. He was one of the boys; always the last guy to get undressed from his coveralls. 
+                <br><br>
+                Once I had settled in, I would call my girlfriend and then read my book that my friend had lent me: With the Old Breed by Eugene Sledge. 
+                <br><br>
+                Our second day of firefighting, August 3, would change the pace of the operation. Our morning went smooth and relaxed. We filled our camelbacks and took the bus out to the same hill on the southwest side of Jasper. We trudged up the hill and found a hotspot that took almost an hour to clear out because of how deep it had gotten into the root system. I made sure to wear my respirator more since when walking uphill on the steep incline the person in front tends to kick up ash in your face. 
+            </p>
+            <figure>
+                <img src="../images/Op Lentus 24/HomeRubble.jpeg" alt="Jasper Rubble Image">
+                <figcaption>Burnt homes in Jasper</figcaption>
+            </figure>
+            <figure>
+                <img src="../images/Op Lentus 24/JasperViewpoint.jpeg" alt="Jasper View Image">
+                <figcaption>Jasper from viewpoint</figcaption>
+            </figure>
+            <p>    
+                I was also dealing with a tough blister on my heel that I got from wearing the steel-toed boots they issued us. We continued our work sweeping areas and clearing hotspots throughout the morning until we headed down for lunch. The sky was filled with more smoke than yesterday because of that new fire that had erupted in the northeast. The smoke made it difficult to see where the source of that fire was but it seemed to be raging on. Air support is terribly difficult in the mountains, since water bombers can't fly low enough to be accurate. There was another spot fire that had erupted near our hill, either to the south or north I cannot recollect. But shifting winds were becoming a great concern, and eventually the helicopters had to be grounded. All of the firefighter crews convened at the Alberta Wildfire HQ. We met with some fire crews from Ontario, Wawa Fire, and traded patches with them. 
+                <br><br>
+                There was some uncertainty over what we were doing there or why we had not just gone back to Hinton. A woman from either Alberta Wildfire or Parks Canada gathered us in a circle in the parking lot and gave us some grim news: a firefighter had been critically injured. He was a tree feller cutting down those widowmaker trees, and the strong winds must have blown one in the wrong direction and crushed him. He was medevac'd to the nearest hospital. They did not release his name or any more details until the information reached the family first, but we would learn later that his name was Morgan Kitchen, and he would die of his injuries that night in hospice. The day's operations were ceased so the firefighters could mourn. Mo took it hard, as Morgan was his friend. He did not join us the following day, taking some time to grieve.
+                <br><br>
+                The following morning, a memorial service was held for Morgan Kitchen in Hinton. We stood at attention in a row along the highway and gave a salute to the firetruck as it drove by. Kitchen's family exited the funeral home and I watched the father gasp when he saw us. We lined the highway for blocks. There were maybe 6 in the family, including some children. Kitchen was also a former Calgary Highlander, so some of my fellow troops took this loss very hard. 
+            </p>
+            <a href="https://www.cbc.ca/news/canada/calgary/morgan-kitchen-funeral-calgary-firefighter-jasper-1.7297672">Morgan Kitchen, firefighter who died battling Jasper wildfire, laid to rest in Calgary - CBC News - August 18, 2024</a>
+            <p>
+                The following morning, a memorial service was held for Morgan Kitchen in Hinton. We lined the highway for blocks at attention and gave a salute to the firetruck as it drove by. Kitchen's family exited the funeral home and I watched the father gasp when he saw us. Seeing his father react to us was an emotional experience. Despite not knowing Kitchen personally, I was deeply moved by the incident, especially after seeing his family. There were maybe 6 in the family, including some children. Kitchen was also a former Calgary Highlander, so some of my fellow troops took this loss very hard.
+                <br><br>
+                The local indigenous community offered the all first responders to attend a smudging ceremony the following morning, to bless us with safety given what had occurred. Around 40 of us attended the ceremony. The indigenous woman said a very passionate chant in her native language, while igniting the sage in a wooden bowl and wafting it over herself. She began to cry by the end of her chant. One by one, each of us took turns bathing ourselves in the smoke which she would pour into our hands to wash over our faces and head. The we would turn around and she would waft the smoke over our backs with an eagle feather. I felt very appreciative of them for doing this ceremony for us, as not only might it bring us luck but it was also a unique cultural experience. 
+                <br><br>
+                Each subsequent day was routine after that incident. For the next week or so we would wake up in our rec center in Hinton, and take our bus to the same hill on the southwest side of Jasper. Hotspots were becoming more and more scarce to find, so we began switching strategies to sending out separate parties of people to the hotspot coordinates directly instead of sweeping large areas. I would regularly volunteer to join small work parties to hike up steep hills to access these hotspot coordinates that the main body could not reach safely. Some areas were just so densely packed with widowmakers that having a large body of people would pose too much danger. Individuals can move out of the way a lot faster when there's nobody around them. Especially on these steeper hills, giant black logs that already fell would be stacked behind other widowmakers on the hill. If one of those supporting widowmakers fell, the entire stack would come rolling down.          
+            </p>
+            <figure>
+                <img src="../images/Op Lentus 24/BurningTrunk.jpeg" alt="Burning Trunk">
+                <figcaption>Burning tree stump</figcaption>
+            </figure>
+            <p>
+                Working around these hills by Jasper also allowed views of the town and the scale of the destruction. Visibly, you could see blocks and blocks of rubble; a tragic sight. There was a pair of memorial park benches at one of these viewpoints. Somehow, one of them was burnt to nearly ashes while the other was perfectly intact. We found it amusing. 
+            </p>
+            <figure>
+                <img src="../images/Op Lentus 24/JasperViewpoint2.jpeg" alt="Viewpoint Image">
+                <figcaption>Jasper viewpoint</figcaption>
+            </figure>
+            <figure>
+                <img src="../images/Op Lentus 24/BurntBench.jpeg" alt="Bench Image">
+                <figcaption>Park benches at Jasper viewpoint</figcaption>
+            </figure>
+            <p>
+                The town of Hinton was so caring towards us as well. The church across the street invited us over for dinner one night. These nice old ladies made us hot food, serving buffet style. It was delicious food and a demonstration of remarkable kindness. Some of them were residents of Jasper taking refuge in the town. 
+                <br><br>
+                There was another dinner that was organized for us at the Royal Canadian Legion on behalf of the entire town. We took a group photo in front of the cross out front, and then joined the townspeople to share in the delicious food and kindness. One old lady who cooked the food was flirting with our regimental sergeant major, which we found hilarious. The troops sat next to the townspeople of Hinton, and a Jasper local stood up and gave a speech on how grateful he was for us to be there. Many of these people have had their homes turned to rubble. I sat next to a group of Jasper residents who were also very appreciative of us, and seemed a bit intimidated to talk at the table. Once the conversation started it kepts rolling through. They were very interested in what the Canadian Army was involved in nowadays in terms of deployments and operations. I did my best to explain our operations in Europe, but it was shortlived as our commanders called us back to return to the rec center. 
+            </p>
+            <figure>
+                <img src="../images/Op Lentus 24/Legion.jpeg" alt="Dinner Image">
+                <figcaption>Royal Canadian Legion - Hinton, AB</figcaption>
+            </figure>
+            <p>
+                Towards the end of the week, we got rain which was such a blessing. It curbed the heat on us, and took out most of the hotspots. By the end of our deployment in Jasper we were being sent into falsely detected hotspots that were just rocks that had heated up in the sun. Our tenure in Jasper was pretty much over at this point. Rumours began circulating among the troops of a redeployment to northern Alberta, pending if the Alberta government renews their request for assistance from the federal government on August 8. 
+                <br><br>
+                1 Platoon had nicknamed ourselves <i>Hill Troop</i>, since our assigned terrain was very mountainous and difficult. It seemed like the other two platoons had much easier work on flat terrain. So we would always return to Hinton last from our workday, chanting <i>"ONE TROOP, HILL TROOP"</i>. 
+            </p>
+            <figure>
+                <img src="../images/Op Lentus 24/BarrenGround.jpeg" alt="Wet Firefighting Image">
+                <figcaption>Barren ground</figcaption>
+            </figure>
+            <p>
+                August 7 was our last day working on Jasper. We were no longer working that same hill by the end of the deployment in Jasper, but on a flatter area near the outskirts of town. There was the green Jasper sign nearby. One time as I crossed the highway from doing sentry duty, one of the road workers thanked me randomly. It just showed once again the appreciation of the local people, and that made the work so rewarding. We took photos of our platoon by the Jasper sign, of our engineer section, and of the entire company by a nearby lake. 
+            </p>
+            <figure>
+                <img src="../images/Op Lentus 24/1Platoon.jpeg" alt="1 Platoon Photo">
+                <figcaption>1 Platoon + Mo</figcaption>
+            </figure>
+            <figure>
+                <img src="../images/Op Lentus 24/Engineers.jpeg" alt="1 Section (Engineer Section)">
+                <figcaption>1 Section (combat engineer section)</figcaption>
+            </figure>
+            <figure>
+                <img src="../images/Op Lentus 24/41Brigade.jpeg" alt="41 Brigade Territorial Battle Group">
+                <figcaption>41 Brigade Territorial Battle Group - Operation LENTUS 24-02 in Jasper, Alberta on 7 August 2024<br>Photo Credit: Corporal Peter Grieves<br>Directorate Army Public Affairs</figcaption>
+            </figure>
+        </section>
+        <section id="North">
+            <p>
+                That day we returned to CFB Edmonton. We were all excited to be going home. All of us had been working with equipment that we had packed in just 72 hours. The operation had gone on for almost two weeks now, and many of us were hoping to go home soon, myself included. Some of us were even talking about cutting our contracts to go home early, since the miscommunication about our date of return was beginning to frustrate people, especially with families and jobs. When August 8 came, we were notified that the request for assistance was renewed. However, since this was a redeployment it was technically a new contract we had to sign which allowed the troops the option to not sign and go home immediately. Some people took the opportunity. I was tempted to after days of hiking and labour but ultimately decided I wanted to see this whole thing through for the experience. I convinced a couple others to stay who were going to go home as well. 
+                <br><br>
+                Our new mission details were fuzzy, but we knew we were going very far north. The word was to prepare for the mosquitos and the dangers of being in these backwood towns we may be staying in. We eventually found out the exact location that we were redeploying to. It was the Semo Fire Complex that was raging in John D'Or Prairie Reserve in the High Level district of Alberta. This was about as close to the Northwest Territories border as you could get, and farther north than I had ever been in my life, even when working in the oil sands. 
+                <br><br>
+                It took a couple of days for logistics to be planned, and on August 10 we drove nearly 10 hours from Edmonton to a remote firefighter camp north of John D'Or Prairie town and just south of highway 58. The Semo Fire Complex was over 100,000 hectares, whereas the Jasper fire was only 33,000 hectares. At the camp, there were 700 firefighters and over 80 helicopters working this fire. I was a part of the advanced party that left CFB Edmonton a day earlier than the rest of the company. We filled tens of jerry cans of water for the trip up, since this reserve apparently did not have a drinkable water source. The camp itself was made from oilfield camp trailers; the ones with one bathroom shared between two rooms. We got hot food and beds for the night in the trailers, but there were not enough resources at the camp to accommodate the entire army. Therefore, we began firefighting immediately the next day while the rest of the company drove up and set up mod tents for us to return to. There was also not enough food for us, so we had to rely on our military rations for three meals a day. We called our little section of the camp, <i>Camp Morgan</i>, named after Morgan Kitchen. 
+            </p>
+            <figure>
+                <img src="../images/Op Lentus 24/SemoFireComplex.jpeg" alt="Semo Image">
+                <figcaption>Semo Fire Complex - black circle is Camp Morgan</figcaption>
+            </figure>
+            <figure>
+                <img src="../images/Op Lentus 24/CampMorgan.jpeg" alt="Camp Morgan Image">
+                <figcaption>Camp Morgan</figcaption>
+            </figure>
+            <p>
+                Rez dogs from the reserve had come to the camp for food. This is one of the tragic tales of this story, but these dogs were left in John D'Or Prairie when the town was evacuated. Some of the dogs were left tied up to their homes and starved to death. Others were tied close to each other and had resorted to cannibalism to survive. Dogs that were kept off leash had resorted to attacking the horses. The first firefighters to respond had witnessed the gruesomeness and gore of it. The dogs here at Camp Morgan would have escaped that and found this camp, where food is plentiful and where they probably get fed and petted all day. Poor dogs... 
+            </p>
+            <figure>
+                <img src="../images/Op Lentus 24/RezDog.jpeg" alt="Rez Dogs Image">
+                <figcaption>Rez dogs at Camp Morgan</figcaption>
+            </figure>
+            <p>
+                The fire in Jasper was very high profile, garnering national headlines across Canada. But the Semo Fire Complex was a much tougher fire. First, the forest was twice as dense, so the danger of widowmakers was elevated. The denser vegetation also meant we had to climb over rows of fallen trees rather than just walking straight like in Jasper. The heat was awful as well. 32 degrees of unrelenting sun, and since we were more north we had more UV exposure. These were prime fire conditions, as there was not a cloud in the sky. 
+            </p>
+            <figure>
+                <img src="../images/Op Lentus 24/DenseVegetation.jpeg" alt="Dense Vegetation">
+                <figcaption>Dense vegetation</figcaption>
+            </figure>
+            <p>
+                We had an early morning waking up for the morning brief at 6am. We drove out to an area called the hockey stick, which was aptly named because of its hockey stick shape on the map. We did a sweep on this area, but to no availe. The day was long and tiresome just trudging through the ashes and hurdling over fallen trees, but we found no hotspots the first day. We rode out to site on these little tracked vehicles decommissioned from the Swedish army. The smoke we encountered was thicker than anything I had experience in the past. As we drove by the immediate south of the main fire body, you couldn't see the berm of the gravel road. Apparently, many people have already been medevac'd from crashing on this road because of this. 
+            </p>
+            <figure>
+                <img src="../images/Op Lentus 24/ThickSmoke.jpeg" alt="Image">
+                <figcaption>Thick smoke while driving to the hockey stick</figcaption>
+            </figure>
+            <p>
+                This camp was also filled with firefighters from Costa Rica and Mexico. I practiced my Spanish with the Costa Ricans who were very friendly. We traded patches with the Costa Ricans and the Mexicans, although the Mexicans seemed more unfriendly. I also tried speaking to them but I think they had been here longer and were tired. I also traded for a Northwest Territories firecrew t-shirt from another firefighter which was awesome. 
+            </p>
+            <p>
+                Our second day in John D'Or Prairie was the real deal. This was the most action we had gotten the entire deployment, and it couldn't have come at a worse time. At that same hockey stick, 32 degrees, sunny, at 3pm we spot three major hotspots. But these hotspots were honestly more like hot areas, and they were impossible to access. This section of the hockey stick and been recently waterbombed, but the terrain we were walking in was no longer burnt vegetation. Bushwhacking through living vegetation is much more difficult than when it had been burnt to ashes. But also the waterbombing had knocked over all the trees, so we we had to hurdle over them to reach these difficult hotspots with our heavy piss packs. I was on the piss pack when it was first sighted. 
+            </p>
+            <figure>
+                <img src="../images/Op Lentus 24/AshyGround.jpeg">
+                <figcaption>Hot, dry conditions in John D'Or Prairie</figcaption>
+            </figure>
+            <figure>
+                <video height="700" autoplay muted loop controls>
+                    <source src="../images/Op Lentus 24/GiantHotspot2.mp4" type="video/mp4">
+                </video>
+                <figcaption>One of three giant hotspots</figcaption>
+            </figure>
+            <p>
+                The worst part of it was that the fire was burning underneath all of this living vegetation that had been knocked over to the ground. So there was burning smoke underneath all of these trees; a recipe for disaster. This was the opportunity I was waiting for though. We worked this fire hard, and I chugged through my 3L camelback of water within the hour. Once my piss pack ran out I stole a pulaski and was digging away. Water was scarce to access here, so we had to send runners in and out of the forest to refill the water. In the meantime, the water we had had to be conserved for anytime the smoldering would cause on open flame on the vegetation. 
+            </p>
+            <figure>
+                <video height="700" autoplay muted loop controls>
+                    <source src="../images/Op Lentus 24/GiantHotspot.mp4" type="video/mp4">
+                </video>
+                <figcaption>One of three giant hotspots</figcaption>
+            </figure>
+            <p>
+                I had never sweated so hard in my life, especially with those fire coveralls on. My inner shirt was complete saturated with sweat once I finally took a break to refill my camelback. One person fainted from exhaustion. Once I was refilled I ran right back out there, rotating between the three hotspot areas we had found. The adrenaline made the time fly by, and by the time we had finished it was almost 6pm. By far, that was the wildest day we had. 
+            </p>
+            <figure>
+                <img src="../images/Op Lentus 24/MeSweaty.jpeg" alt="Image">
+                <figcaption>Me, exhausted</figcaption>
+            </figure>
+            <p>
+                With our contracts ending, August 15 was our last day here before the regular force took over another rotation. 2 Platoon had cleared the other end of the hockey stick that last day, so we no longer had to worry about that area. Today we were working at a firebreak that had been made by some dozers, but the burning material had been pushed and buried on the wrong side of the fire line. We finally got to make use of the water hoses and extinguish that section all along the firebreak. It was a fitting last day. 
+            </p>
+            <figure>
+                <img src="../images/Op Lentus 24/Firebreak.jpeg" alt="Image">
+                <figcaption>Burning firebreak</figcaption>
+            </figure>
+            <figure>
+                <img src="../images/Op Lentus 24/Waterhose.jpeg" alt="Image">
+                <figcaption>Me on the water hose</figcaption>
+            </figure>
+            <p>
+                We ended our work day, packed up our kit, and drove to Fort Vermillion for the night where we bunkered down in yet another hockey rink. The operation was over. Our group decided to go out in Fort Vermillion for dinner, and then we hung out on the dock of the Peace River. The river was so massive and wide, and the water was calm. We cracked jokes and just chatted until we had to go back for 10pm curfew. The following day we drove back to CFB Edmonton and dispersed to our home units. I was finally in my own bed again that night. 
+            </p>
+            <figure>
+                <img src="../images/Op Lentus 24/PeaceRiver.jpeg" alt="Image">
+                <figcaption>Peace River at Fort Vermillion</figcaption>
+            </figure>
+            <p>
+                Not a bad way to spend a summer ...
+            </p>
+        </section>
+    </div>
+    <footer>
+        <ul class="social-media">
+            <li><a href="https://www.linkedin.com/in/jaredcrebo/"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/jaredrc8/"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+            <li><a href="mailto:jaredrc8@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a></li>
+        </ul>
+    </footer>
+</body>
+
+
+</html>
