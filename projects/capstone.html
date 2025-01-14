@@ -148,7 +148,7 @@
                 <p>
                     <br><br>
                     <b>1.3 Grid Convergence Study</b><br>
-                    A grid convergence study is conducted on the mesh. Three meshes of varying refinement levels are simulated to compare the change in solution with respect to the grid per the procedure outlined by P.J. Boache. (1994)[30]. The  parameter used for the refinement ratio is the spacing of the refinement box, and the solution is taken as the lift coefficent of the UAV.                   
+                    A grid convergence study is conducted on the mesh. Three meshes of varying refinement levels are simulated to compare the change in solution with respect to the grid per the procedure outlined by P.J. Boache. (1994)[30]. The  parameter used for the refinement ratio is the spacing of the refinement box, and the solution is taken as the lift coefficient of the UAV.                   
                 </p>
                 <figure>
                     <img src="../images/Capstone/MeshStatistics.jpg">
@@ -179,7 +179,7 @@
                     <b>1.4 Computational Parameters</b><br>
                     The choice of computational parameters and settings for the simulation in OpenFOAM depends on the desired output parameters. The objective of this CFD analysis is to obtain aerodynamic coefficients of the UAV in various states. This requires an accurate model of the pressure gradient around the UAV and the boundary layer. Computational efficiency must also be a priority when deciding what settings to use.
                     <br><br>
-                    The UAV is assumed to be steady-state in each simulation to isolate the change in aerodynamics to only the effects of angle of attack, sideslip angle, or control surface deflection. This is a reasonable assumption for the determination of pressure forces and moments associated with each state because they do not change with time except from the effects of flow separation and vortices in the wake which may cause slight oscillations in pressure about a mean value. Therefore, the steady-state assumption is valid and the simpleFoam solver for steady-state, incompressible flow is selected to reduce the computational cost of solving for the pressure gradient. This solver will numerically solve the governing NavierStokes equations for incompressible, steady-state flow using the finite volume method (FVM). 
+                    The UAV is assumed to be steady-state in each simulation to isolate the change in aerodynamics to only the effects of angle of attack, sideslip angle, or control surface deflection. This is a reasonable assumption for the determination of pressure forces and moments associated with each state because they do not change with time except from the effects of flow separation and vortices in the wake which may cause slight oscillations in pressure about a mean value. Therefore, the steady-state assumption is valid and the simpleFoam solver for steady-state, incompressible flow is selected to reduce the computational cost of solving for the pressure gradient. This solver will numerically solve the governing Navier-Stokes equations for incompressible, steady-state flow using the finite volume method (FVM). 
                     <br><br>
                     Three aerodynamic coefficients are not steady-state and require a transient simulation for their derivation. These are p, q, and r; the roll rate, pitching rate, and yaw rate, respectively. The rates of change are a function of time by definition and therefore cannot by modeled with simpleFoam. However, a set of transient simulations requires a computational cost that is unreasonable for the timeline of the project. Therefore, these coefficients will be taken from the OpenVSP analysis.
                     <br><br>
@@ -199,7 +199,7 @@
                     <figcaption>Boundary Conditions and Initial Conditions</figcaption>
                 </figure>
                 <p>
-                    The initial velocity of U is set to 20m/s in the +x direction (downstream) as this is within the range of the cruise regime (17-22m/s) specified by the manufacturer MakeFlyEasy and the targeted velocity when conducting the experimental flight tests. The pressure, p, is initially set to the mean air pressure of Calgary between 1981 and 2010[31]. However, this value can be set arbitrarily since the output parameters depend on the relative pressure gradient around the UAV rather than the absolute pressure values. The parameters for turbulent kinematic viscosity and modified turbulent viscosity are calculated based on the standard 𝜈=1.48𝐸−5	𝑚/𝑠 for air at room temperature. The convergence criteria for each variable U, p, and ṽ were set to a residual tolerance of 1E-7.  
+                    The initial velocity of U is set to 20m/s in the +x direction (downstream) as this is within the range of the cruise regime (17-22m/s) specified by the manufacturer MakeFlyEasy and the targeted velocity when conducting the experimental flight tests. The pressure, p, is initially set to the mean air pressure of Calgary between 1981 and 2010[31]. However, this value can be set arbitrarily since the output parameters depend on the relative pressure gradient around the UAV rather than the absolute pressure values. The parameters for turbulent kinematic viscosity and modified turbulent viscosity are calculated based on the standard 𝜈=1.48𝐸−5  𝑚/𝑠 for air at room temperature. The convergence criteria for each variable U, p, and ṽ were set to a residual tolerance of 1E-7.  
                     <br><br>
                     <b>1.5 Computational Fluid Dynamics</b><br>
                     Access to the Advanced Research Computing (ARC) cluster at the University of Calgary was granted for the purpose of computing the CFD simulations for this project. The ARC cluster is a high-performance compute cluster comprised of hundreds of servers interconnected with a high bandwidth interconnect available for research projects based at the University of Calgary. This allows the spatial domain of each simulation case to be split into hundreds of cores working in parallel to solve the Navier-Stokes equations that govern fluid flow. A total of 11 cases were ran in OpenFOAM v2012, as this is the same version used by the AeroCore lab.
@@ -358,5 +358,5 @@
     </footer>
 </body>
 
-
 </html>
+
