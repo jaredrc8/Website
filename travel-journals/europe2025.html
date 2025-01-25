@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/2faed38072.js" crossorigin="anonymous"></script>
+    <title>Jared Crebo - Travel Journal</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+    <!-- Custom Styling -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"/>
+    <style>
+        #map {
+            width: 40vw;
+            max-width: 720px;
+            height: 400px;
+            border-radius: 15px;
+        }
+    </style>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1 class="logo-text"><a href="../index.html"><span>Jared </span>Crebo</a></h1>
+        </div>
+        <ul class="nav">
+            <li><a href="../about.html">About Me</a></li>
+            <li><a href="../career.html">Career</a></li>
+            <li><a href="../travel.html">Travel</a></li>
+            <li><a href="../blog.html">Blog</a></li>
+        </ul>
+    </header>
+
+    <div class="contents">
+        <p>
+            Contents
+        </p>     
+        <ul>
+            <li><a href="#September 29">September 29</a></li>
+            <li><a href="#September 30">September 30</a></li>
+            <li><a href="#October 1">October 1</a></li>
+            <li><a href="#October 2">October 2</a></li>
+            <li><a href="#October 3">October 3</a></li>
+            <li><a href="#October 4">October 4</a></li>
+            <li><a href="#October 5">October 5</a></li>
+            <li><a href="#October 6">October 6</a></li>
+            <li><a href="#October 7">October 7</a></li>
+            <li><a href="#October 8">October 8</a></li>
+            <li><a href="#October 9">October 9</a></li>
+            <li><a href="#October 10">October 10</a></li>
+            <li><a href="#October 11">October 11</a></li>
+            <li><a href="#October 12">October 12</a></li>
+            <li><a href="#October 13">October 13</a></li>
+            <li><a href="#October 14">October 14</a></li>
+            <li><a href="#October 15">October 15</a></li>
+            <li><a href="#October 16">October 16</a></li>
+            <li><a href="#October 17">October 17</a></li>
+            <li><a href="#October 18">October 18</a></li>
+            <li><a href="#October 19">October 19</a></li>
+            <li><a href="#October 20">October 20</a></li>
+            <li><a href="#October 21">October 21</a></li>
+            <li><a href="#October 22">October 22</a></li>
+            <li><a href="#October 23">October 23</a></li>
+            <li><a href="#October 24">October 24</a></li>
+            <li><a href="#October 25">October 25</a></li>
+            <li><a href="#October 26">October 26</a></li>
+            <li><a href="#October 27">October 27</a></li>
+            <li><a href="#October 28">October 28</a></li>
+            <li><a href="#October 29">October 29</a></li>
+            <li><a href="#October 30">October 30</a></li>
+            <li><a href="#October 31">October 31</a></li>
+            <li><a href="#November 1">November 1</a></li>
+            <li><a href="#November 2">November 2</a></li>
+        </ul>
+        
+    </div>
+
+    <div class="days">
+        <div class="journal-title">
+            <p>Silk Road Part 3: Europe Travel Journal</p>
+            <div id="map"></div>
+            <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+            <script>
+                const map = L.map('map', {
+                    scrollWheelZoom: false,
+                    doubleClickZoom: false,
+                    touchZoom: false,
+                    dragging: true,
+                    zoomControl: false
+                }).setView([10, 80], 4);
+                L.tileLayer('https://api.mapbox.com/styles/v1/jaredrc8/cm2xhtey200nt01r6a3l595ps/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiamFyZWRyYzgiLCJhIjoiY20yeGhxZDV0MDVkbDJrcTI3eTVrc280eiJ9.ErTKzFjOLEtvUgf2C7ckrw', {
+                maxZoom: 18,
+                tileSize: 512,
+                zoomOffset: -1,
+                attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>'
+            }).addTo(map);
+            /*
+            const coords = [
+                [40.6401, 22.9444], // Thessaloniki, Greece
+                [41.3275, 19.8189], // Tirana, Albania
+                [42.4410, 19.2626], // Podgorica, Montenegro
+                [43.3433, 17.8078], // Mostar, Bosnia and Herzegovina
+                [43.5081, 16.4402], // Split, Croatia
+                [45.8150, 15.9819], // Zagreb, Croatia
+                [46.0569, 14.5058], // Ljubljana, Slovenia
+                [45.4408, 12.3155], // Venice, Italy
+                [44.4949, 11.3426], // Bologna, Italy
+                [43.7696, 11.2558], // Florence, Italy
+                [41.9028, 12.4964]  // Rome, Italy
+            ];
+            */
+
+            const theIcon = document.createElement('i');
+            theIcon.classList.add('fas', 'map-pin');
+            theIcon.style.color = 'gold';
+            theIcon.style.fontSize = '24px';
+
+            coords.forEach(coord => {
+                L.marker(coord).addTo(map);
+            });
+
+            const route = L.polyline(coords, {
+                color: 'black',
+                weight: 4,
+                opacity: 0.7
+            }).addTo(map);
+
+            map.fitBounds(route.getBounds());
+
+            map.setZoom(map.getZoom() - 1);
+
+            </script>
+        </div>
+    </div>
+
+    <footer>
+        <ul class="social-media">
+            <li><a href="https://www.linkedin.com/in/jaredcrebo/"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/jaredrc8/"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+            <li><a href="mailto:jaredrc8@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
