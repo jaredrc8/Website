@@ -16,6 +16,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 
     <!-- Custom Styling -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"/>
+    <style>
+        #map {
+            width: 40vw;
+            max-width: 720px;
+            height: 400px;
+            border-radius: 15px;
+        }
+    </style>
     <link rel="stylesheet" href="../style.css">
 </head>
 
@@ -31,6 +40,286 @@
             <li><a href="../blog.html">Blog</a></li>
         </ul>
     </header>
+    <div class="contents">
+        <p>Contents</p>
+        <ul>
+            <li><a href="#July 1">Quito, Ecuador. July 1</a></li>
+            <li><a href="#July 2">Quito, Ecuador. July 2</a></li>
+            <li><a href="#July 3">Quito, Ecuador. July 3</a></li>
+            <li><a href="#July 4">Quito, Ecuador. July 4</a></li>
+            <li><a href="#July 5">July 5</a></li>
+            <li><a href="#July 6">July 6</a></li>
+            <li><a href="#July 7">July 7</a></li>
+            <li><a href="#July 8">July 8</a></li>
+            <li><a href="#July 9">July 9</a></li>
+            <li><a href="#July 10">July 10</a></li>
+            <li><a href="#July 11">July 11</a></li>
+            <li><a href="#July 12">July 12</a></li>
+            <li><a href="#July 13">July 13</a></li>
+            <li><a href="#July 14">July 14</a></li>
+            <li><a href="#July 15">July 15</a></li>
+            <li><a href="#July 16">July 16</a></li>
+            <li><a href="#July 17">July 17</a></li>
+            <li><a href="#July 18">July 18</a></li>
+            <li><a href="#July 19">July 19</a></li>
+            <li><a href="#July 20">July 20</a></li>
+            <li><a href="#July 21">July 21</a></li>
+            <li><a href="#July 22">July 22</a></li>
+            <li><a href="#July 23">July 23</a></li>
+            <li><a href="#July 24">July 24</a></li>
+            <li><a href="#July 25">July 25</a></li>
+            <li><a href="#July 26">July 26</a></li>
+            <li><a href="#July 27">July 27</a></li>
+            <li><a href="#July 28">July 28</a></li>
+            <li><a href="#July 29">July 29</a></li>
+            <li><a href="#July 30">July 30</a></li>
+            <li><a href="#July 31">July 31</a></li>
+            <li><a href="#August 1">August 1</a></li>
+            <li><a href="#August 2">August 2</a></li>
+            <li><a href="#August 3">August 3</a></li>
+            <li><a href="#August 4">August 4</a></li>
+            <li><a href="#August 5">August 5</a></li>
+            <li><a href="#August 6">August 6</a></li>
+            <li><a href="#August 7">August 7</a></li>
+            <li><a href="#August 8">August 8</a></li>
+            <li><a href="#August 9">August 9</a></li>
+            <li><a href="#August 10">August 10</a></li>
+            <li><a href="#August 11">August 11</a></li>
+            <li><a href="#August 12">August 12</a></li>
+            <li><a href="#August 13">August 13</a></li>
+            <li><a href="#August 14">August 14</a></li>
+            <li><a href="#August 15">August 15</a></li>
+            <li><a href="#August 16">August 16</a></li>
+            <li><a href="#August 17">August 17</a></li>
+            <li><a href="#August 18">August 18</a></li>
+            <li><a href="#August 19">August 19</a></li>
+            <li><a href="#August 20">August 20</a></li>
+            <li><a href="#August 21">August 21</a></li>
+            <li><a href="#August 22">August 22</a></li>
+            <li><a href="#August 23">August 23</a></li>
+            <li><a href="#August 24">August 24</a></li>
+            <li><a href="#August 25">August 25</a></li>
+            <li><a href="#August 26">August 26</a></li>
+        </ul>
+    </div>
+    <div class="days">
+        <div class="journal-title">
+            <p>South America 2023 Travel Journal</p>
+            <div id="map"></div>
+            <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+            <script>
+                const map = L.map('map', {
+                    scrollWheelZoom: false,
+                    doubleClickZoom: false,
+                    touchZoom: false,
+                    dragging: true,
+                    zoomControl: false
+                }).setView([10, 80], 4);
+                    L.tileLayer('https://api.mapbox.com/styles/v1/jaredrc8/cm2xhtey200nt01r6a3l595ps/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiamFyZWRyYzgiLCJhIjoiY20yeGhxZDV0MDVkbDJrcTI3eTVrc280eiJ9.ErTKzFjOLEtvUgf2C7ckrw', {
+                    maxZoom: 18,
+                    tileSize: 512,
+                    zoomOffset: -1,
+                    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>'
+                }).addTo(map);
+    
+                const coords = [
+                    [-0.1807, -78.4678], // Quito, Ecuador
+                    [-0.9538, -90.9656], // Galapagos Islands, Ecuador
+                    [-2.9006, -79.0045], // Cuenca, Ecuador
+                    [-12.0464, -77.0428], // Lima, Peru
+                    [-14.0678, -75.7286], // Ica, Peru
+                    [-13.5320, -71.9675], // Cusco, Peru
+                    [-16.5661, -69.0414], // Desaguadero, Peru
+                    [-16.4897, -68.1193], // La Paz, Bolivia
+                    [-20.4603, -66.8267], // Uyuni, Bolivia
+                    [-22.9150, -68.2039], // San Pedro de Atacama, Chile
+                    [-33.4489, -70.6693], // Santiago, Chile
+                    [-32.8908, -68.8272], // Mendoza, Argentina
+                    [-34.6037, -58.3816], // Buenos Aires, Argentina
+                    [-25.5163, -54.5854], // Foz do Iguacu, Brazil
+                    [-23.5505, -46.6333], // Sao Paulo, Brazil
+                    [-22.9068, -43.1729]  // Rio de Janeiro, Brazil
+                ];
+
+    
+                const theIcon = document.createElement('i');
+                theIcon.classList.add('fas', 'map-pin');
+                theIcon.style.color = 'gold';
+                theIcon.style.fontSize = '24px';
+        
+                coords.forEach(coord => {
+                    L.marker(coord).addTo(map);
+                });
+        
+                const route = L.polyline(coords, {
+                    color: 'black',
+                    weight: 4,
+                    opacity: 0.7
+                }).addTo(map);
+        
+                map.fitBounds(route.getBounds());
+        
+                map.setZoom(map.getZoom());
+    
+            </script>
+        </div>
+        <div class="day">
+            <section id="July 1">
+                <h3>Quito, Ecuador. July 1, 2023.</h3>
+                <figure>
+                    <img src="">
+                    <figcaption></figcaption>
+                </figure>
+                <p>
+                    We arrived in Quito at 10:30pm, right when the last bus to the city itself had already left. 
+                    I was ready to finally reach my destination, especially after getting my ear talked off by that nice lady from Sylvan Lake visiting her boyfriend in South Carolina. 
+                    All I had to eat the entire day was some Wendy's from the Miami airport at like 3pm during our second layover. 
+                    <br><br>
+                    Unfortunately, at 10:30pm in Quito everything is closed and kind of sketchy too. 
+                    We were approached by a man who offered to take us to our hostel from $25 USD. 
+                    There was no public transit until 4am the next day, and Ubers were costing similarly at $23 so we figured we would just take the taxi the man was offering. 
+                    <br><br>
+                    I showed the driver my Google Maps from the airport to the hostel, and he memorized it and drove us there. 
+                    He drove super fast, cutting through people and even speeding past cop cars. 
+                    I think that is just how it is down here. 
+                    I made sure to keep looking at the maps in case he tried taking us somewhere else. 
+                    <br><br>
+                    While we were driving on the highway, someone had left their motorcycle in the middle of the road splitting two lanes. 
+                    We had to swerve to the shoulder at high speed to avoid it. 
+                </p>
+                <figure>
+                    <img src="">
+                    <figcaption></figcaption>
+                </figure>
+                <p>
+                    We arrived alright to the front door of our hostel close to midnight. 
+                    The streets were absolutely empty and all the doors and windows were metal or barred. 
+                    There was a sinking moment where we thought we would be stuck outside at night if this hostel wasn't open. 
+                    The driver got out and rang the doorbell for us several times until one of the hostel workers finally opened it. 
+                    The driver wanted to give us a tour tomorrow and drive us to the airport when we leave. 
+                    Matteo took down his contact info to make him happy, but we had no intentions of messaging him. 
+                    <br><br>
+                    The hostel worker was very nice and even complimented my Spanish. 
+                    He was pleased to find I was Canadian. 
+                    He set us up in a room with two bunk beds to ourselves. 
+                </p>
+                <figure>
+                    <img src="">
+                    <figcaption></figcaption>
+                </figure>
+            </section>
+        </div>
+        <div class="day">
+            <section id="July 2">
+                <h3>Quito, Ecuador. July 2, 2023.</h3>
+                <figure>
+                    <img src="">
+                    <figcaption></figcaption>
+                </figure>
+                <p>
+                    The day began around 9am on our way to the Plaza Independencia. 
+                    As we walked in the supposed direction of the plaza, we spotted the Basilica del Voto Nacional in the opposite direction towering over the city, so we went there first. 
+                    The top of the tower cost $4 USD and gave us a great initial vantage point of the city. 
+                    Matteo ws very hot in his jacket and sweater so we walked back to the hostel after. 
+                    The hostel worker recommended us a direction to look for food since we hadn't eaten since the Miami airport the afternoon prior. 
+                </p>
+                <figure>
+                    <img src="">
+                    <figcaption></figcaption>
+                </figure>
+                <p>
+                    During our search, I spotted a fresh fruit juice vendor that was selling fresh coconut, sugarcane, and jackfruit juice. 
+                    I got a cup of sugarcane juice and watched the lady squeeze the cane through a machine and collect the juice. 
+                    We found a cheap breakfast place to eat at. 
+                    I got beef with pan con queso, 2 eggs, rice, salsa, coffee, and another fruit juice for $2.75 USD. 
+                </p>
+                <figure>
+                    <img src="">
+                    <figcaption></figcaption>
+                </figure>
+                <p>
+                    We decided to find a SIM card afterwards. 
+                    The man at the counter was very nice and complimented my Spanish. 
+                    He learned good English from playing videogames and watching movies. 
+                    He recommended us to grab a dish called encebollado. 
+                    Upon getting my new phone number set up, we set out to reach the Plaza Independencia again. 
+                    The plaza itself was beautiful with early Spanish colonial architecture. 
+                    The Iglesia Catolica San Francisco was one of the most impressive churches on the inside that I have ever seen, even compared to Europe. 
+                    Inside had so much intricate gold structure and art. 
+                    Unfortunately, photos were not allowed to be taken. 
+                    We also visited the Basilica Catolica Nuestra Senora de la Merced which did allow photos. 
+                </p>
+                <figure>
+                    <img src="">
+                    <figcaption></figcaption>
+                </figure>
+                <p>
+                    One of the corners we walked past had street food vendors selling quail eggs, fried plantain, watermelon, and chicharron: fried pig stomach. 
+                    The chicharron tasted alright, it could have had some more seasoning but it wasn't bad. 
+                    It looks like friend chicken skins. 
+                </p>
+                <figure>
+                    <img src="">
+                    <figcaption></figcaption>
+                </figure>
+                <p>
+                    I ate the chicharron on the way to take the bus to El Panecillo. 
+                    We had trouble finding the right bus and eventually an old lady told us to get on the next bus to get to El Panecillo. 
+                    I gave Matteo a dollar for both of us but they let us on for free because he couldn't find who to give it to. 
+                    The bus eventually missed a turn to go up the hill to El Panecillo so we got off and walked up the hill. 
+                    The houses and paths on the way up reminded me of the favelas or slums you would see in movies. 
+                    We didn't encounter anybody though, and made it to the top. 
+                </p>
+                <figure>
+                    <img src="">
+                    <figcaption></figcaption>
+                </figure>
+                <p>
+                    The statue of the Virgen del Panecillo stood tall overlooking the city. 
+                    Kids played with kites at the top of the hill and there were many vendors there selling food and trinkets. 
+                    Here I purchased a handmade leather coin pouch for $5 USD. 
+                    We decided to skip the bus and walked down to the Old Town again, but this time taking a path that led us to some colourful murals. 
+                </p>
+                <figure>
+                    <img src="">
+                    <figcaption></figcaption>
+                </figure>
+                <p>
+                    We decided to try the encebollado that the worker at the cell phone store had recommended us. 
+                    It was a fish stew with popcorn, plantain chips, mustaard, and limes on the side. 
+                    I also got an Ecuadorian beer made from corn, rice, and wheat. 
+                </p>
+                <figure>
+                    <img src="">
+                    <figcaption></figcaption>
+                </figure>
+                <p>
+                    Quito overall seems like an old, rundown Europe in the colonial areas and like a sketchy slum in the newer areas. 
+                    It has a lot of character though, and it is very colourful. 
+                    I love overlooking the city and seeing the houses go up the mountains and beyond the line of sight. 
+                    So far I have had no issues with the altitude either, even though we are at 2900m above sea level. 
+                    I am having a lot of fun exploring Quito because the city looks so interesting and the people are friendly. 
+                    The food and cultural experience is fantastic. 
+                    <br><br>
+                    We also got a new roommate, Richard, who was born in Moscow, raised in the USA, lived in Rio, and has since made his way through Paraguay, Bolivia, Peru, and now Ecuador. 
+                    His final destination is Colombia. 
+                    He warned us about getting robbed in South America since we are new here...
+                </p>
+            </section>
+        </div>
+        <div class="day">
+            <section id="July 3">
+                <h3>Quito, Ecuador. July 3, 2023. </h3>
+                <figure>
+                    <img src="">
+                    <figcaption></figcaption>
+                </figure>
+                <p>
+                    First thing in the morning, 
+                </p>
+            </section>
+        </div>
+    </div>
 
     <footer>
         <ul class="social-media">
